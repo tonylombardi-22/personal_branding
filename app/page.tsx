@@ -531,7 +531,7 @@ export default function Home() {
           <div className="footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
             <a href="/resume" className="footer-link">Resume</a>
-            <a href="mailto:tonylombardi1@gmail.com" className="footer-link">tonylombardi1@gmail.com</a>
+            <a href="mailto:tony@tonylombardi.ai" className="footer-link">tony@tonylombardi.ai</a>
           </div>
         </footer>
       </div>
