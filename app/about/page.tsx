@@ -448,14 +448,7 @@ export default function About() {
                 "Most people stop after one mountain. The obsession is the same — different terrain."
               </div>
               <p className="ab-body">
-                After stepping back from competition from 2014–2019 through major life 
-                transitions — marriage, children, relocation to North Carolina — the 
-                return to training in 2020 had one goal: Ironman Florida 2021. That finish line 
-                led to two more — Ironman Florida 2023 and 2024. In spring 2025, a new 
-                arena opened. Brazilian Jiu-Jitsu came first. Then kickboxing. Then Muay 
-                Thai. Then MMA. Each discipline building on the last — the same way every 
-                career transition has. Now pursuing what no one has attempted: a sanctioned 
-                MMA fight and a full-distance Ironman in the same calendar year.
+                After stepping back from competition from 2014–2019 through major life transitions — marriage, children, relocation to North Carolina — the return to training in 2020 had one goal: Ironman Florida 2021. That finish line led to two more — Ironman Florida 2023 and 2024. In spring 2025, a new arena opened. Brazilian Jiu-Jitsu came first. Then kickboxing. Then Muay Thai. Then MMA. Each discipline building on the last — the same way every career transition has. Now pursuing what no one has attempted: a sanctioned MMA fight and a full-distance Ironman in the same calendar year.
               </p>
               <div className="ab-pills">
                 <span className="ab-pill">7× Ironman</span>
@@ -505,6 +498,117 @@ export default function About() {
 
           </div>
         </div>
+
+        {/* Podcast Section */}
+        <section style={{
+          padding: "72px 48px",
+          maxWidth: "1100px",
+          margin: "0 auto",
+        }}>
+          <div style={{
+            fontSize: "11px",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase" as const,
+            color: "rgba(240,237,232,0.28)",
+            marginBottom: "12px",
+          }}>
+            Featured
+          </div>
+          <div style={{
+            fontFamily: "'Cormorant Garamond', serif",
+            fontSize: "32px",
+            fontWeight: 600,
+            color: "#f0ede8",
+            marginBottom: "8px",
+            lineHeight: 1.1,
+          }}>
+            The Mad Coach Podcast
+          </div>
+          <p style={{
+            fontSize: "13px",
+            fontWeight: 300,
+            color: "rgba(240,237,232,0.42)",
+            marginBottom: "36px",
+            lineHeight: 1.7,
+            maxWidth: "560px",
+          }}>
+            A conversation about the dual identity — enterprise operator and combat sports competitor.
+            What it takes to pursue two elite challenges simultaneously, and why the mindset is identical.
+          </p>
+
+          {/* Primary embed — combined cut */}
+          <div style={{ marginBottom: "16px" }}>
+            <div style={{
+              fontSize: "10px",
+              letterSpacing: "0.1em",
+              textTransform: "uppercase" as const,
+              color: "rgba(200,169,110,0.55)",
+              marginBottom: "10px",
+            }}>
+              Full conversation — edited cut
+            </div>
+            <iframe
+              style={{ borderRadius: "8px" }}
+              src="https://open.spotify.com/embed/episode/6xKKeVJdOn5VGaVzvQlDf5?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            />
+          </div>
+
+          {/* Part 1 and Part 2 side by side */}
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "16px",
+            marginTop: "16px",
+          }}>
+            <div>
+              <div style={{
+                fontSize: "10px",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase" as const,
+                color: "rgba(240,237,232,0.2)",
+                marginBottom: "10px",
+              }}>
+                Part 1
+              </div>
+              <iframe
+                style={{ borderRadius: "8px" }}
+                src="https://open.spotify.com/embed/episode/1VejZb5DwAPjYeZhRN5wHz?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <div style={{
+                fontSize: "10px",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase" as const,
+                color: "rgba(240,237,232,0.2)",
+                marginBottom: "10px",
+              }}>
+                Part 2
+              </div>
+              <iframe
+                style={{ borderRadius: "8px" }}
+                src="https://open.spotify.com/embed/episode/3KO0T7jxhSbprKjYQw3Sso?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+
+        <hr className="rule" />
 
         {/* CTA */}
         <div className="ab-cta">
