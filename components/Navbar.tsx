@@ -214,7 +214,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="tl-logo-zone">
             <Link href="/" className="tl-logo">
-              tonyLombardi<span className="dot-ai">.ai</span>
+              tonylombardi<span className="dot-ai">.ai</span>
             </Link>
           </div>
 
