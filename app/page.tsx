@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import ScrollAnimations from "@/components/ScrollAnimations";
 import Link from "next/link";
 
 export default function Home() {
@@ -446,10 +447,11 @@ export default function Home() {
 
       <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
         <Navbar />
+        <ScrollAnimations />
 
         {/* Hero */}
         <section className="hero">
-          <div className="hero-left">
+          <div className="hero-left fade-up">
             <div className="hero-tag">Enterprise Transformation · AI Operations · Builder</div>
             <h1 className="hero-h1">
               High-agency<br />
@@ -467,7 +469,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-photo-wrap">
+          <div className="hero-photo-wrap fade-up delay-2">
             <img
               src="/tony-lombardi.jpg"
               alt="Tony Lombardi"
@@ -482,19 +484,19 @@ export default function Home() {
 
         {/* Metrics */}
         <section className="metrics">
-          <div className="metric">
+          <div className="metric fade-up delay-1">
             <div className="metric-num">$8.6M</div>
             <div className="metric-label">Portfolio governed<br />at Verisk Analytics</div>
           </div>
-          <div className="metric">
+          <div className="metric fade-up delay-2">
             <div className="metric-num">$5B+</div>
             <div className="metric-label">Client assets<br />supported</div>
           </div>
-          <div className="metric">
+          <div className="metric fade-up delay-3">
             <div className="metric-num">326</div>
             <div className="metric-label">Overnight branch rollouts,<br />zero failures</div>
           </div>
-          <div className="metric">
+          <div className="metric fade-up delay-4">
             <div className="metric-num">7×</div>
             <div className="metric-label">Ironman finisher &<br />20+ marathons</div>
           </div>
@@ -504,9 +506,9 @@ export default function Home() {
 
         {/* What I Do */}
         <section className="what">
-          <div className="section-eyebrow">What I do</div>
+          <div className="section-eyebrow fade-up">What I do</div>
           <div className="cards">
-            <div className="card">
+            <div className="card fade-up delay-1">
               <div className="card-num">01</div>
               <div className="card-title">Enterprise transformation</div>
               <div className="card-body">
@@ -514,7 +516,7 @@ export default function Home() {
                 reality — governance, roadmaps, and the operating model to sustain it.
               </div>
             </div>
-            <div className="card">
+            <div className="card fade-up delay-2">
               <div className="card-num">02</div>
               <div className="card-title">AI-enabled operations</div>
               <div className="card-body">
@@ -522,7 +524,7 @@ export default function Home() {
                 pipelines that scale human judgment — not just human labor.
               </div>
             </div>
-            <div className="card">
+            <div className="card fade-up delay-3">
               <div className="card-num">03</div>
               <div className="card-title">Platform & product strategy</div>
               <div className="card-body">
@@ -537,7 +539,7 @@ export default function Home() {
 
         {/* Dual Identity */}
         <section className="identity">
-          <div className="identity-col">
+          <div className="identity-col fade-up delay-1">
             <div className="section-eyebrow">The professional</div>
             <div className="identity-headline">
               Every role.<br /><em>One operator.</em>
@@ -556,7 +558,7 @@ export default function Home() {
               <span className="pill">SOC 1 / SOC 2</span>
             </div>
           </div>
-          <div className="identity-col">
+          <div className="identity-col fade-up delay-2">
             <div className="section-eyebrow">The athlete</div>
             <div className="identity-headline">
               Same discipline.<br /><em>Different arena.</em>
@@ -577,7 +579,7 @@ export default function Home() {
         </section>
 
         {/* CTA Bar */}
-        <div className="cta-bar">
+        <div className="cta-bar fade-up">
           <div className="cta-bar-text-wrap">
             <div className="cta-bar-headline">Ready to build something that works.</div>
             <div className="cta-bar-sub">
@@ -590,12 +592,12 @@ export default function Home() {
         {/* Footer */}
         <footer className="footer">
           <Link href="/" className="footer-logo">
-            TonyLombardi<span className="gold">.ai</span>
+            tonyLombardi<span className="gold">.ai</span>
           </Link>
           <div className="footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
-            <a href="/resume" className="footer-link">Resume</a>
-            <a href="mailto:tonylombardi1@gmail.com" className="footer-link">tonylombardi1@gmail.com</a>
+            <a href="/tony-lombardi-resume.pdf" download className="footer-link">Resume</a>
+            <a href="mailto:tony@tonylombardi.ai" className="footer-link">tony@tonylombardi.ai</a>
           </div>
         </footer>
       </div>
