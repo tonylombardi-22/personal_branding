@@ -448,7 +448,14 @@ export default function About() {
                 "Most people stop after one mountain. The obsession is the same — different terrain."
               </div>
               <p className="ab-body">
-                After stepping back from competition from 2014–2019 through major life transitions — marriage, children, relocation to North Carolina — the return to training in 2020 didn't look like most comebacks. It led directly into combat sports and a milestone no one has attempted: a sanctioned MMA fight and a full-distance Ironman triathlon in the same calendar year.
+                After stepping back from competition from 2014–2019 through major life 
+                transitions — marriage, children, relocation to North Carolina — the 
+                return to training in 2020 had one goal: Ironman Florida 2021. That finish line 
+                led to two more — Ironman Florida 2023 and 2024. In spring 2025, a new 
+                arena opened. Brazilian Jiu-Jitsu came first. Then kickboxing. Then Muay 
+                Thai. Then MMA. Each discipline building on the last — the same way every 
+                career transition has. Now pursuing what no one has attempted: a sanctioned 
+                MMA fight and a full-distance Ironman in the same calendar year.
               </p>
               <div className="ab-pills">
                 <span className="ab-pill">7× Ironman</span>
