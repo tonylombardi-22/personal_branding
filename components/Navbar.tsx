@@ -205,7 +205,6 @@ export default function Navbar() {
             <Link href="/about" className="tl-link">About</Link>
             <Link href="/experience" className="tl-link">Experience</Link>
             <Link href="/projects" className="tl-link">Projects</Link>
-            <Link href="/writing" className="tl-link">Writing</Link>
           </div>
 
           {/* Desktop right side */}
