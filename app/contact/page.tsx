@@ -23,7 +23,6 @@ export default function Contact() {
           -webkit-font-smoothing: antialiased;
         }
 
-        /* ── HERO ─────────────────────────────── */
         .ct-hero {
           padding: 100px 48px 80px;
           max-width: 1100px;
@@ -65,7 +64,6 @@ export default function Contact() {
           margin-bottom: 40px;
         }
 
-        /* ── CONTACT OPTIONS ──────────────────── */
         .ct-options {
           display: flex;
           flex-direction: column;
@@ -131,10 +129,7 @@ export default function Contact() {
           flex-shrink: 0;
         }
 
-        /* ── FORM SIDE ────────────────────────── */
-        .ct-form-wrap {
-          padding-top: 4px;
-        }
+        .ct-form-wrap { padding-top: 4px; }
 
         .ct-form-label {
           font-size: 11px;
@@ -219,14 +214,12 @@ export default function Contact() {
           margin-top: 8px;
         }
 
-        /* ── RULE ─────────────────────────────── */
         .rule {
           border: none;
           border-top: 0.5px solid rgba(240,237,232,0.08);
           margin: 0 48px;
         }
 
-        /* ── AVAILABILITY BAR ─────────────────── */
         .ct-avail {
           padding: 48px 48px;
           max-width: 1100px;
@@ -255,7 +248,6 @@ export default function Contact() {
           font-weight: 500;
         }
 
-        /* ── FOOTER ───────────────────────────── */
         .ct-footer {
           padding: 36px 48px;
           border-top: 0.5px solid rgba(240,237,232,0.08);
@@ -279,10 +271,7 @@ export default function Contact() {
 
         .ct-footer-logo span { color: rgba(200,169,110,0.35); }
 
-        .ct-footer-links {
-          display: flex;
-          gap: 28px;
-        }
+        .ct-footer-links { display: flex; gap: 28px; }
 
         .ct-footer-link {
           font-size: 12px;
@@ -294,17 +283,14 @@ export default function Contact() {
 
         .ct-footer-link:hover { color: rgba(240,237,232,0.55); }
 
-        /* ── RESPONSIVE ───────────────────────── */
         @media (max-width: 900px) {
           .ct-hero {
             grid-template-columns: 1fr;
             gap: 48px;
             padding: 72px 24px 56px;
           }
-
           .ct-avail { padding: 36px 24px; }
           .rule { margin: 0 24px; }
-
           .ct-footer {
             padding: 32px 24px;
             flex-direction: column;
@@ -317,7 +303,6 @@ export default function Contact() {
         <Navbar />
 
         <section className="ct-hero">
-          {/* Left — headline + contact options */}
           <div>
             <div className="ct-eyebrow">Contact</div>
             <h1 className="ct-h1">
@@ -374,10 +359,20 @@ export default function Contact() {
                 </div>
                 <div className="ct-option-arrow">→</div>
               </a>
+
+              <a href="/tony-lombardi-resume.pdf" download className="ct-option">
+                <div className="ct-option-icon white">
+                  <i className="ti ti-file-download" aria-hidden="true"></i>
+                </div>
+                <div className="ct-option-body">
+                  <div className="ct-option-label">Resume</div>
+                  <div className="ct-option-value">Download PDF</div>
+                </div>
+                <div className="ct-option-arrow">→</div>
+              </a>
             </div>
           </div>
 
-          {/* Right — contact form */}
           <div className="ct-form-wrap">
             <div className="ct-form-label">Send a message</div>
             <form
@@ -387,23 +382,11 @@ export default function Contact() {
             >
               <div className="ct-field">
                 <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  required
-                />
+                <input type="text" id="name" name="name" placeholder="Your name" required />
               </div>
               <div className="ct-field">
                 <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="your@email.com"
-                  required
-                />
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
               </div>
               <div className="ct-field">
                 <label htmlFor="context">What are you working on?</label>
@@ -413,19 +396,14 @@ export default function Contact() {
                   placeholder="Brief context on your organization, the role or project, and what you're looking for..."
                 />
               </div>
-              <button type="submit" className="ct-submit">
-                Send message →
-              </button>
-              <p className="ct-form-note">
-                Typically responds within 24–48 hours.
-              </p>
+              <button type="submit" className="ct-submit">Send message →</button>
+              <p className="ct-form-note">Typically responds within 24–48 hours.</p>
             </form>
           </div>
         </section>
 
         <hr className="rule" />
 
-        {/* Availability indicator */}
         <div className="ct-avail">
           <div className="ct-avail-dot" />
           <p className="ct-avail-text">
@@ -436,7 +414,6 @@ export default function Contact() {
 
         <hr className="rule" />
 
-        {/* Footer */}
         <footer className="ct-footer">
           <Link href="/" className="ct-footer-logo">
             tonyLombardi<span>.ai</span>
