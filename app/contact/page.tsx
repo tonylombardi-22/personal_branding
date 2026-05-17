@@ -99,13 +99,15 @@ export default function Contact() {
         }
 
         .ct-option-icon.gold {
-          background: rgba(200,169,110,0.12);
+          background: rgba(200,169,110,0.18);
           color: #C8A96E;
+          font-size: 20px;
         }
 
         .ct-option-icon.white {
-          background: rgba(240,237,232,0.06);
-          color: rgba(240,237,232,0.6);
+          background: rgba(240,237,232,0.1);
+          color: rgba(240,237,232,0.8);
+          font-size: 20px;
         }
 
         .ct-option-body { flex: 1; }
@@ -119,13 +121,13 @@ export default function Contact() {
 
         .ct-option-value {
           font-size: 11.5px;
-          color: rgba(240,237,232,0.35);
+          color: rgba(240,237,232,0.55);
           letter-spacing: 0.03em;
         }
 
         .ct-option-arrow {
-          font-size: 14px;
-          color: rgba(240,237,232,0.2);
+          font-size: 16px;
+          color: rgba(240,237,232,0.5);
           flex-shrink: 0;
         }
 
@@ -154,14 +156,14 @@ export default function Contact() {
         .ct-field label {
           font-size: 11px;
           letter-spacing: 0.06em;
-          color: rgba(240,237,232,0.35);
+          color: rgba(240,237,232,0.6);
           text-transform: uppercase;
         }
 
         .ct-field input,
         .ct-field textarea {
-          background: rgba(240,237,232,0.03);
-          border: 0.5px solid rgba(240,237,232,0.12);
+          background: rgba(240,237,232,0.04);
+          border: 0.5px solid rgba(240,237,232,0.18);
           border-radius: 3px;
           padding: 12px 16px;
           font-family: 'DM Sans', sans-serif;
@@ -175,7 +177,7 @@ export default function Contact() {
 
         .ct-field input::placeholder,
         .ct-field textarea::placeholder {
-          color: rgba(240,237,232,0.2);
+          color: rgba(240,237,232,0.35);
         }
 
         .ct-field input:focus,
