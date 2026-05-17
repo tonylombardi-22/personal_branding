@@ -217,6 +217,75 @@ export default function About() {
           border-radius: 2px;
         }
 
+        /* ── ATHLETIC PHOTOS ──────────────────── */
+        .ab-photos {
+          display: grid;
+          grid-template-columns: 1.4fr 1fr;
+          grid-template-rows: auto auto;
+          gap: 8px;
+          margin: 32px 0;
+        }
+
+        .ab-photo-primary {
+          grid-row: 1 / 3;
+          position: relative;
+          overflow: hidden;
+          border-radius: 3px;
+        }
+
+        .ab-photo-primary img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center top;
+          display: block;
+          filter: grayscale(10%) contrast(1.04);
+          transition: transform 0.4s ease;
+        }
+
+        .ab-photo-primary:hover img { transform: scale(1.02); }
+
+        .ab-photo-secondary {
+          position: relative;
+          overflow: hidden;
+          border-radius: 3px;
+          aspect-ratio: 4 / 3;
+        }
+
+        .ab-photo-secondary img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          display: block;
+          filter: grayscale(10%) contrast(1.04);
+          transition: transform 0.4s ease;
+        }
+
+        .ab-photo-secondary:hover img { transform: scale(1.02); }
+
+        .ab-photo-caption {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          font-size: 9px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: rgba(200,169,110,0.8);
+          background: rgba(10,10,10,0.65);
+          padding: 4px 8px;
+          border-radius: 2px;
+          backdrop-filter: blur(4px);
+        }
+
+        @media (max-width: 700px) {
+          .ab-photos {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+          }
+          .ab-photo-primary { grid-row: auto; aspect-ratio: 3/4; }
+        }
+
         /* ── CTA BAR ──────────────────────────── */
         .ab-cta {
           background: #C8A96E;
@@ -457,6 +526,22 @@ export default function About() {
                 <span className="ab-pill">Amateur MMA</span>
                 <span className="ab-pill">Emergency First Responder</span>
                 <span className="ab-pill">Rescue Scuba Diver</span>
+              </div>
+
+              {/* Athletic photo grid */}
+              <div className="ab-photos">
+                <div className="ab-photo-primary">
+                  <img src="/athletic_photo_1.jpg" alt="Tony Lombardi — Ironman triathlon" />
+                  <div className="ab-photo-caption">7× Ironman finisher</div>
+                </div>
+                <div className="ab-photo-secondary">
+                  <img src="/athletic_photo_2.jpg" alt="Tony Lombardi — Ironman finish line" />
+                  <div className="ab-photo-caption">Ironman finish line</div>
+                </div>
+                <div className="ab-photo-secondary">
+                  <img src="/athletic_photo_3.jpg" alt="Tony Lombardi — Brazilian Jiu-Jitsu" />
+                  <div className="ab-photo-caption">Brazilian Jiu-Jitsu</div>
+                </div>
               </div>
             </section>
 
