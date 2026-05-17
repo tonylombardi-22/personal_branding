@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     siteName: "TonyLombardi.ai",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://tonylombardi.ai/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Tony Lombardi — Enterprise Transformation & AI Operations",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Tony Lombardi | Enterprise Transformation & AI Operations",
     description:
       "High-agency operator with range. $8.6M portfolios, $5B+ in client assets, 7× Ironman finisher.",
+    images: ["https://tonylombardi.ai/og-image.png"],
   },
   icons: {
     icon: [
