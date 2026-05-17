@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects | Tony Lombardi",
   description:
-    "DMV 2.0 — a patented GovTech disruption concept adopted by a gubernatorial campaign. The Fight Don — a complete digital operating infrastructure and AI-enabled performance analytics platform built from zero.",
+    "DMV 2.0 · The Fight Don · Jared P. Grenier Scholarship Foundation · The Hybrid Athlete Milestone · Travelers ITLDP. Five projects that show the range.",
 };
 
 const projects = [
@@ -40,6 +40,54 @@ const projects = [
     tags: ["AI-Enabled Operations", "Sports Technology", "Operating Model Design", "Digital Infrastructure", "Startup"],
     role: "Director, Digital Transformation & AI Operations",
     year: "2025 — Present",
+  },
+  {
+    number: "03",
+    name: "Jared P. Grenier Scholarship Foundation",
+    positioning:
+      "A living tribute to a friend who deserved to be remembered — a 501(c)(3) scholarship founded in 2006 that has awarded a graduating Southington High School senior every single year since.",
+    summary:
+      "In 2006, following the loss of a close friend, Tony Lombardi co-founded the Jared P. Grenier Scholarship Foundation alongside Jared's friends and family — not as a career accomplishment, but because the people who loved him wanted his memory to mean something beyond grief. Tony secured full 501(c)(3) nonprofit status, designed the annual selection process from scratch, and has served as President continuously since founding. The scholarship is awarded each year to a graduating senior from Southington High School who best embodies the values Jared represented: friendship, loyalty, and love. Applicants submit a peer reference, a photograph, and an essay describing what friendship means to them and how the photograph relates to it. Nearly two decades later, the award has never been missed.",
+    proofPoints: [
+      "Full 501(c)(3) nonprofit status obtained and maintained since 2006",
+      "Annual scholarship awarded to a Southington High School graduating senior every year without interruption for nearly 20 years",
+      "Four-person board — President, Vice President, Secretary, Treasurer — sustained across the full tenure with no external funding or institutional support",
+    ],
+    tags: ["501(c)(3) Governance", "Nonprofit Operations", "Program Design", "Award Administration", "Community Institution Building"],
+    role: "Co-Founder & President",
+    year: "2006 — Present",
+  },
+  {
+    number: "04",
+    name: "The Hybrid Athlete Milestone",
+    positioning:
+      "An active pursuit of a first-of-its-kind athletic milestone: a sanctioned MMA fight and a full-distance Ironman triathlon in the same calendar year — built on a 7-Ironman, 20-marathon endurance foundation and a combat sports development track begun in 2025.",
+    summary:
+      "Tony Lombardi has competed in endurance sports since 2007, accumulating seven Ironman finishes and more than twenty marathon completions before stepping back from competition during a period of major life transition from 2014 to 2019. He returned to Ironman competition in 2021 — completing Ironman Florida under severe race conditions — and has finished Ironman Florida again in 2023 and 2024. Beginning in spring 2025, he added combat sports: Brazilian Jiu-Jitsu, kickboxing, Muay Thai, and MMA, completing two competitive BJJ matches and one live unsanctioned MMA smoker round. He is currently a BJJ white belt with one stripe, targeting blue belt as the prerequisite for sanctioned MMA competition. The dual milestone is actively in progress — timing contingent on belt progression. The discipline, sequencing, and long-term goal execution that defines this pursuit is the same operating model applied across every professional engagement in the career.",
+    proofPoints: [
+      "Seven Ironman finishes, including three consecutive post-comeback completions at Ironman Florida in 2021, 2023, and 2024",
+      "Two competitive BJJ matches and one live unsanctioned MMA smoker round completed",
+      "PADI Rescue Diver certified in 2023, including Emergency First Responder certification — sustaining a scuba practice begun with Junior Open Water certification in 1996",
+    ],
+    tags: ["Endurance Performance", "Combat Sports Development", "Multi-Discipline Training", "Long-Horizon Goal Execution", "Performance Analytics"],
+    role: "Athlete — In Progress",
+    year: "2007 — Present",
+  },
+  {
+    number: "05",
+    name: "Travelers IT Leadership Development Program",
+    positioning:
+      "The origin of a full-stack delivery career: selected into one of financial services' most competitive corporate leadership programs — top 30% of 3,000+ applicants, 10–15 accepted — rotating through developer, BA, project lead, and PM seats on mission-critical systems.",
+    summary:
+      "Tony Lombardi entered Travelers' IT Leadership Development Program in 2006 after earning a contingent full-time offer through a 2005 summer internship, completing his M.S. in Information Systems with a 3.92 GPA to qualify. Over five rotations across five distinct business units, he held nearly every role on a modern delivery team simultaneously — developer, business analyst, QA tester, Scrum Master, budget owner, and team leader — often within a single engagement. He also chaired the Leadership Development Intern Program during his LDP tenure, designing programming, mentoring early-career talent, and running the pipeline that fed future cohorts. The breadth of that foundation — built at a Fortune 100 insurer alongside ThoughtWorks consultants, years before Agile reached mainstream corporate adoption — is the ground-level credibility that distinguishes every transformation leadership role that followed.",
+    proofPoints: [
+      "Selected into the Travelers ITLDP in the top 30% of a cohort drawn from 3,000+ applicants — 10 to 15 participants accepted annually",
+      "Completed five rotations across five distinct business units spanning Agile development, infrastructure project management, QA team leadership, waterfall budget delivery, and legacy system modernization",
+      "Chaired the Leadership Development Intern Program during LDP tenure — designing programming and mentoring early-career talent across the full early-in-career pipeline",
+    ],
+    tags: ["Fortune 100 Enterprise", "Multi-Role Delivery Immersion", "Early-Career Foundation", "Agile Methodology", "Talent Development"],
+    role: "IT Leadership Development Program",
+    year: "2006 — 2012",
   },
 ];
 
