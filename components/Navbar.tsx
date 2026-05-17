@@ -196,7 +196,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="tl-logo-zone">
             <Link href="/" className="tl-logo">
-              tonylombardi<span className="dot-ai">.ai</span>
+              TonyLombardi<span className="dot-ai">.ai</span>
             </Link>
           </div>
 
@@ -209,6 +209,7 @@ export default function Navbar() {
 
           {/* Desktop right side */}
           <div className="tl-right">
+            <a href="/tony-lombardi-resume.pdf" download className="tl-link">Resume</a>
             <div className="tl-dot" aria-hidden="true" />
             <Link href="/contact" className="tl-contact">Contact</Link>
           </div>
@@ -229,7 +230,7 @@ export default function Navbar() {
           <Link href="/about" className="tl-mobile-link" onClick={() => setMenuOpen(false)}>About</Link>
           <Link href="/experience" className="tl-mobile-link" onClick={() => setMenuOpen(false)}>Experience</Link>
           <Link href="/projects" className="tl-mobile-link" onClick={() => setMenuOpen(false)}>Projects</Link>
-          <Link href="/writing" className="tl-mobile-link" onClick={() => setMenuOpen(false)}>Writing</Link>
+          <a href="/tony-lombardi-resume.pdf" download className="tl-mobile-link">Resume</a>
           <Link href="/contact" className="tl-mobile-contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       </nav>
