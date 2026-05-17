@@ -21,6 +21,52 @@ export default function Home() {
           padding: 110px 48px 90px;
           max-width: 1200px;
           margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr 420px;
+          gap: 72px;
+          align-items: center;
+        }
+
+        .hero-left {}
+
+        .hero-photo-wrap {
+          position: relative;
+        }
+
+        .hero-photo {
+          width: 100%;
+          aspect-ratio: 3 / 4;
+          object-fit: cover;
+          object-position: center top;
+          border-radius: 4px;
+          display: block;
+          filter: grayscale(15%) contrast(1.05);
+        }
+
+        .hero-photo-accent {
+          position: absolute;
+          bottom: -16px;
+          left: -16px;
+          width: 120px;
+          height: 120px;
+          border: 0.5px solid rgba(200,169,110,0.3);
+          border-radius: 3px;
+          pointer-events: none;
+        }
+
+        .hero-photo-label {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 10px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: rgba(200,169,110,0.7);
+          background: rgba(10,10,10,0.7);
+          padding: 5px 10px;
+          border-radius: 2px;
+          backdrop-filter: blur(4px);
         }
 
         .hero-tag {
@@ -347,7 +393,13 @@ export default function Home() {
 
         /* ─── RESPONSIVE ───────────────────────────── */
         @media (max-width: 900px) {
-          .hero { padding: 72px 24px 64px; }
+          .hero {
+            grid-template-columns: 1fr;
+            padding: 72px 24px 64px;
+            gap: 48px;
+          }
+          .hero-photo-wrap { order: -1; max-width: 320px; }
+          .hero-photo-accent { display: none; }
           .rule { margin: 0 24px; }
           .metrics {
             grid-template-columns: repeat(2, 1fr);
@@ -397,20 +449,32 @@ export default function Home() {
 
         {/* Hero */}
         <section className="hero">
-          <div className="hero-tag">Enterprise Transformation · AI Operations · Builder</div>
-          <h1 className="hero-h1">
-            High-agency<br />
-            operator<br />
-            <span className="gold">with range.</span>
-          </h1>
-          <p className="hero-sub">
-            I walk into complexity, design the operating model, and deliver measurable results.
-            20+ years across insurance, financial services, SaaS, and sports technology —
-            from developer to portfolio director.
-          </p>
-          <div className="hero-btns">
-            <Link href="/experience" className="btn-primary">View my work</Link>
-            <Link href="/about" className="btn-ghost">My story</Link>
+          <div className="hero-left">
+            <div className="hero-tag">Enterprise Transformation · AI Operations · Builder</div>
+            <h1 className="hero-h1">
+              High-agency<br />
+              operator<br />
+              <span className="gold">with range.</span>
+            </h1>
+            <p className="hero-sub">
+              I walk into complexity, design the operating model, and deliver measurable results.
+              20+ years across insurance, financial services, SaaS, and sports technology —
+              from developer to portfolio director.
+            </p>
+            <div className="hero-btns">
+              <Link href="/experience" className="btn-primary">View my work</Link>
+              <Link href="/about" className="btn-ghost">My story</Link>
+            </div>
+          </div>
+
+          <div className="hero-photo-wrap">
+            <img
+              src="/tony-lombardi.jpg"
+              alt="Tony Lombardi"
+              className="hero-photo"
+            />
+            <div className="hero-photo-accent" aria-hidden="true" />
+            <div className="hero-photo-label">Tony Lombardi</div>
           </div>
         </section>
 
@@ -531,7 +595,7 @@ export default function Home() {
           <div className="footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
             <a href="/resume" className="footer-link">Resume</a>
-            <a href="mailto:tony@tonylombardi.ai" className="footer-link">tony@tonylombardi.ai</a>
+            <a href="mailto:tonylombardi1@gmail.com" className="footer-link">tonylombardi1@gmail.com</a>
           </div>
         </footer>
       </div>
