@@ -514,7 +514,7 @@ export default function Writing() {
 
             <p>
               I bring this same operating system to enterprise transformation and AI
-              operations — helping teams build the habits, governance, and composure
+              operations — helping teams build the habits that create predictability, governance, and composure
               to navigate chaos without breaking.
             </p>
 
