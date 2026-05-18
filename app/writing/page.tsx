@@ -183,12 +183,21 @@ export default function Writing() {
 
         .ar-headline {
           font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(36px, 5.5vw, 64px);
+          font-size: clamp(42px, 6vw, 72px);
           font-weight: 600;
           color: #f0ede8;
           line-height: 0.95;
           letter-spacing: -0.01em;
-          margin-bottom: 32px;
+          margin-bottom: 24px;
+        }
+
+        .ar-subheadline {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 22px;
+          font-style: italic;
+          color: rgba(200,169,110,0.72);
+          margin-bottom: 40px;
+          line-height: 1.4;
         }
 
         .ar-byline {
@@ -338,6 +347,14 @@ export default function Writing() {
             padding: 48px 24px 72px;
           }
 
+          .ar-headline {
+            font-size: clamp(38px, 12vw, 58px);
+          }
+
+          .ar-subheadline {
+            font-size: 20px;
+          }
+
           .wr-footer {
             padding: 32px 24px;
             flex-direction: column;
@@ -379,8 +396,8 @@ export default function Writing() {
 
             <p className="wr-article-excerpt">
               Mile 67. Sustained headwinds. A race plan that no longer existed.
-              What happened next became less about endurance and more about the
-              habits, decisions, and operating system that remain when pressure rises.
+              What remained was the operating system that runs when pressure rises
+              and the script breaks.
             </p>
 
             <a href="#article" className="wr-read-link">
@@ -406,6 +423,10 @@ export default function Writing() {
             <br />
             Doesn't Change.
           </h2>
+
+          <div className="ar-subheadline">
+            “The race reveals who you are.”
+          </div>
 
           <div className="ar-byline">
             By <strong>Tony Lombardi</strong>
@@ -514,7 +535,7 @@ export default function Writing() {
 
             <p>
               I bring this same operating system to enterprise transformation and AI
-              operations — helping teams build the habits that create predictability, governance, and composure
+              operations — helping teams build the habits, governance, and composure
               to navigate chaos without breaking.
             </p>
 
