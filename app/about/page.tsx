@@ -2,6 +2,8 @@ import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import type { Metadata } from "next";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: "About | Tony Lombardi",
   description:
@@ -711,7 +713,7 @@ export default function About() {
         {/* Footer */}
         <footer className="ab-footer">
           <Link href="/" className="ab-footer-logo">
-            TonyLombardi<span>.ai</span>
+            tonyLombardi<span>.ai</span>
           </Link>
           <div className="ab-footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="ab-footer-link">LinkedIn</a>

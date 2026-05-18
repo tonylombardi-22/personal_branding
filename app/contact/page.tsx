@@ -2,6 +2,8 @@ import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import type { Metadata } from "next";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: "Contact | Tony Lombardi",
   description:
@@ -23,6 +25,7 @@ export default function Contact() {
           -webkit-font-smoothing: antialiased;
         }
 
+        /* ── HERO ─────────────────────────────── */
         .ct-hero {
           padding: 100px 48px 80px;
           max-width: 1100px;
@@ -64,6 +67,7 @@ export default function Contact() {
           margin-bottom: 40px;
         }
 
+        /* ── CONTACT OPTIONS ──────────────────── */
         .ct-options {
           display: flex;
           flex-direction: column;
@@ -99,15 +103,13 @@ export default function Contact() {
         }
 
         .ct-option-icon.gold {
-          background: rgba(200,169,110,0.18);
+          background: rgba(200,169,110,0.12);
           color: #C8A96E;
-          font-size: 20px;
         }
 
         .ct-option-icon.white {
-          background: rgba(240,237,232,0.1);
-          color: rgba(240,237,232,0.8);
-          font-size: 20px;
+          background: rgba(240,237,232,0.06);
+          color: rgba(240,237,232,0.6);
         }
 
         .ct-option-body { flex: 1; }
@@ -121,17 +123,20 @@ export default function Contact() {
 
         .ct-option-value {
           font-size: 11.5px;
-          color: rgba(240,237,232,0.55);
+          color: rgba(240,237,232,0.35);
           letter-spacing: 0.03em;
         }
 
         .ct-option-arrow {
-          font-size: 16px;
-          color: rgba(240,237,232,0.5);
+          font-size: 14px;
+          color: rgba(240,237,232,0.2);
           flex-shrink: 0;
         }
 
-        .ct-form-wrap { padding-top: 4px; }
+        /* ── FORM SIDE ────────────────────────── */
+        .ct-form-wrap {
+          padding-top: 4px;
+        }
 
         .ct-form-label {
           font-size: 11px;
@@ -156,14 +161,14 @@ export default function Contact() {
         .ct-field label {
           font-size: 11px;
           letter-spacing: 0.06em;
-          color: rgba(240,237,232,0.6);
+          color: rgba(240,237,232,0.35);
           text-transform: uppercase;
         }
 
         .ct-field input,
         .ct-field textarea {
-          background: rgba(240,237,232,0.04);
-          border: 0.5px solid rgba(240,237,232,0.18);
+          background: rgba(240,237,232,0.03);
+          border: 0.5px solid rgba(240,237,232,0.12);
           border-radius: 3px;
           padding: 12px 16px;
           font-family: 'DM Sans', sans-serif;
@@ -177,7 +182,7 @@ export default function Contact() {
 
         .ct-field input::placeholder,
         .ct-field textarea::placeholder {
-          color: rgba(240,237,232,0.35);
+          color: rgba(240,237,232,0.2);
         }
 
         .ct-field input:focus,
@@ -216,12 +221,14 @@ export default function Contact() {
           margin-top: 8px;
         }
 
+        /* ── RULE ─────────────────────────────── */
         .rule {
           border: none;
           border-top: 0.5px solid rgba(240,237,232,0.08);
           margin: 0 48px;
         }
 
+        /* ── AVAILABILITY BAR ─────────────────── */
         .ct-avail {
           padding: 48px 48px;
           max-width: 1100px;
@@ -250,6 +257,7 @@ export default function Contact() {
           font-weight: 500;
         }
 
+        /* ── FOOTER ───────────────────────────── */
         .ct-footer {
           padding: 36px 48px;
           border-top: 0.5px solid rgba(240,237,232,0.08);
@@ -273,7 +281,10 @@ export default function Contact() {
 
         .ct-footer-logo span { color: rgba(200,169,110,0.35); }
 
-        .ct-footer-links { display: flex; gap: 28px; }
+        .ct-footer-links {
+          display: flex;
+          gap: 28px;
+        }
 
         .ct-footer-link {
           font-size: 12px;
@@ -285,14 +296,17 @@ export default function Contact() {
 
         .ct-footer-link:hover { color: rgba(240,237,232,0.55); }
 
+        /* ── RESPONSIVE ───────────────────────── */
         @media (max-width: 900px) {
           .ct-hero {
             grid-template-columns: 1fr;
             gap: 48px;
             padding: 72px 24px 56px;
           }
+
           .ct-avail { padding: 36px 24px; }
           .rule { margin: 0 24px; }
+
           .ct-footer {
             padding: 32px 24px;
             flex-direction: column;
@@ -305,6 +319,7 @@ export default function Contact() {
         <Navbar />
 
         <section className="ct-hero">
+          {/* Left — headline + contact options */}
           <div>
             <div className="ct-eyebrow">Contact</div>
             <h1 className="ct-h1">
@@ -361,34 +376,36 @@ export default function Contact() {
                 </div>
                 <div className="ct-option-arrow">→</div>
               </a>
-
-              <a href="/tony-lombardi-resume.pdf" download className="ct-option">
-                <div className="ct-option-icon white">
-                  <i className="ti ti-file-download" aria-hidden="true"></i>
-                </div>
-                <div className="ct-option-body">
-                  <div className="ct-option-label">Resume</div>
-                  <div className="ct-option-value">Download PDF</div>
-                </div>
-                <div className="ct-option-arrow">→</div>
-              </a>
             </div>
           </div>
 
+          {/* Right — contact form */}
           <div className="ct-form-wrap">
             <div className="ct-form-label">Send a message</div>
             <form
               className="ct-form"
-              action="https://formspree.io/f/mdajokkg"
+              action="https://formspree.io/f/YOUR_FORM_ID"
               method="POST"
             >
               <div className="ct-field">
                 <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
               </div>
               <div className="ct-field">
                 <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
               </div>
               <div className="ct-field">
                 <label htmlFor="context">What are you working on?</label>
@@ -398,24 +415,30 @@ export default function Contact() {
                   placeholder="Brief context on your organization, the role or project, and what you're looking for..."
                 />
               </div>
-              <button type="submit" className="ct-submit">Send message →</button>
-              <p className="ct-form-note">Typically responds within 24–48 hours.</p>
+              <button type="submit" className="ct-submit">
+                Send message →
+              </button>
+              <p className="ct-form-note">
+                Typically responds within 24–48 hours.
+              </p>
             </form>
           </div>
         </section>
 
         <hr className="rule" />
 
+        {/* Availability indicator */}
         <div className="ct-avail">
           <div className="ct-avail-dot" />
           <p className="ct-avail-text">
-            <strong>Currently available</strong> for Q3 engagement — transformation leadership, fractional advisory, or consulting.
-            On-site, hybrid, or remote. Based in Fuquay-Varina, NC - 15 minutes from Raleigh.
+            <strong>Currently available</strong> for transformation leadership, consulting, and strategic advisory roles —
+            on-site, hybrid, or remote. Based in Fuquay-Varina, NC.
           </p>
         </div>
 
         <hr className="rule" />
 
+        {/* Footer */}
         <footer className="ct-footer">
           <Link href="/" className="ct-footer-logo">
             tonyLombardi<span>.ai</span>
