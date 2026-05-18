@@ -179,12 +179,49 @@ export default function Home() {
           padding: 44px 48px;
           max-width: 1200px;
           margin: 0 auto;
+          position: relative;
+        }
+
+        .metrics::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 48px;
+          right: 48px;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, rgba(200,169,110,0.4) 20%, rgba(200,169,110,0.4) 80%, transparent);
+        }
+
+        .metrics::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 48px;
+          right: 48px;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, rgba(200,169,110,0.15) 20%, rgba(200,169,110,0.15) 80%, transparent);
         }
 
         .metric {
           padding-right: 40px;
-          border-right: 0.5px solid rgba(240, 237, 232, 0.08);
+          border-right: 0.5px solid rgba(200,169,110,0.12);
           margin-right: 40px;
+          position: relative;
+        }
+
+        .metric::before {
+          content: '';
+          position: absolute;
+          top: -44px;
+          left: 0;
+          width: 24px;
+          height: 2px;
+          background: #C8A96E;
+          opacity: 0.6;
+        }
+
+        .metric:first-child::before {
+          display: none;
         }
 
         .metric:last-child {
@@ -195,7 +232,7 @@ export default function Home() {
 
         .metric-num {
           font-family: 'Cormorant Garamond', serif;
-          font-size: 52px;
+          font-size: 56px;
           font-weight: 600;
           color: #C8A96E;
           line-height: 1;
@@ -205,9 +242,9 @@ export default function Home() {
         .metric-label {
           font-family: 'DM Sans', sans-serif;
           font-size: 12px;
-          color: rgba(240, 237, 232, 0.38);
+          color: rgba(240, 237, 232, 0.45);
           letter-spacing: 0.04em;
-          margin-top: 8px;
+          margin-top: 10px;
           line-height: 1.5;
         }
 
