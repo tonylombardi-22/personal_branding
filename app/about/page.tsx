@@ -549,6 +549,15 @@ export default function About() {
                 </div>
               </div>
 
+              {/* One man two worlds poster */}
+              <div style={{ marginTop: "32px", borderRadius: "4px", overflow: "hidden" }}>
+                <img
+                  src="/1_man_2_worlds.png"
+                  alt="Tony Lombardi — One man. Two worlds."
+                  style={{ width: "100%", display: "block" }}
+                />
+              </div>
+
             </section>
 
             {/* The Builder */}
