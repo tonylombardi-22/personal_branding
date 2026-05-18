@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import PageTransition from "@/components/PageTransition";
+import CustomCursor from "@/components/CustomCursor";
 
 export const metadata: Metadata = {
   title: "Tony Lombardi | Enterprise Transformation & AI Operations",
@@ -53,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ margin: 0, padding: 0, background: "#0a0a0a" }}>
+        <CustomCursor />
         <PageTransition>
           {children}
         </PageTransition>
