@@ -550,11 +550,11 @@ export default function About() {
               </div>
 
               {/* One man two worlds poster */}
-              <div style={{ marginTop: "32px", borderRadius: "4px", overflow: "hidden" }}>
+              <div style={{ marginTop: "32px", display: "flex", justifyContent: "center" }}>
                 <img
                   src="/1_man_2_worlds.png"
                   alt="Tony Lombardi — One man. Two worlds."
-                  style={{ width: "100%", display: "block" }}
+                  style={{ width: "80%", display: "block", borderRadius: "4px" }}
                 />
               </div>
 
