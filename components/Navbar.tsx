@@ -72,6 +72,7 @@ export default function Navbar() {
           border-radius: 3px;
           text-decoration: none;
           transition: color 0.2s ease, background 0.2s ease;
+          position: relative;
         }
 
         .tl-link:hover {
@@ -82,7 +83,6 @@ export default function Navbar() {
         .tl-link.active {
           color: #f0ede8;
           background: rgba(240, 237, 232, 0.08);
-          position: relative;
         }
 
         .tl-link.active::after {
@@ -210,7 +210,7 @@ export default function Navbar() {
       <nav className="tl-nav">
         <div className="tl-nav-inner">
 
-          {/* Logo */}
+          {/* Logo — always lowercase: tonyLombardi.ai */}
           <div className="tl-logo-zone">
             <Link href="/" className="tl-logo">
               tonyLombardi<span className="dot-ai">.ai</span>
