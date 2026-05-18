@@ -7,7 +7,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: "Writing | Tony Lombardi",
   description:
-    "The Operating System Doesn't Change — on resilience, leadership, transformation, and the operating system that remains when the plan fails.",
+    "The Operating System Doesn't Change — on resilience, leadership, transformation, and the operating system that remains when pressure rises and the plan fails.",
 };
 
 export default function Writing() {
@@ -343,7 +343,7 @@ export default function Writing() {
               The Operating System<br />Doesn't Change.
             </div>
             <p className="wr-article-excerpt">
-              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had already vomited during the second lap of the swim. My legs had nothing left, and the plan I arrived with was gone. What happened next became a lesson in resilience, leadership, and the operating system that remains when the script fails.
+              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had already vomited during the second lap of the swim. My legs had nothing left, and the plan I arrived with was gone. What happened next became a lesson in resilience, leadership, and the operating system that remains when pressure rises.
             </p>
             <a href="#article" className="wr-read-link">Read essay →</a>
           </div>
@@ -430,11 +430,19 @@ export default function Writing() {
 
             <ul>
               <li>in Ironman races,</li>
-              <li>in MMA and Brazilian jiu-jitsu training,</li>
               <li>in enterprise transformation work,</li>
-              <li>in high-pressure delivery environments,</li>
-              <li>and during periods of personal and professional uncertainty.</li>
+              <li>in overnight implementation bridges with zero margin for failure,</li>
+              <li>in Emergency First Response and Rescue Diver training, where panic itself becomes the primary threat,</li>
+              <li>and in MMA and Brazilian Jiu-Jitsu environments, where composure disappears quickly if you allow emotion to overtake technique.</li>
             </ul>
+
+            <p>
+              The environments change.
+            </p>
+
+            <p>
+              The operating system does not.
+            </p>
 
             <p>
               Most people perform well when conditions are stable.
@@ -467,6 +475,38 @@ export default function Writing() {
             <span className="section-break">— — —</span>
 
             <p>
+              Combat sports reinforced that lesson even further for me.
+            </p>
+
+            <p>
+              There is a unique form of chaos that exists during a hard MMA sparring session or a Brazilian Jiu-Jitsu tournament match — adrenaline, uncertainty, physical consequence, fatigue, and the constant temptation to abandon technique for emotion.
+            </p>
+
+            <p>
+              The athletes who perform best are rarely the loudest or most aggressive.
+            </p>
+
+            <p>
+              They are the ones who remain composed enough to think clearly while pressure escalates around them.
+            </p>
+
+            <p>
+              The same principle exists in Rescue Diver training.
+            </p>
+
+            <p>
+              Underwater, panic compounds itself quickly. Breathing accelerates. Decision-making narrows. Small problems become dangerous when emotion overrides process. The training is not simply about physical skill. It is about slowing the mind down enough to continue functioning clearly while stress rises.
+            </p>
+
+            <p>
+              That lesson translates directly into leadership.
+            </p>
+
+            <p>
+              In high-pressure operational environments, the ability to remain calm while others become reactive is often the difference between resolution and escalation.
+            </p>
+
+            <p>
               One of the biggest misconceptions about resilience is that it is loud, emotional, or motivational.
             </p>
 
@@ -485,12 +525,18 @@ export default function Writing() {
               <li>and continuing to move forward when nobody is watching.</li>
             </ul>
 
+            <span className="section-break">— — —</span>
+
             <p>
               The world today rewards adaptability more than certainty.
             </p>
 
             <p>
               Industries are changing. Technology is changing. Careers are changing. Entire operating models are being rewritten in real time.
+            </p>
+
+            <p>
+              AI is accelerating that reality even further.
             </p>
 
             <p>
@@ -510,14 +556,16 @@ export default function Writing() {
             </p>
 
             <p>
+              It is true underwater.
+            </p>
+
+            <p>
               It is true in combat sports.
             </p>
 
             <p>
               And it is absolutely true in leadership.
             </p>
-
-            <span className="section-break">— — —</span>
 
             <p>
               Looking back, the Ironman finish line itself mattered far less than the realization that came from it:
@@ -542,7 +590,7 @@ export default function Writing() {
 
           <div className="ar-footer">
             <p className="ar-footer-byline">
-              <strong>Tony Lombardi</strong> is an enterprise transformation and AI operations leader based in Fuquay-Varina, NC. He is a 7× Ironman finisher, active BJJ practitioner, and operator focused on resilience, disciplined execution, and helping organizations navigate change. You can find his work at <a href="https://tonylombardi.ai">tonylombardi.ai</a>.
+              <strong>Tony Lombardi</strong> is an enterprise transformation and AI operations leader based in Fuquay-Varina, NC. He is a 7× Ironman finisher, Rescue Scuba Diver with Emergency First Response training, and active BJJ practitioner focused on resilience, disciplined execution, and helping organizations navigate change. You can find his work at <a href="https://tonylombardi.ai">tonylombardi.ai</a>.
             </p>
             <div className="ar-nav">
               <Link href="/contact" className="ar-nav-link gold">Get in touch →</Link>
