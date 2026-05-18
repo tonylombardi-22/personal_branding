@@ -219,10 +219,18 @@ export default function Projects() {
           font-size: 10px;
           letter-spacing: 0.08em;
           color: rgba(200,169,110,0.65);
-          border: 0.5px solid rgba(200,169,110,0.22);
+          border: 0.5px solid rgba(200,169,110,0.2);
           padding: 3px 10px;
           border-radius: 2px;
           width: fit-content;
+          transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+          cursor: default;
+        }
+
+        .pj-tag:hover {
+          color: #C8A96E;
+          border-color: rgba(200,169,110,0.55);
+          background: rgba(200,169,110,0.06);
         }
 
         /* Right column */
