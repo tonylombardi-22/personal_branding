@@ -430,13 +430,18 @@ export default function Writing() {
             </p>
 
             <p>
-              I sat down in the saddle, took in hydration and nutrition, and prioritized calm focus over physical pain.
-               <p>
-               In Ironman, there is an old adage: "You can quit if you want and no one will care. But you will know. You will know for the rest of your life."
-              </p>
-              <p>
+              I sat down in the saddle, took in hydration and nutrition,
+              and prioritized calm focus over physical pain.
+            </p>
+
+            <p>
+              In Ironman, there is an old adage: "You can quit if you want
+              and no one will care. But you will know. You will know for
+              the rest of your life."
+            </p>
+
+            <p>
               Eleven hours later, I crossed the finish line.
-              </p>
             </p>
 
             <p>
