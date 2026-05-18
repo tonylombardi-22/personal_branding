@@ -32,7 +32,6 @@ export default function Navbar() {
           padding: 0 48px;
         }
 
-        /* ── Logo zone ── */
         .tl-logo-zone {
           display: flex;
           align-items: center;
@@ -43,15 +42,14 @@ export default function Navbar() {
           line-height: 0;
         }
 
-        /* Height 36px → scale factor 36/116 = 0.31
-           Name renders at 58 * 0.31 = ~18px vs 13px nav links = 38% larger (≈30%) */
+        /* Height 36px on viewBox 640x132 → scale 36/132 = 0.273
+           Name: 58 * 0.273 = ~16px rendered (vs 13px nav = ~23% larger, close to 30%) */
         .tl-logo-svg {
           height: 36px;
           width: auto;
           display: block;
         }
 
-        /* ── Nav links — 13px baseline ── */
         .tl-links {
           display: flex;
           align-items: center;
@@ -82,7 +80,6 @@ export default function Navbar() {
           background: rgba(200, 169, 110, 0.1);
         }
 
-        /* ── CTA ── */
         .tl-cta {
           font-family: 'DM Sans', sans-serif;
           font-size: 11px;
@@ -103,7 +100,6 @@ export default function Navbar() {
           border-color: rgba(200, 169, 110, 0.8);
         }
 
-        /* ── Mobile ── */
         .tl-hamburger {
           display: none;
           flex-direction: column;
@@ -173,40 +169,38 @@ export default function Navbar() {
       <nav className="tl-nav">
         <div className="tl-nav-inner">
 
-          {/* ── Logo: final approved SVG — stripes extend to tagline baseline ── */}
           <Link href="/" className="tl-logo-zone" aria-label="tonylombardi.ai home">
             <svg
               className="tl-logo-svg"
-              viewBox="0 0 640 116"
+              viewBox="0 0 640 132"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
             >
-              {/* Slash bars: y=10 top to y=108 bottom (tagline baseline) */}
-              <polygon points="16,108 34,10 46,10 28,108" fill="#FFFFFF"/>
-              <polygon points="32,108 50,10 62,10 44,108" fill="#FFFFFF" opacity="0.4"/>
-              <polygon points="48,108 66,10 78,10 60,108" fill="#FFFFFF" opacity="0.15"/>
+              {/* Slash bars — full height y=8 to y=124 */}
+              <polygon points="16,124 34,8 46,8 28,124" fill="#FFFFFF"/>
+              <polygon points="32,124 50,8 62,8 44,124" fill="#FFFFFF" opacity="0.4"/>
+              <polygon points="48,124 66,8 78,8 60,124" fill="#FFFFFF" opacity="0.15"/>
 
               {/* TONY white */}
-              <text x="100" y="75"
+              <text x="100" y="72"
                 fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
                 fontSize="58" fontWeight="800" fill="#FFFFFF" letterSpacing="-0.5">TONY</text>
 
               {/* LOMBARDI gold */}
-              <text x="282" y="75"
+              <text x="282" y="72"
                 fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
                 fontSize="58" fontWeight="800" fill="#B3995E" letterSpacing="-0.5">LOMBARDI</text>
 
               {/* Rule */}
-              <line x1="100" y1="87" x2="616" y2="87" stroke="#B3995E" strokeWidth="0.8"/>
+              <line x1="100" y1="84" x2="616" y2="84" stroke="#B3995E" strokeWidth="0.8"/>
 
-              {/* Tagline */}
-              <text x="102" y="106" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="13" fontWeight="700" fill="#B3995E" letterSpacing="3">AI &amp; </text>
-              <text x="155" y="106" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="13" fontWeight="700" fill="#FFFFFF" letterSpacing="3">HUMAN </text>
-              <text x="237" y="106" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="13" fontWeight="700" fill="#B3995E" letterSpacing="3">FACILITATOR</text>
+              {/* Tagline — fontSize 29 so it renders ~9px at navbar scale */}
+              <text x="102" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="29" fontWeight="700" fill="#B3995E" letterSpacing="6">AI &amp; </text>
+              <text x="210" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="29" fontWeight="700" fill="#FFFFFF" letterSpacing="6">HUMAN </text>
+              <text x="348" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="29" fontWeight="700" fill="#B3995E" letterSpacing="6">FACILITATOR</text>
             </svg>
           </Link>
 
-          {/* ── Desktop links ── */}
           <div className="tl-links">
             <Link href="/about"      className={`tl-link${isActive("/about")      ? " active" : ""}`}>About</Link>
             <Link href="/experience" className={`tl-link${isActive("/experience") ? " active" : ""}`}>Experience</Link>
@@ -214,10 +208,8 @@ export default function Navbar() {
             <Link href="/writing"    className={`tl-link${isActive("/writing")    ? " active" : ""}`}>Writing</Link>
           </div>
 
-          {/* ── CTA ── */}
           <Link href="/contact" className="tl-cta">GET IN TOUCH →</Link>
 
-          {/* ── Hamburger ── */}
           <button
             className="tl-hamburger"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -229,7 +221,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* ── Mobile menu ── */}
         <div className={`tl-mobile-menu${menuOpen ? " open" : ""}`}>
           <Link href="/about"      className={`tl-mobile-link${isActive("/about")      ? " active" : ""}`} onClick={() => setMenuOpen(false)}>About</Link>
           <Link href="/experience" className={`tl-mobile-link${isActive("/experience") ? " active" : ""}`} onClick={() => setMenuOpen(false)}>Experience</Link>
