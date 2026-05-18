@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import ParallaxPhoto from "@/components/ParallaxPhoto";
 import Link from "next/link";
 
 export default function Home() {
@@ -555,15 +556,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-photo-wrap fade-up delay-2">
-            <img
-              src="/tony-lombardi.jpg"
-              alt="Tony Lombardi"
-              className="hero-photo"
-            />
-            <div className="hero-photo-accent" aria-hidden="true" />
-            <div className="hero-photo-label">Tony Lombardi</div>
-          </div>
+          <ParallaxPhoto />
         </section>
 
         <hr className="rule" />
