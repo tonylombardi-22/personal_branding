@@ -426,69 +426,59 @@ export default function Writing() {
             <span className="section-break">— — —</span>
 
             <p>
-              People ask me what endurance sports have to do with enterprise transformation. I've never had a clean answer. But after twenty years of leading programs across insurance, financial services, and SaaS — and seven Ironman finishes — I've come to believe they're not two things. They're the same thing.
+              Pressure does not build character. It reveals what was already installed.
             </p>
 
             <p>
-              The cognitive operating system is identical.
+              When the plan collapses and fatigue is total, you don't suddenly transform. You default to what you've already drilled — your composure, habits, and decision-making under stress.
             </p>
 
             <p>
-              At First Citizens Bank, I ran 326 consecutive overnight branch implementations. Every night, after each branch closed, I opened a conference bridge. Technicians checked in. The branch manager confirmed. I gave the go-ahead and ran status checks through the night. When a Bloomberg data feed failed at 2 AM with a hard 9 AM branch open deadline and no margin for error, I stayed on the bridge and worked it through to resolution. Ninety minutes before the deadline, the feed was restored. Zero branches missed their opening.
+              This principle has shown up across very different arenas.
             </p>
 
             <p>
-              That's not a technology story. That's the same story as mile 67.
+              In Emergency First Response and Rescue Diver training, panic is often the real threat. Breathing accelerates, thinking narrows, and small problems become dangerous when emotion overrides process.
             </p>
 
             <p>
-              Small goals. One segment at a time. Don't look at the finish line — look at the next landmark. When the vendor fails, you don't quit; you escalate, stay on the line, and work through to resolution. The bridge stays open as long as it needs to stay open.
+              In MMA sparring and BJJ matches, adrenaline, fatigue, and physical consequences test whether you stick with technique or let emotion take over. The best performers aren't usually the loudest — they're the ones who stay calm enough to think clearly.
             </p>
 
             <p>
-              In the race, I set targets from hotel sign to ice cream shop, running 25 to 100 yards at a time for hours. In the bank, I set targets from branch close to branch open, one location at a time across 326 nights. The physical pain is different. The mental architecture is the same.
+              The same pattern appears in enterprise transformations. Overnight cutovers with zero margin for error, 2 a.m. crises, and demanding stakeholders quickly reveal whether a team's operating system is built for composure or collapse.
+            </p>
+
+            <p>
+              The environments change. The operating system does not.
+            </p>
+
+            <p>
+              Most people and teams perform fine when conditions are stable. What matters is what runs after the script breaks — when motivation is gone and nobody is watching.
+            </p>
+
+            <p>
+              True resilience is quiet: consistency without applause, emotional control under pressure, and the willingness to keep executing in uncertainty.
             </p>
 
             <span className="section-break">— — —</span>
 
             <p>
-              What I've learned is that the operating system isn't built in races or boardrooms. It's built in the moments when the plan fails and the only available input is whether you continue or don't.
+              In a world being rewritten by AI and constant change, tools and processes will keep evolving. The ability to stay calm and functional when conditions turn ugly remains the real advantage.
             </p>
 
             <p>
-              Telling my wife on Father's Day 2020 that I wanted to try another Ironman after nearly a decade away — that was the same conversation as every transformation engagement I've walked into. No infrastructure. No playbook. A program already running. The question is always the same: <em>Are you going to build this thing or not?</em>
+              I bring this same operating system to enterprise transformation and AI operations — helping teams build the habits, governance, and composure to navigate chaos without breaking.
             </p>
 
             <p>
-              The answer, every time, has been yes.
-            </p>
-
-            <span className="section-break">— — —</span>
-
-            <p>
-              Now I'm doing something I haven't done before. Brazilian Jiu-Jitsu. Kickboxing. Muay Thai. MMA. I'm pursuing what would be a first-of-its-kind milestone: a sanctioned MMA fight and a full-distance Ironman triathlon in the same calendar year.
-            </p>
-
-            <p>
-              People ask why. I don't have a good answer for that either.
-            </p>
-
-            <p>
-              What I know is that the operating system doesn't change. The arena does. The discipline, the sequencing, the refusal to stop at mile 67 — those are constant. They show up on the mat the same way they show up in the conference bridge at 2 AM.
-            </p>
-
-            <p>
-              Ironman taught me something I've never been able to fully articulate until recently: it's not a race. It enters your bloodstream, and no matter how far you veer from it, it waits. Patient. It waits for you to decide to prove to yourself that anything is possible.
-            </p>
-
-            <p>
-              I've decided again.
+              If you're leading through uncertainty and value steady execution when it gets hard, I'd welcome the conversation.
             </p>
           </div>
 
           <div className="ar-footer">
             <p className="ar-footer-byline">
-              <strong>Tony Lombardi</strong> is an enterprise transformation and AI operations leader based in Fuquay-Varina, NC. He is a 7× Ironman finisher and active BJJ practitioner pursuing a first-of-its-kind milestone: a sanctioned MMA fight and a full-distance Ironman in the same calendar year. You can find his work at <a href="https://tonylombardi.ai">tonylombardi.ai</a>.
+              <strong>Tony Lombardi</strong> is an enterprise transformation and AI operations leader based in Fuquay-Varina, NC. His work focuses on disciplined execution, operational resilience, and helping teams navigate uncertainty, pressure, and change. You can find his work at <a href="https://tonylombardi.ai">tonylombardi.ai</a>.
             </p>
             <div className="ar-nav">
               <Link href="/contact" className="ar-nav-link gold">Get in touch →</Link>
@@ -500,7 +490,7 @@ export default function Writing() {
 
         <footer className="wr-footer">
           <Link href="/" className="wr-footer-logo">
-            tonyLombardi<span>.ai</span>
+            tonylombardi<span>.ai</span>
           </Link>
           <div className="wr-footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="wr-footer-link">LinkedIn</a>
