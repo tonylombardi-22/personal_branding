@@ -42,10 +42,10 @@ export default function Navbar() {
           line-height: 0;
         }
 
-        /* 42px height on viewBox 132 tall → scale 42/132 = 0.318
-           Name: 58 * 0.318 = ~18.5px rendered vs 13px nav links = 42% larger ✓ */
+        /* 44px height on viewBox 132 → scale 44/132 = 0.333
+           Name: 58 * 0.333 = ~19.3px rendered vs 13px nav = 48% larger ≈ 50% */
         .tl-logo-svg {
-          height: 42px;
+          height: 44px;
           width: auto;
           display: block;
         }
@@ -190,9 +190,10 @@ export default function Navbar() {
 
               <line x1="100" y1="84" x2="616" y2="84" stroke="#B3995E" strokeWidth="0.8"/>
 
-              <text x="102" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="29" fontWeight="700" fill="#B3995E" letterSpacing="6">AI &amp; </text>
-              <text x="210" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="29" fontWeight="700" fill="#FFFFFF" letterSpacing="6">HUMAN </text>
-              <text x="348" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="29" fontWeight="700" fill="#B3995E" letterSpacing="6">FACILITATOR</text>
+              {/* Tagline — each word is its own element with explicit x to guarantee spacing */}
+              <text x="102" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="26" fontWeight="700" fill="#B3995E" letterSpacing="5">AI &amp;</text>
+              <text x="210" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="26" fontWeight="700" fill="#FFFFFF" letterSpacing="5">HUMAN</text>
+              <text x="355" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="26" fontWeight="700" fill="#B3995E" letterSpacing="5">FACILITATOR</text>
             </svg>
           </Link>
 
