@@ -679,7 +679,7 @@ export default function Home() {
               height: "100%",
               display: "block",
               objectFit: "cover",
-              objectPosition: "center center",
+              objectPosition: "center top",
             }}
           />
         </div>
