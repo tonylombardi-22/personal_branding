@@ -669,14 +669,17 @@ export default function Home() {
           width: "100%",
           overflow: "hidden",
           position: "relative",
+          height: "50vh",
         }}>
           <img
             src="/transformer.png"
             alt="Tony Lombardi — Ironman finisher, MMA fighter, enterprise executive"
             style={{
               width: "100%",
+              height: "100%",
               display: "block",
               objectFit: "cover",
+              objectPosition: "center center",
             }}
           />
         </div>
