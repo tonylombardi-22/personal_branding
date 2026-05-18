@@ -26,36 +26,36 @@ export default function Navbar() {
         .tl-nav-inner {
           display: flex;
           align-items: center;
-          height: 72px;
+          height: 76px;
           max-width: 1200px;
           margin: 0 auto;
           padding: 0 48px;
         }
 
-        /* ── Logo ── */
+        /* ── Logo zone ── */
         .tl-logo-zone {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 14px;
           padding-right: 32px;
           border-right: 0.5px solid rgba(240, 237, 232, 0.1);
           flex-shrink: 0;
           text-decoration: none;
         }
 
-        /* CSS slash mark — 3 angled bars */
+        /* Slash mark — scaled 25% larger than 13px nav baseline */
         .tl-slash-mark {
           display: flex;
           align-items: center;
-          gap: 3px;
-          height: 36px;
+          gap: 4px;
+          height: 48px;
           flex-shrink: 0;
         }
 
         .tl-slash-mark span {
           display: block;
-          width: 5px;
-          height: 36px;
+          width: 6px;
+          height: 48px;
           background: #f0ede8;
           transform: skewX(-18deg);
           border-radius: 1px;
@@ -64,33 +64,76 @@ export default function Navbar() {
         .tl-slash-mark span:nth-child(2) { opacity: 0.45; }
         .tl-slash-mark span:nth-child(3) { opacity: 0.18; }
 
-        /* Wordmark — stacked two lines */
+        /* Wordmark — name + tagline, 16px = 13px nav * 1.25 */
         .tl-wordmark {
           display: flex;
           flex-direction: column;
           line-height: 1;
+          gap: 0;
+        }
+
+        .tl-wordmark-name {
+          display: flex;
+          flex-direction: column;
           gap: 2px;
+          margin-bottom: 5px;
         }
 
         .tl-wordmark-top {
           font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-          font-size: 13px;
+          font-size: 16px;
           font-weight: 800;
           letter-spacing: 0.14em;
           color: #f0ede8;
           text-transform: uppercase;
+          line-height: 1;
         }
 
         .tl-wordmark-bottom {
           font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-          font-size: 13px;
+          font-size: 16px;
           font-weight: 800;
           letter-spacing: 0.14em;
           color: #B3995E;
           text-transform: uppercase;
+          line-height: 1;
         }
 
-        /* ── Nav links ── */
+        /* Gold rule */
+        .tl-wordmark-rule {
+          width: 100%;
+          height: 0.5px;
+          background: rgba(179, 153, 94, 0.6);
+          margin-bottom: 4px;
+        }
+
+        /* Tagline: AI & [gold] HUMAN [white] FACILITATOR [gold] */
+        .tl-tagline {
+          display: flex;
+          align-items: center;
+          gap: 0;
+          white-space: nowrap;
+        }
+
+        .tl-tagline-gold {
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-size: 8.5px;
+          font-weight: 700;
+          letter-spacing: 0.3em;
+          color: #B3995E;
+          text-transform: uppercase;
+        }
+
+        .tl-tagline-white {
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-size: 8.5px;
+          font-weight: 700;
+          letter-spacing: 0.3em;
+          color: #f0ede8;
+          text-transform: uppercase;
+        }
+
+        /* ── Nav links — 13px baseline ── */
         .tl-links {
           display: flex;
           align-items: center;
@@ -220,8 +263,16 @@ export default function Navbar() {
               <span />
             </div>
             <div className="tl-wordmark">
-              <span className="tl-wordmark-top">Tony</span>
-              <span className="tl-wordmark-bottom">Lombardi</span>
+              <div className="tl-wordmark-name">
+                <span className="tl-wordmark-top">Tony</span>
+                <span className="tl-wordmark-bottom">Lombardi</span>
+              </div>
+              <div className="tl-wordmark-rule" />
+              <div className="tl-tagline">
+                <span className="tl-tagline-gold">AI &amp;&nbsp;</span>
+                <span className="tl-tagline-white">HUMAN&nbsp;</span>
+                <span className="tl-tagline-gold">FACILITATOR</span>
+              </div>
             </div>
           </Link>
 
