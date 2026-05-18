@@ -85,9 +85,9 @@ export default function Home() {
 
         .hero-h1 {
           font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(52px, 7.5vw, 88px);
+          font-size: clamp(44px, 6.5vw, 78px);
           font-weight: 600;
-          line-height: 0.92;
+          line-height: 0.95;
           letter-spacing: -0.01em;
           margin-bottom: 32px;
           color: #f0ede8;
@@ -456,10 +456,11 @@ export default function Home() {
             <h1 className="hero-h1">
               The operating<br />
               system doesn't<br />
-              <span className="gold">change.</span>
+              change.<br />
+              <span className="gold">The arena does.</span>
             </h1>
             <p className="hero-sub">
-              The arena does. 20+ years walking into complexity — insurance, financial services,
+              20+ years walking into complexity — insurance, financial services,
               SaaS, sports technology — designing the operating model and delivering measurable results.
               From developer to portfolio director.
             </p>
