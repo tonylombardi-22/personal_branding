@@ -19,7 +19,7 @@ export default function Home() {
 
         /* ─── HERO ─────────────────────────────────── */
         .hero {
-          padding: 110px 48px 90px;
+          padding: 72px 48px 72px;
           max-width: 1200px;
           margin: 0 auto;
           display: grid;
@@ -85,11 +85,11 @@ export default function Home() {
 
         .hero-h1 {
           font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(64px, 10vw, 108px);
+          font-size: clamp(52px, 7.5vw, 88px);
           font-weight: 600;
           line-height: 0.92;
           letter-spacing: -0.01em;
-          margin-bottom: 36px;
+          margin-bottom: 32px;
           color: #f0ede8;
         }
 
@@ -455,11 +455,11 @@ export default function Home() {
             <div className="hero-tag">Enterprise Transformation · AI Operations · Builder</div>
             <h1 className="hero-h1">
               The operating<br />
-              system doesn't change.<br />
-              <span className="gold">The arena does.</span>
+              system doesn't<br />
+              <span className="gold">change.</span>
             </h1>
             <p className="hero-sub">
-              The last 20+ years have been about walking into complexity — insurance, financial services,
+              The arena does. 20+ years walking into complexity — insurance, financial services,
               SaaS, sports technology — designing the operating model and delivering measurable results.
               From developer to portfolio director.
             </p>
