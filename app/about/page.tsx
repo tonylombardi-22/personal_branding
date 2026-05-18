@@ -501,6 +501,9 @@ export default function About() {
                 <span className="ab-pill">SOC 1 / SOC 2</span>
                 <span className="ab-pill">AWS</span>
               </div>
+              <div className="ab-pull">
+                "I design operating models the way I train for an Ironman — clear milestones, relentless iteration, accountability, and the endurance to see it through."
+              </div>
             </section>
 
             {/* The Athlete */}
