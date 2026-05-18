@@ -7,7 +7,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: "Writing | Tony Lombardi",
   description:
-    "The Operating System Doesn't Change — on endurance, enterprise transformation, and why the same cognitive system that finishes an Ironman runs 326 overnight branch implementations without a single failure.",
+    "The Operating System Doesn't Change — on resilience, leadership, transformation, and the operating system that remains when the plan fails.",
 };
 
 export default function Writing() {
@@ -25,7 +25,6 @@ export default function Writing() {
           -webkit-font-smoothing: antialiased;
         }
 
-        /* ── INDEX HEADER ─────────────────────── */
         .wr-header {
           padding: 80px 48px 48px;
           max-width: 900px;
@@ -59,7 +58,6 @@ export default function Writing() {
           max-width: 560px;
         }
 
-        /* ── ARTICLE LIST ─────────────────────── */
         .wr-list {
           max-width: 900px;
           margin: 0 auto;
@@ -132,7 +130,6 @@ export default function Writing() {
 
         .wr-read-link:hover { gap: 12px; }
 
-        /* ── ARTICLE PAGE ─────────────────────── */
         .ar-wrap {
           max-width: 720px;
           margin: 0 auto;
@@ -202,7 +199,6 @@ export default function Writing() {
           font-weight: 500;
         }
 
-        /* Article body typography */
         .ar-body p {
           font-family: 'Cormorant Garamond', serif;
           font-size: clamp(18px, 2.2vw, 22px);
@@ -210,6 +206,18 @@ export default function Writing() {
           line-height: 1.75;
           color: rgba(240,237,232,0.8);
           margin-bottom: 28px;
+        }
+
+        .ar-body ul {
+          margin: 0 0 28px 28px;
+          color: rgba(240,237,232,0.8);
+        }
+
+        .ar-body li {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: clamp(18px, 2.2vw, 22px);
+          line-height: 1.75;
+          margin-bottom: 8px;
         }
 
         .ar-body .section-break {
@@ -272,7 +280,6 @@ export default function Writing() {
         .ar-nav-link.gold { color: #C8A96E; }
         .ar-nav-link.gold:hover { color: #d4b87a; }
 
-        /* Footer */
         .wr-footer {
           padding: 36px 48px;
           border-top: 0.5px solid rgba(240,237,232,0.08);
@@ -318,7 +325,6 @@ export default function Writing() {
       <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
         <Navbar />
 
-        {/* Writing index header */}
         <div className="wr-header">
           <div className="wr-eyebrow">Writing</div>
           <h1 className="wr-title">The long game.</h1>
@@ -327,7 +333,6 @@ export default function Writing() {
           </p>
         </div>
 
-        {/* Article list */}
         <div className="wr-list">
           <div className="wr-article-card">
             <div className="wr-article-meta">
@@ -338,13 +343,12 @@ export default function Writing() {
               The Operating System<br />Doesn't Change.
             </div>
             <p className="wr-article-excerpt">
-              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had vomited on the second lap of the swim. My legs had nothing left. I had a plan, and the plan was finished. What happened next is the same story as 326 overnight branch implementations, zero failures.
+              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had already vomited during the second lap of the swim. My legs had nothing left, and the plan I arrived with was gone. What happened next became a lesson in resilience, leadership, and the operating system that remains when the script fails.
             </p>
             <a href="#article" className="wr-read-link">Read essay →</a>
           </div>
         </div>
 
-        {/* Article full text */}
         <div className="ar-wrap" id="article">
           <a href="#top" className="ar-back">← Writing</a>
 
@@ -363,7 +367,7 @@ export default function Writing() {
 
           <div className="ar-body">
             <p>
-              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had vomited on the second lap of the swim. My legs had nothing left. I had a plan, and the plan was finished.
+              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had already vomited during the second lap of the swim. My legs had nothing left, and the plan I arrived with was gone.
             </p>
 
             <p>
@@ -371,83 +375,174 @@ export default function Writing() {
             </p>
 
             <p>
-              As Mike Tyson famously put it — everyone has a plan until they get punched in the face.
+              As Mike Tyson famously said, everyone has a plan until they get punched in the face.
             </p>
 
             <p>
-              What happened instead was stranger. A calm came over me. I took twenty minutes. I told myself something that I've thought about many times since: <em>Unless you are in serious physical danger or risking death, you will carry on until your body quits. If you quit, you will never be able to stand the face you see in the mirror.</em> I grabbed a water bottle at the next aid station and pushed on. The only acceptable outcomes were medical extraction or the finish line.
+              What happened next was something I've thought about many times since — not just in endurance sports, but in leadership, business, and life.
             </p>
 
             <p>
-              I crossed that finish line 14 hours, 25 minutes, and 57 seconds after I started — my slowest Ironman ever, and the one I'm most proud of.
-            </p>
-
-            <span className="section-break">— — —</span>
-
-            <p>
-              People ask me what endurance sports have to do with enterprise transformation. I've never had a clean answer. But after twenty years of leading programs across insurance, financial services, and SaaS — and seven Ironman finishes — I've come to believe they're not two things. They're the same thing.
+              A strange calm came over me.
             </p>
 
             <p>
-              The cognitive operating system is identical.
+              I sat for twenty minutes and made a decision: unless I was in serious physical danger, I would continue until my body physically quit. Because if I quit simply to escape discomfort, exhaustion, or adversity, I would never be able to stand the person looking back at me in the mirror.
             </p>
 
             <p>
-              At First Citizens Bank, I ran 326 consecutive overnight branch implementations. Every night, after each branch closed, I opened a conference bridge. Technicians checked in. The branch manager confirmed. I gave the go-ahead and ran status checks through the night. When a Bloomberg data feed failed at 2 AM with a hard 9 AM branch open deadline and no margin for error, I stayed on the bridge and worked it through to resolution. Ninety minutes before the deadline, the feed was restored. Zero branches missed their opening.
+              So I grabbed another water bottle and kept moving.
             </p>
 
             <p>
-              That's not a technology story. That's the same story as mile 67.
+              The only acceptable outcomes became medical extraction or the finish line.
             </p>
 
             <p>
-              Small goals. One segment at a time. Don't look at the finish line — look at the next landmark. When the vendor fails, you don't quit; you escalate, stay on the line, and work through to resolution. The bridge stays open as long as it needs to stay open.
+              I crossed that finish line over fourteen hours later.
             </p>
 
             <p>
-              In the race, I set targets from hotel sign to ice cream shop, running 25 to 100 yards at a time for hours. In the bank, I set targets from branch close to branch open, one location at a time across 326 nights. The physical pain is different. The mental architecture is the same.
-            </p>
-
-            <span className="section-break">— — —</span>
-
-            <p>
-              What I've learned is that the operating system isn't built in races or boardrooms. It's built in the moments when the plan fails and the only available input is whether you continue or don't.
+              At the time, I thought that experience was about endurance.
             </p>
 
             <p>
-              Telling my wife on Father's Day 2020 that I wanted to try another Ironman after nearly a decade away — that was the same conversation as every transformation engagement I've walked into. No infrastructure. No playbook. A program already running. The question is always the same: <em>Are you going to build this thing or not?</em>
-            </p>
-
-            <p>
-              The answer, every time, has been yes.
+              Years later, I realized it was actually about operating systems.
             </p>
 
             <span className="section-break">— — —</span>
 
             <p>
-              Now I'm doing something I haven't done before. Brazilian Jiu-Jitsu. Kickboxing. Muay Thai. MMA. I'm pursuing what would be a first-of-its-kind milestone: a sanctioned MMA fight and a full-distance Ironman triathlon in the same calendar year.
+              Pressure reveals what is already there.
             </p>
 
             <p>
-              People ask why. I don't have a good answer for that either.
+              When the plan breaks, when conditions deteriorate, when uncertainty rises, when fatigue sets in — people do not suddenly become someone else. They fall back on the operating system they built long before the crisis arrived.
             </p>
 
             <p>
-              What I know is that the operating system doesn't change. The arena does. The discipline, the sequencing, the refusal to stop at mile 67 — those are constant. They show up on the mat the same way they show up in the conference bridge at 2 AM.
+              The operating system does not change.
             </p>
 
             <p>
-              Ironman taught me something I've never been able to fully articulate until recently: it's not a race. It enters your bloodstream, and no matter how far you veer from it, it waits. Patient. It waits for you to decide to prove to yourself that anything is possible.
+              That lesson has followed me everywhere:
+            </p>
+
+            <ul>
+              <li>in Ironman races,</li>
+              <li>in MMA and Brazilian jiu-jitsu training,</li>
+              <li>in enterprise transformation work,</li>
+              <li>in high-pressure delivery environments,</li>
+              <li>and during periods of personal and professional uncertainty.</li>
+            </ul>
+
+            <p>
+              Most people perform well when conditions are stable.
             </p>
 
             <p>
-              I've decided again.
+              What defines individuals and organizations is what happens after the script fails.
+            </p>
+
+            <p>
+              Can you remain composed?
+            </p>
+
+            <p>
+              Can you adapt?
+            </p>
+
+            <p>
+              Can you continue executing when the original strategy no longer applies?
+            </p>
+
+            <p>
+              Can you make decisions under pressure without losing your identity?
+            </p>
+
+            <p>
+              Those moments expose whether resilience was ever truly built in the first place.
+            </p>
+
+            <span className="section-break">— — —</span>
+
+            <p>
+              One of the biggest misconceptions about resilience is that it is loud, emotional, or motivational.
+            </p>
+
+            <p>
+              In my experience, it is usually quiet.
+            </p>
+
+            <p>
+              It looks like:
+            </p>
+
+            <ul>
+              <li>consistency when motivation disappears,</li>
+              <li>discipline when outcomes are uncertain,</li>
+              <li>emotional control under pressure,</li>
+              <li>and continuing to move forward when nobody is watching.</li>
+            </ul>
+
+            <p>
+              The world today rewards adaptability more than certainty.
+            </p>
+
+            <p>
+              Industries are changing. Technology is changing. Careers are changing. Entire operating models are being rewritten in real time.
+            </p>
+
+            <p>
+              But while tools evolve, the underlying operating system still matters:
+            </p>
+
+            <ul>
+              <li>discipline,</li>
+              <li>composure,</li>
+              <li>accountability,</li>
+              <li>resilience,</li>
+              <li>and the ability to continue functioning effectively when conditions become uncomfortable.</li>
+            </ul>
+
+            <p>
+              That is true in endurance sports.
+            </p>
+
+            <p>
+              It is true in combat sports.
+            </p>
+
+            <p>
+              And it is absolutely true in leadership.
+            </p>
+
+            <span className="section-break">— — —</span>
+
+            <p>
+              Looking back, the Ironman finish line itself mattered far less than the realization that came from it:
+            </p>
+
+            <p>
+              You can survive far more than you think you can.
+            </p>
+
+            <p>
+              And when the plan fails — as it often will — your operating system is what remains.
+            </p>
+
+            <p>
+              Today, I apply that same mindset to leadership, transformation, and operational execution — helping organizations navigate uncertainty, pressure, and change without losing momentum.
+            </p>
+
+            <p>
+              If you're building teams that value resilience, adaptability, disciplined execution, and composure under pressure, I'd welcome the conversation.
             </p>
           </div>
 
           <div className="ar-footer">
             <p className="ar-footer-byline">
-              <strong>Tony Lombardi</strong> is an enterprise transformation and AI operations leader based in Fuquay-Varina, NC. He is a 7× Ironman finisher and active BJJ practitioner pursuing a first-of-its-kind milestone: a sanctioned MMA fight and a full-distance Ironman in the same calendar year. You can find his work at <a href="https://tonylombardi.ai">tonylombardi.ai</a>.
+              <strong>Tony Lombardi</strong> is an enterprise transformation and AI operations leader based in Fuquay-Varina, NC. He is a 7× Ironman finisher, active BJJ practitioner, and operator focused on resilience, disciplined execution, and helping organizations navigate change. You can find his work at <a href="https://tonylombardi.ai">tonylombardi.ai</a>.
             </p>
             <div className="ar-nav">
               <Link href="/contact" className="ar-nav-link gold">Get in touch →</Link>
