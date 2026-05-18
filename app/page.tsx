@@ -455,11 +455,11 @@ export default function Home() {
             <div className="hero-tag">Enterprise Transformation · AI Operations · Builder</div>
             <h1 className="hero-h1">
               The operating<br />
-              system doesn't<br />
-              <span className="gold">change.</span>
+              system doesn't change.<br />
+              <span className="gold">The arena does.</span>
             </h1>
             <p className="hero-sub">
-              The arena does. 20+ years walking into complexity — insurance, financial services,
+              The last 20+ years have been about walking into complexity — insurance, financial services,
               SaaS, sports technology — designing the operating model and delivering measurable results.
               From developer to portfolio director.
             </p>
