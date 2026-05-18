@@ -770,7 +770,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="footer">
           <Link href="/" className="footer-logo">
-            tonyLombardi<span className="gold">.ai</span>
+            tonylombardi<span className="gold">.ai</span>
           </Link>
           <div className="footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
