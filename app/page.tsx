@@ -156,7 +156,7 @@ export default function Home() {
         .metrics {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
-          padding: 64px 48px;
+          padding: 44px 48px;
           max-width: 1200px;
           margin: 0 auto;
         }
@@ -193,7 +193,7 @@ export default function Home() {
 
         /* ─── WHAT I DO ────────────────────────────── */
         .what {
-          padding: 72px 48px;
+          padding: 48px 48px;
           max-width: 1200px;
           margin: 0 auto;
         }
@@ -255,17 +255,17 @@ export default function Home() {
           grid-template-columns: 1fr 1fr;
           max-width: 1200px;
           margin: 0 auto;
-          padding: 0 48px 80px;
+          padding: 0 48px 56px;
         }
 
         .identity-col {
-          padding: 64px 56px 64px 0;
+          padding: 48px 56px 48px 0;
           border-right: 0.5px solid rgba(240, 237, 232, 0.08);
         }
 
         .identity-col:last-child {
           border-right: none;
-          padding: 64px 0 64px 56px;
+          padding: 48px 0 48px 56px;
         }
 
         .identity-headline {
