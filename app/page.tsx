@@ -454,14 +454,14 @@ export default function Home() {
           <div className="hero-left fade-up">
             <div className="hero-tag">Enterprise Transformation · AI Operations · Builder</div>
             <h1 className="hero-h1">
-              High-agency<br />
-              operator<br />
-              <span className="gold">with range.</span>
+              The operating<br />
+              system doesn't<br />
+              <span className="gold">change.</span>
             </h1>
             <p className="hero-sub">
-              I walk into complexity, design the operating model, and deliver measurable results.
-              20+ years across insurance, financial services, SaaS, and sports technology —
-              from developer to portfolio director.
+              The arena does. 20+ years walking into complexity — insurance, financial services,
+              SaaS, sports technology — designing the operating model and delivering measurable results.
+              From developer to portfolio director.
             </p>
             <div className="hero-btns">
               <Link href="/experience" className="btn-primary">View my work</Link>

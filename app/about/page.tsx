@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About | Tony Lombardi",
   description:
-    "Different arena. Same obsession. 20+ years of enterprise transformation, 7× Ironman finisher, amateur MMA competitor. The pattern doesn't change.",
+    "The operating system doesn't change. The arena does. 20+ years of enterprise transformation, 7× Ironman finisher, active BJJ practitioner pursuing a first-of-its-kind milestone.",
 };
 
 export default function About() {
