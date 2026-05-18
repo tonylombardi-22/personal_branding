@@ -435,7 +435,7 @@ export default function Writing() {
                In Ironman, there is an old adage: "You can quit if you want and no one will care. But you will know. You will know for the rest of your life."
               </p>
               <p>
-              Fourteen hours later, I crossed the finish line.
+              Eleven hours later, I crossed the finish line.
               </p>
             </p>
 
