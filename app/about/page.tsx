@@ -474,7 +474,7 @@ export default function About() {
                 I started my career as a developer and business analyst at Travelers, where I was selected into a leadership development program that accepted 10–15 people from a pool of over 3,000 applicants. I rotated through every seat on a delivery team — developer, BA, project lead, project manager — which gave me a ground-level understanding of how technology actually gets built that most senior leaders never acquire.
               </p>
               <p className="ab-body">
-                That breadth became the foundation for everything that followed. At ESPN, First Citizens Bank, Apex Systems, Jahnel Group, and Verisk Analytics, I wasn't just managing programs. I was redesigning the operating models underneath them — cutting delivery cycle times by 50–60%, delivering SOC 1 and SOC 2 certifications months ahead of schedule, and translating executive vision into roadmaps that actually survived contact with reality.
+                That breadth became the foundation for everything that followed. At ESPN, First Citizens Bank, Apex Systems, Jahnel Group, and Verisk Analytics, I wasn't just managing programs. I was redesigning the operating models underneath them — cutting delivery cycle times by 30–40%, delivering SOC 1 and SOC 2 certifications months ahead of schedule, and translating executive vision into roadmaps that actually survived contact with reality.
               </p>
               <div className="ab-pull">
                 "I read operational signals early — before they become compliance findings, missed SLAs, or executive escalations."
