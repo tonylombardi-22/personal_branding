@@ -192,8 +192,8 @@ export default function Writing() {
           font-size: 13px;
           font-weight: 300;
           color: rgba(240,237,232,0.35);
-          margin-bottom: 48px;
-          padding-bottom: 48px;
+          margin-bottom: 24px;
+          padding-bottom: 24px;
           border-bottom: 0.5px solid rgba(240,237,232,0.08);
         }
 
