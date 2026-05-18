@@ -430,7 +430,7 @@ export default function Writing() {
             </p>
 
             <p>
-              I stood up, took another water bottle, and kept moving.
+              I stood up, took in hydration and nutrition, and kept moving. In Ironman, there is an old adage: "You can quit if you want and no one will care. But you will know. You will know for the rest of your life."
               Fourteen hours later, I crossed the finish line.
             </p>
 
