@@ -702,8 +702,8 @@ export default function Writing() {
             <p className="ar-footer-byline">
               <strong>Tony Lombardi</strong> is an enterprise transformation
               and AI operations leader based in Fuquay-Varina, NC.
-              He is a 7× Ironman finisher, Rescue Scuba Diver with
-              Emergency First Response training, and active BJJ practitioner
+              He is a 7× Ironman triathlon finisher, Rescue Scuba Diver with
+              Emergency First Response training, and active Brazilian Jiu-Jitsu, Muy Thai & MMA practitioner
               focused on resilience, disciplined execution, and helping
               organizations navigate change. You can find his work at{" "}
               <a href="https://tonylombardi.ai">
