@@ -54,8 +54,8 @@ const roles = [
         text: "Governed an $8.6M annual transformation portfolio supporting $5B+ in managed client assets — accountable to executive stakeholders for delivery, financial, and client-impact performance.",
       },
       {
-        num: "50–60%",
-        text: "Cut release and upgrade cycle times by 50–60% by redesigning the enterprise delivery operating model around SAFe and Kanban, eliminating chronic delays that had eroded client and stakeholder confidence.",
+        num: "30–40%",
+        text: "Cut release and upgrade cycle times by 30–40% by redesigning the enterprise delivery operating model around SAFe and Kanban, eliminating chronic delays that had eroded client and stakeholder confidence.",
       },
       {
         num: "15%+ YoY",
