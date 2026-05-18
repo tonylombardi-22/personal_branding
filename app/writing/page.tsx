@@ -1,13 +1,14 @@
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import type { Metadata } from "next";
+import ReadingProgress from "@/components/ReadingProgress";
 
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
   title: "Writing | Tony Lombardi",
   description:
-    "The Operating System Doesn't Change — on pressure, resilience, leadership, and the habits that remain when plans collapse.",
+    "The Operating System Doesn't Change — on endurance, enterprise transformation, and why the same cognitive system that finishes an Ironman runs 326 overnight branch implementations without a single failure.",
 };
 
 export default function Writing() {
@@ -25,6 +26,7 @@ export default function Writing() {
           -webkit-font-smoothing: antialiased;
         }
 
+        /* ── INDEX HEADER ─────────────────────── */
         .wr-header {
           padding: 80px 48px 48px;
           max-width: 900px;
@@ -58,6 +60,7 @@ export default function Writing() {
           max-width: 560px;
         }
 
+        /* ── ARTICLE LIST ─────────────────────── */
         .wr-list {
           max-width: 900px;
           margin: 0 auto;
@@ -71,9 +74,7 @@ export default function Writing() {
           transition: opacity 0.2s ease;
         }
 
-        .wr-article-card:hover {
-          opacity: 0.75;
-        }
+        .wr-article-card:hover { opacity: 0.75; }
 
         .wr-article-meta {
           display: flex;
@@ -130,10 +131,9 @@ export default function Writing() {
           transition: gap 0.2s ease;
         }
 
-        .wr-read-link:hover {
-          gap: 12px;
-        }
+        .wr-read-link:hover { gap: 12px; }
 
+        /* ── ARTICLE PAGE ─────────────────────── */
         .ar-wrap {
           max-width: 720px;
           margin: 0 auto;
@@ -153,9 +153,7 @@ export default function Writing() {
           transition: color 0.2s ease;
         }
 
-        .ar-back:hover {
-          color: rgba(240,237,232,0.6);
-        }
+        .ar-back:hover { color: rgba(240,237,232,0.6); }
 
         .ar-meta {
           display: flex;
@@ -183,21 +181,12 @@ export default function Writing() {
 
         .ar-headline {
           font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(42px, 6vw, 72px);
+          font-size: clamp(36px, 5.5vw, 64px);
           font-weight: 600;
           color: #f0ede8;
           line-height: 0.95;
           letter-spacing: -0.01em;
-          margin-bottom: 24px;
-        }
-
-        .ar-subheadline {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 22px;
-          font-style: italic;
-          color: rgba(200,169,110,0.72);
-          margin-bottom: 40px;
-          line-height: 1.4;
+          margin-bottom: 32px;
         }
 
         .ar-byline {
@@ -214,6 +203,7 @@ export default function Writing() {
           font-weight: 500;
         }
 
+        /* Article body typography */
         .ar-body p {
           font-family: 'Cormorant Garamond', serif;
           font-size: clamp(18px, 2.2vw, 22px);
@@ -232,11 +222,9 @@ export default function Writing() {
           display: block;
         }
 
-        .ar-divider {
-          width: 120px;
-          height: 1px;
-          background: rgba(200,169,110,0.25);
-          margin: 56px auto 40px;
+        .ar-body em {
+          font-style: italic;
+          color: rgba(240,237,232,0.9);
         }
 
         .ar-footer {
@@ -281,18 +269,11 @@ export default function Writing() {
           transition: color 0.2s ease;
         }
 
-        .ar-nav-link:hover {
-          color: rgba(240,237,232,0.6);
-        }
+        .ar-nav-link:hover { color: rgba(240,237,232,0.6); }
+        .ar-nav-link.gold { color: #C8A96E; }
+        .ar-nav-link.gold:hover { color: #d4b87a; }
 
-        .ar-nav-link.gold {
-          color: #C8A96E;
-        }
-
-        .ar-nav-link.gold:hover {
-          color: #d4b87a;
-        }
-
+        /* Footer */
         .wr-footer {
           padding: 36px 48px;
           border-top: 0.5px solid rgba(240,237,232,0.08);
@@ -314,14 +295,9 @@ export default function Writing() {
           text-decoration: none;
         }
 
-        .wr-footer-logo span {
-          color: rgba(200,169,110,0.35);
-        }
+        .wr-footer-logo span { color: rgba(200,169,110,0.35); }
 
-        .wr-footer-links {
-          display: flex;
-          gap: 28px;
-        }
+        .wr-footer-links { display: flex; gap: 28px; }
 
         .wr-footer-link {
           font-size: 12px;
@@ -330,103 +306,64 @@ export default function Writing() {
           transition: color 0.2s ease;
         }
 
-        .wr-footer-link:hover {
-          color: rgba(240,237,232,0.55);
-        }
+        .wr-footer-link:hover { color: rgba(240,237,232,0.55); }
 
         @media (max-width: 768px) {
-          .wr-header {
-            padding: 60px 24px 36px;
-          }
-
-          .wr-list {
-            padding: 0 24px 60px;
-          }
-
-          .ar-wrap {
-            padding: 48px 24px 72px;
-          }
-
-          .ar-headline {
-            font-size: clamp(38px, 12vw, 58px);
-          }
-
-          .ar-subheadline {
-            font-size: 20px;
-          }
-
-          .wr-footer {
-            padding: 32px 24px;
-            flex-direction: column;
-            align-items: flex-start;
-          }
+          .wr-header { padding: 60px 24px 36px; }
+          .wr-list { padding: 0 24px 60px; }
+          .ar-wrap { padding: 48px 24px 72px; }
+          .wr-footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
         }
       `}</style>
 
       <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
+        <ReadingProgress />
         <Navbar />
 
+        {/* Writing index header */}
         <div className="wr-header">
           <div className="wr-eyebrow">Writing</div>
-
-          <h1 className="wr-title">
-            The long game.
-          </h1>
-
+          <h1 className="wr-title">The long game.</h1>
           <p className="wr-sub">
-            Essays on enterprise transformation, endurance, AI operations,
-            and the discipline that connects them.
+            Essays on enterprise transformation, endurance, AI operations, and the discipline that connects them.
           </p>
         </div>
 
+        {/* Article list */}
         <div className="wr-list">
           <div className="wr-article-card">
             <div className="wr-article-meta">
               <span className="wr-article-date">May 2026</span>
-              <span className="wr-article-tag">
-                Operator · Athlete
-              </span>
+              <span className="wr-article-tag">Operator · Athlete</span>
             </div>
-
             <div className="wr-article-headline">
-              The Operating System
-              <br />
-              Doesn't Change.
+              The Operating System<br />Doesn't Change.
             </div>
-
             <p className="wr-article-excerpt">
-              Mile 67. Sustained headwinds. A race plan that no longer existed.
-              What remained was the operating system that runs when pressure rises
-              and the script breaks.
+              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had vomited on the second lap of the swim. My legs had nothing left. I had a plan, and the plan was finished. What happened next is the same story as 326 overnight branch implementations, zero failures.
             </p>
-
-            <a href="#article" className="wr-read-link">
-              Read essay →
-            </a>
+            <a href="#article" className="wr-read-link">Read essay →</a>
           </div>
         </div>
 
+        {/* Article full text */}
         <div className="ar-wrap" id="article">
-          <a href="#top" className="ar-back">
-            ← Writing
-          </a>
+          <a href="#top" className="ar-back">← Writing</a>
 
           <div className="ar-meta">
             <span className="ar-date">May 2026</span>
-            <span className="ar-tag">
-              Operator · Athlete
-            </span>
+            <span className="ar-tag">Operator · Athlete</span>
+            <span style={{
+              fontSize: "11px",
+              letterSpacing: "0.06em",
+              color: "rgba(240,237,232,0.28)",
+              fontFamily: "'DM Sans', sans-serif",
+            }}>5 min read</span>
           </div>
 
           <h2 className="ar-headline">
-            The Operating System
-            <br />
-            Doesn't Change.
+            The Operating System<br />Doesn't Change.
           </h2>
-
-          <div className="ar-subheadline">
-            "The race reveals who you are."
-          </div>
 
           <div className="ar-byline">
             By <strong>Tony Lombardi</strong>
@@ -434,169 +371,108 @@ export default function Writing() {
 
           <div className="ar-body">
             <p>
-              Mile 67. Sustained headwinds of 20 to 30 miles per hour for over
-              three hours. I had already vomited during the second lap of the swim.
-              My legs were empty, and the race plan I had trained for no longer existed.
+              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had vomited on the second lap of the swim. My legs had nothing left. I had a plan, and the plan was finished.
             </p>
 
             <p>
-              Quitting was the simplest option. No one would have blamed me.
+              The plan was simple: get to the next aid station, hand in my timing chip, let them ask me three times if I wanted to quit, answer yes three times, find the nearest bar, and never do another triathlon again.
             </p>
 
             <p>
-              Instead, a strange calm settled in. I pedaled more steadily
-              and made a deliberate decision: unless I was in serious physical danger,
-              I would continue until my body physically stopped. Quitting just to
-              escape discomfort wasn't something I wanted to carry.
+              As Mike Tyson famously put it — everyone has a plan until they get punched in the face.
             </p>
 
             <p>
-              I sat down in the saddle, took in hydration and nutrition,
-              and prioritized calm focus over physical pain.
+              What happened instead was stranger. A calm came over me. I took twenty minutes. I told myself something that I've thought about many times since: <em>Unless you are in serious physical danger or risking death, you will carry on until your body quits. If you quit, you will never be able to stand the face you see in the mirror.</em> I grabbed a water bottle at the next aid station and pushed on. The only acceptable outcomes were medical extraction or the finish line.
             </p>
 
             <p>
-              In Ironman, there is an old adage: "You can quit if you want
-              and no one will care. But you will know. You will know for
-              the rest of your life."
+              I crossed that finish line 14 hours, 25 minutes, and 57 seconds after I started — my slowest Ironman ever, and the one I'm most proud of.
+            </p>
+
+            <span className="section-break">— — —</span>
+
+            <p>
+              People ask me what endurance sports have to do with enterprise transformation. I've never had a clean answer. But after twenty years of leading programs across insurance, financial services, and SaaS — and seven Ironman finishes — I've come to believe they're not two things. They're the same thing.
             </p>
 
             <p>
-              Eleven hours later, I crossed the finish line.
+              The cognitive operating system is identical.
             </p>
 
             <p>
-              That day stopped being about endurance and became about the operating
-              system I run when everything falls apart.
-            </p>
-
-            <span className="section-break">
-              — — —
-            </span>
-
-            <p>
-              <strong>Pressure does not build character. It reveals what was already installed.</strong>
+              At First Citizens Bank, I ran 326 consecutive overnight branch implementations. Every night, after each branch closed, I opened a conference bridge. Technicians checked in. The branch manager confirmed. I gave the go-ahead and ran status checks through the night. When a Bloomberg data feed failed at 2 AM with a hard 9 AM branch open deadline and no margin for error, I stayed on the bridge and worked it through to resolution. Ninety minutes before the deadline, the feed was restored. Zero branches missed their opening.
             </p>
 
             <p>
-              When the plan collapses and fatigue is total, you don't suddenly transform.
-              You default to what you've already drilled — your composure, habits,
-              and decision-making under stress.
+              That's not a technology story. That's the same story as mile 67.
             </p>
 
             <p>
-              This principle has shown up across very different arenas.
+              Small goals. One segment at a time. Don't look at the finish line — look at the next landmark. When the vendor fails, you don't quit; you escalate, stay on the line, and work through to resolution. The bridge stays open as long as it needs to stay open.
             </p>
 
             <p>
-              In Emergency First Response and Rescue Diver training, panic is often
-              the real threat. Breathing accelerates, thinking narrows, and small
-              problems become dangerous when emotion overrides process.
+              In the race, I set targets from hotel sign to ice cream shop, running 25 to 100 yards at a time for hours. In the bank, I set targets from branch close to branch open, one location at a time across 326 nights. The physical pain is different. The mental architecture is the same.
+            </p>
+
+            <span className="section-break">— — —</span>
+
+            <p>
+              What I've learned is that the operating system isn't built in races or boardrooms. It's built in the moments when the plan fails and the only available input is whether you continue or don't.
             </p>
 
             <p>
-              In MMA sparring and BJJ matches, adrenaline, fatigue, and physical
-              consequences test whether you stick with technique or let emotion take over.
-              The best performers aren't usually the loudest — they're the ones who
-              stay calm enough to think clearly.
+              Telling my wife on Father's Day 2020 that I wanted to try another Ironman after nearly a decade away — that was the same conversation as every transformation engagement I've walked into. No infrastructure. No playbook. A program already running. The question is always the same: <em>Are you going to build this thing or not?</em>
             </p>
 
             <p>
-              The same pattern appears in enterprise transformations. Overnight cutovers
-              with zero margin for error, 2 a.m. crises, and demanding stakeholders
-              quickly reveal whether a team's operating system is built for composure
-              or collapse.
+              The answer, every time, has been yes.
+            </p>
+
+            <span className="section-break">— — —</span>
+
+            <p>
+              Now I'm doing something I haven't done before. Brazilian Jiu-Jitsu. Kickboxing. Muay Thai. MMA. I'm pursuing what would be a first-of-its-kind milestone: a sanctioned MMA fight and a full-distance Ironman triathlon in the same calendar year.
             </p>
 
             <p>
-              The environments change. The operating system does not.
+              People ask why. I don't have a good answer for that either.
             </p>
 
             <p>
-              Most people and teams perform fine when conditions are stable.
-              What matters is what runs after the script breaks — when motivation
-              is gone and nobody is watching.
+              What I know is that the operating system doesn't change. The arena does. The discipline, the sequencing, the refusal to stop at mile 67 — those are constant. They show up on the mat the same way they show up in the conference bridge at 2 AM.
             </p>
 
             <p>
-              True resilience is quiet: consistency without applause, emotional control
-              under pressure, and the willingness to keep executing in uncertainty.
-            </p>
-
-            <span className="section-break">
-              — — —
-            </span>
-
-            <p>
-              I bring this same operating system to enterprise transformation and AI
-              operations — helping teams build the habits, governance, and composure
-              to navigate chaos without breaking.
+              Ironman taught me something I've never been able to fully articulate until recently: it's not a race. It enters your bloodstream, and no matter how far you veer from it, it waits. Patient. It waits for you to decide to prove to yourself that anything is possible.
             </p>
 
             <p>
-              If you're leading through uncertainty and value steady execution when
-              it gets hard, I'd welcome the conversation.
+              I've decided again.
             </p>
-
-            <div className="ar-divider"></div>
           </div>
 
           <div className="ar-footer">
             <p className="ar-footer-byline">
-              <strong>Tony Lombardi</strong> is an enterprise transformation
-              and AI operations leader based in Fuquay-Varina, NC.
-              His work focuses on disciplined execution, operational resilience,
-              and helping teams navigate uncertainty, pressure, and change.
-              Connect on{" "}
-              <a
-                href="https://linkedin.com/in/tonylombardi1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>{" "}
-              or reach out directly — he works with leaders navigating enterprise
-              transformation, AI operations, and the pressure that comes with both.
+              <strong>Tony Lombardi</strong> is an enterprise transformation and AI operations leader based in Fuquay-Varina, NC. He is a 7× Ironman finisher and active BJJ practitioner pursuing a first-of-its-kind milestone: a sanctioned MMA fight and a full-distance Ironman in the same calendar year. You can find his work at <a href="https://tonylombardi.ai">tonylombardi.ai</a>.
             </p>
-
             <div className="ar-nav">
-              <Link href="/contact" className="ar-nav-link gold">
-                Get in touch →
-              </Link>
-
-              <Link href="/about" className="ar-nav-link">
-                About Tony
-              </Link>
-
-              <Link href="/experience" className="ar-nav-link">
-                Experience
-              </Link>
+              <Link href="/contact" className="ar-nav-link gold">Get in touch →</Link>
+              <Link href="/about" className="ar-nav-link">About Tony</Link>
+              <Link href="/experience" className="ar-nav-link">Experience</Link>
             </div>
           </div>
         </div>
 
         <footer className="wr-footer">
           <Link href="/" className="wr-footer-logo">
-            tonylombardi<span>.ai</span>
+            tonyLombardi<span>.ai</span>
           </Link>
-
           <div className="wr-footer-links">
-            <a
-              href="https://linkedin.com/in/tonylombardi1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="wr-footer-link"
-            >
-              LinkedIn
-            </a>
-
-            <a href="/experience" className="wr-footer-link">
-              Experience
-            </a>
-
-            <a href="/contact" className="wr-footer-link">
-              Contact
-            </a>
+            <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="wr-footer-link">LinkedIn</a>
+            <a href="/experience" className="wr-footer-link">Experience</a>
+            <a href="/contact" className="wr-footer-link">Contact</a>
           </div>
         </footer>
       </div>
