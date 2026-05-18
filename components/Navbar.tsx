@@ -42,10 +42,10 @@ export default function Navbar() {
           line-height: 0;
         }
 
-        /* Height 36px on viewBox 640x132 → scale 36/132 = 0.273
-           Name: 58 * 0.273 = ~16px rendered (vs 13px nav = ~23% larger, close to 30%) */
+        /* 42px height on viewBox 132 tall → scale 42/132 = 0.318
+           Name: 58 * 0.318 = ~18.5px rendered vs 13px nav links = 42% larger ✓ */
         .tl-logo-svg {
-          height: 36px;
+          height: 42px;
           width: auto;
           display: block;
         }
@@ -176,25 +176,20 @@ export default function Navbar() {
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
             >
-              {/* Slash bars — full height y=8 to y=124 */}
               <polygon points="16,124 34,8 46,8 28,124" fill="#FFFFFF"/>
               <polygon points="32,124 50,8 62,8 44,124" fill="#FFFFFF" opacity="0.4"/>
               <polygon points="48,124 66,8 78,8 60,124" fill="#FFFFFF" opacity="0.15"/>
 
-              {/* TONY white */}
               <text x="100" y="72"
                 fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
                 fontSize="58" fontWeight="800" fill="#FFFFFF" letterSpacing="-0.5">TONY</text>
 
-              {/* LOMBARDI gold */}
               <text x="282" y="72"
                 fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
                 fontSize="58" fontWeight="800" fill="#B3995E" letterSpacing="-0.5">LOMBARDI</text>
 
-              {/* Rule */}
               <line x1="100" y1="84" x2="616" y2="84" stroke="#B3995E" strokeWidth="0.8"/>
 
-              {/* Tagline — fontSize 29 so it renders ~9px at navbar scale */}
               <text x="102" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="29" fontWeight="700" fill="#B3995E" letterSpacing="6">AI &amp; </text>
               <text x="210" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="29" fontWeight="700" fill="#FFFFFF" letterSpacing="6">HUMAN </text>
               <text x="348" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="29" fontWeight="700" fill="#B3995E" letterSpacing="6">FACILITATOR</text>
