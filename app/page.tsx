@@ -383,14 +383,29 @@ export default function Home() {
           gap: 6px;
         }
 
+        .pills {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-top: 24px;
+        }
+
         .pill {
           font-family: 'DM Sans', sans-serif;
           font-size: 11px;
-          letter-spacing: 0.06em;
-          color: rgba(200, 169, 110, 0.8);
-          border: 0.5px solid rgba(200, 169, 110, 0.3);
-          padding: 5px 12px;
+          letter-spacing: 0.07em;
+          color: rgba(200,169,110,0.7);
+          border: 0.5px solid rgba(200,169,110,0.2);
+          padding: 5px 14px;
           border-radius: 2px;
+          transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+          cursor: default;
+        }
+
+        .pill:hover {
+          color: #C8A96E;
+          border-color: rgba(200,169,110,0.55);
+          background: rgba(200,169,110,0.06);
         }
 
         /* ─── CTA BAR ──────────────────────────────── */
