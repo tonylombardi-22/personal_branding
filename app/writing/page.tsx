@@ -189,6 +189,16 @@ export default function Writing() {
           margin-bottom: 32px;
         }
 
+        .ar-subheadline {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 22px;
+          font-style: italic;
+          font-weight: 400;
+          color: rgba(200,169,110,0.65);
+          margin-bottom: 28px;
+          letter-spacing: 0.01em;
+        }
+
         .ar-byline {
           font-size: 13px;
           font-weight: 300;
@@ -340,7 +350,9 @@ export default function Writing() {
               The Operating System<br />Doesn't Change.
             </div>
             <p className="wr-article-excerpt">
-              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had vomited on the second lap of the swim. My legs had nothing left. I had a plan, and the plan was finished. What happened next is the same story as 326 overnight branch implementations, zero failures.
+              Mile 67. Sustained headwinds. A race plan that no longer existed.
+              What remained was the operating system that runs when pressure rises
+              and the script breaks.
             </p>
             <a href="#article" className="wr-read-link">Read essay →</a>
           </div>
@@ -365,29 +377,50 @@ export default function Writing() {
             The Operating System<br />Doesn't Change.
           </h2>
 
+          <div className="ar-subheadline">
+            "The race reveals who you are."
+          </div>
+
           <div className="ar-byline">
             By <strong>Tony Lombardi</strong>
           </div>
 
           <div className="ar-body">
             <p>
-              Mile 67. Headwinds at 20 to 30 miles per hour for three and a half hours. I had vomited on the second lap of the swim. My legs had nothing left. I had a plan, and the plan was finished.
+              Mile 67. Sustained headwinds of 20 to 30 miles per hour for over
+              three hours. I had already vomited during the second lap of the swim.
+              My legs were empty, and the race plan I had trained for no longer existed.
             </p>
 
             <p>
-              The plan was simple: get to the next aid station, hand in my timing chip, let them ask me three times if I wanted to quit, answer yes three times, find the nearest bar, and never do another triathlon again.
+              Quitting was the simplest option. No one would have blamed me.
             </p>
 
             <p>
-              As Mike Tyson famously put it — everyone has a plan until they get punched in the face.
+              Instead, a strange calm settled in. I pedaled more steadily
+              and made a deliberate decision: unless I was in serious physical danger,
+              I would continue until my body physically stopped. Quitting just to
+              escape discomfort wasn't something I wanted to carry.
             </p>
 
             <p>
-              What happened instead was stranger. A calm came over me. I took twenty minutes. I told myself something that I've thought about many times since: <em>Unless you are in serious physical danger or risking death, you will carry on until your body quits. If you quit, you will never be able to stand the face you see in the mirror.</em> I grabbed a water bottle at the next aid station and pushed on. The only acceptable outcomes were medical extraction or the finish line.
+              I sat down in the saddle, took in hydration and nutrition,
+              and prioritized calm focus over physical pain.
             </p>
 
             <p>
-              I crossed that finish line 14 hours, 25 minutes, and 57 seconds after I started — my slowest Ironman ever, and the one I'm most proud of.
+              In Ironman, there is an old adage: "You can quit if you want
+              and no one will care. But you will know. You will know for
+              the rest of your life."
+            </p>
+
+            <p>
+              Eleven hours later, I crossed the finish line.
+            </p>
+
+            <p>
+              That day stopped being about endurance and became about the operating
+              system I run when everything falls apart.
             </p>
 
             <span className="section-break">— — —</span>
