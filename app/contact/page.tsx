@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import type { Metadata } from "next";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
 
 export const dynamic = 'force-static';
 
@@ -356,9 +357,9 @@ export default function Contact() {
                 </div>
                 <div className="ct-option-body">
                   <div className="ct-option-label">Book a call</div>
-                  <div className="ct-option-value">calendly.com/tonylombardi</div>
+                  <div className="ct-option-value">Pick a time that works →</div>
                 </div>
-                <div className="ct-option-arrow">→</div>
+                <div className="ct-option-arrow">↓</div>
               </a>
 
               <a
@@ -424,6 +425,24 @@ export default function Contact() {
             </form>
           </div>
         </section>
+
+        {/* Calendly embed */}
+        <div style={{
+          maxWidth: "1100px",
+          margin: "0 auto",
+          padding: "0 48px 64px",
+        }}>
+          <div style={{
+            fontSize: "11px",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase" as const,
+            color: "rgba(240,237,232,0.28)",
+            marginBottom: "20px",
+          }}>
+            Book a call
+          </div>
+          <CalendlyEmbed />
+        </div>
 
         <hr className="rule" />
 
