@@ -30,23 +30,64 @@ export default function Navbar() {
           max-width: 1200px;
           margin: 0 auto;
           padding: 0 48px;
-          gap: 0;
         }
 
-        /* ── Logo zone ── */
+        /* ── Logo ── */
         .tl-logo-zone {
           display: flex;
           align-items: center;
-          padding-right: 36px;
+          gap: 12px;
+          padding-right: 32px;
           border-right: 0.5px solid rgba(240, 237, 232, 0.1);
           flex-shrink: 0;
           text-decoration: none;
         }
 
-        .tl-logo-svg {
-          height: 44px;
-          width: auto;
+        /* CSS slash mark — 3 angled bars */
+        .tl-slash-mark {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+          height: 36px;
+          flex-shrink: 0;
+        }
+
+        .tl-slash-mark span {
           display: block;
+          width: 5px;
+          height: 36px;
+          background: #f0ede8;
+          transform: skewX(-18deg);
+          border-radius: 1px;
+        }
+
+        .tl-slash-mark span:nth-child(2) { opacity: 0.45; }
+        .tl-slash-mark span:nth-child(3) { opacity: 0.18; }
+
+        /* Wordmark — stacked two lines */
+        .tl-wordmark {
+          display: flex;
+          flex-direction: column;
+          line-height: 1;
+          gap: 2px;
+        }
+
+        .tl-wordmark-top {
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-size: 13px;
+          font-weight: 800;
+          letter-spacing: 0.14em;
+          color: #f0ede8;
+          text-transform: uppercase;
+        }
+
+        .tl-wordmark-bottom {
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-size: 13px;
+          font-weight: 800;
+          letter-spacing: 0.14em;
+          color: #B3995E;
+          text-transform: uppercase;
         }
 
         /* ── Nav links ── */
@@ -55,14 +96,14 @@ export default function Navbar() {
           align-items: center;
           gap: 4px;
           flex: 1;
-          padding-left: 32px;
+          padding-left: 28px;
         }
 
         .tl-link {
           font-family: 'DM Sans', sans-serif;
           font-size: 13px;
           font-weight: 400;
-          letter-spacing: 0.06em;
+          letter-spacing: 0.05em;
           color: rgba(240, 237, 232, 0.5);
           text-decoration: none;
           padding: 6px 14px;
@@ -80,29 +121,28 @@ export default function Navbar() {
           background: rgba(200, 169, 110, 0.1);
         }
 
-        /* ── CTA button ── */
+        /* ── CTA ── */
         .tl-cta {
           font-family: 'DM Sans', sans-serif;
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 500;
-          letter-spacing: 0.1em;
+          letter-spacing: 0.12em;
           color: #C8A96E;
           text-decoration: none;
           border: 0.5px solid rgba(200, 169, 110, 0.5);
           border-radius: 4px;
-          padding: 8px 20px;
-          transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+          padding: 8px 18px;
+          transition: background 0.18s ease, border-color 0.18s ease;
           white-space: nowrap;
           flex-shrink: 0;
         }
 
         .tl-cta:hover {
-          background: rgba(200, 169, 110, 0.1);
+          background: rgba(200, 169, 110, 0.08);
           border-color: rgba(200, 169, 110, 0.8);
-          color: #d4b87a;
         }
 
-        /* ── Mobile hamburger ── */
+        /* ── Mobile ── */
         .tl-hamburger {
           display: none;
           flex-direction: column;
@@ -122,7 +162,6 @@ export default function Navbar() {
           transition: all 0.2s ease;
         }
 
-        /* ── Mobile menu ── */
         .tl-mobile-menu {
           display: none;
           flex-direction: column;
@@ -132,9 +171,7 @@ export default function Navbar() {
           gap: 4px;
         }
 
-        .tl-mobile-menu.open {
-          display: flex;
-        }
+        .tl-mobile-menu.open { display: flex; }
 
         .tl-mobile-link {
           font-family: 'DM Sans', sans-serif;
@@ -148,9 +185,7 @@ export default function Navbar() {
         }
 
         .tl-mobile-link:hover,
-        .tl-mobile-link.active {
-          color: #f0ede8;
-        }
+        .tl-mobile-link.active { color: #f0ede8; }
 
         .tl-mobile-cta {
           font-family: 'DM Sans', sans-serif;
@@ -177,55 +212,31 @@ export default function Navbar() {
       <nav className="tl-nav">
         <div className="tl-nav-inner">
 
-          {/* ── Logo: inline SVG slash mark ── */}
+          {/* ── Logo ── */}
           <Link href="/" className="tl-logo-zone" aria-label="tonylombardi.ai home">
-            <svg
-              className="tl-logo-svg"
-              viewBox="0 0 320 44"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              {/* Slash bars */}
-              <polygon points="6,42 18,2 25,2 13,42" fill="#f0ede8"/>
-              <polygon points="18,42 30,2 37,2 25,42" fill="#f0ede8" opacity="0.4"/>
-              <polygon points="30,42 42,2 49,2 37,42" fill="#f0ede8" opacity="0.15"/>
-
-              {/* TONY */}
-              <text
-                x="58"
-                y="34"
-                fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
-                fontSize="32"
-                fontWeight="800"
-                fill="#f0ede8"
-                letterSpacing="-0.5"
-              >TONY</text>
-
-              {/* LOMBARDI in camel gold */}
-              <text
-                x="148"
-                y="34"
-                fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
-                fontSize="32"
-                fontWeight="800"
-                fill="#B3995E"
-                letterSpacing="-0.5"
-              >LOMBARDI</text>
-            </svg>
+            <div className="tl-slash-mark" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </div>
+            <div className="tl-wordmark">
+              <span className="tl-wordmark-top">Tony</span>
+              <span className="tl-wordmark-bottom">Lombardi</span>
+            </div>
           </Link>
 
-          {/* ── Desktop nav links ── */}
+          {/* ── Desktop links ── */}
           <div className="tl-links">
-            <Link href="/about"       className={`tl-link${isActive("/about")       ? " active" : ""}`}>About</Link>
-            <Link href="/experience"  className={`tl-link${isActive("/experience")  ? " active" : ""}`}>Experience</Link>
-            <Link href="/projects"    className={`tl-link${isActive("/projects")    ? " active" : ""}`}>Projects</Link>
-            <Link href="/writing"     className={`tl-link${isActive("/writing")     ? " active" : ""}`}>Writing</Link>
+            <Link href="/about"      className={`tl-link${isActive("/about")      ? " active" : ""}`}>About</Link>
+            <Link href="/experience" className={`tl-link${isActive("/experience") ? " active" : ""}`}>Experience</Link>
+            <Link href="/projects"   className={`tl-link${isActive("/projects")   ? " active" : ""}`}>Projects</Link>
+            <Link href="/writing"    className={`tl-link${isActive("/writing")    ? " active" : ""}`}>Writing</Link>
           </div>
 
           {/* ── CTA ── */}
           <Link href="/contact" className="tl-cta">GET IN TOUCH →</Link>
 
-          {/* ── Mobile hamburger ── */}
+          {/* ── Hamburger ── */}
           <button
             className="tl-hamburger"
             onClick={() => setMenuOpen(!menuOpen)}
