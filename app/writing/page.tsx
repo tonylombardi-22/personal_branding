@@ -423,15 +423,20 @@ export default function Writing() {
             </p>
 
             <p>
-              Instead, a strange calm settled in. I sat down for twenty minutes
+              Instead, a strange calm settled in. I pedaled more steadily
               and made a deliberate decision: unless I was in serious physical danger,
               I would continue until my body physically stopped. Quitting just to
               escape discomfort wasn't something I wanted to carry.
             </p>
 
             <p>
-              I stood up, took in hydration and nutrition, and kept moving. In Ironman, there is an old adage: "You can quit if you want and no one will care. But you will know. You will know for the rest of your life."
+              I sat down in the saddle, took in hydration and nutrition, and prioritized calm focus over physical pain.
+               <p>
+               In Ironman, there is an old adage: "You can quit if you want and no one will care. But you will know. You will know for the rest of your life."
+              </p>
+              <p>
               Fourteen hours later, I crossed the finish line.
+              </p>
             </p>
 
             <p>
