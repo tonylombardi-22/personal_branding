@@ -578,6 +578,76 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Testimonials */}
+        <section style={{
+          padding: "72px 48px",
+          maxWidth: "1200px",
+          margin: "0 auto",
+        }}>
+          <div style={{
+            fontSize: "11px",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase" as const,
+            color: "rgba(240,237,232,0.28)",
+            marginBottom: "40px",
+          }}>
+            What colleagues say
+          </div>
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "24px",
+          }}>
+            <div className="fade-up delay-1" style={{
+              borderLeft: "1.5px solid rgba(200,169,110,0.25)",
+              paddingLeft: "24px",
+            }}>
+              <p style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                fontSize: "19px",
+                fontStyle: "italic",
+                fontWeight: 500,
+                color: "rgba(240,237,232,0.7)",
+                lineHeight: 1.55,
+                marginBottom: "20px",
+              }}>
+                "He approaches every project with a genuine passion, and his commitment to project success is noteworthy. What's even more inspiring is his ability to excel in his role while also participating in Ironman competitions."
+              </p>
+              <div style={{ fontSize: "12px", color: "rgba(240,237,232,0.35)", letterSpacing: "0.04em" }}>
+                Brandon Baggett
+              </div>
+              <div style={{ fontSize: "11px", color: "rgba(200,169,110,0.5)", letterSpacing: "0.04em", marginTop: "3px" }}>
+                Senior Vice President, Jahnel Group
+              </div>
+            </div>
+
+            <div className="fade-up delay-2" style={{
+              borderLeft: "1.5px solid rgba(200,169,110,0.25)",
+              paddingLeft: "24px",
+            }}>
+              <p style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                fontSize: "19px",
+                fontStyle: "italic",
+                fontWeight: 500,
+                color: "rgba(240,237,232,0.7)",
+                lineHeight: 1.55,
+                marginBottom: "20px",
+              }}>
+                "Tony played a great part in keeping projects on track, opening up communication, and adapting to our evolving business and needs. In a startup environment, that's exactly what you need."
+              </p>
+              <div style={{ fontSize: "12px", color: "rgba(240,237,232,0.35)", letterSpacing: "0.04em" }}>
+                Mitch Crandall
+              </div>
+              <div style={{ fontSize: "11px", color: "rgba(200,169,110,0.5)", letterSpacing: "0.04em", marginTop: "3px" }}>
+                Director, Product Strategy — Revology
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr className="rule" />
+
         {/* CTA Bar */}
         <div className="cta-bar fade-up">
           <div className="cta-bar-text-wrap">
