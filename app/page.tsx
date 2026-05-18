@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import Link from "next/link";
-export const dynamic = 'force-static';
 
 export default function Home() {
   return (
@@ -579,6 +578,25 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Transformer image — three identities */}
+        <div className="fade-up" style={{
+          width: "100%",
+          overflow: "hidden",
+          position: "relative",
+        }}>
+          <img
+            src="/transformer.png"
+            alt="Tony Lombardi — Ironman finisher, MMA fighter, enterprise executive"
+            style={{
+              width: "100%",
+              display: "block",
+              objectFit: "cover",
+            }}
+          />
+        </div>
+
+        <hr className="rule" />
 
         {/* Testimonials */}
         <section style={{
