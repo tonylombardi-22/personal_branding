@@ -42,8 +42,6 @@ export default function Navbar() {
           line-height: 0;
         }
 
-        /* 44px height on viewBox 132 → scale 44/132 = 0.333
-           Name: 58 * 0.333 = ~19.3px rendered vs 13px nav = 48% larger ≈ 50% */
         .tl-logo-svg {
           height: 44px;
           width: auto;
@@ -190,10 +188,12 @@ export default function Navbar() {
 
               <line x1="100" y1="84" x2="616" y2="84" stroke="#B3995E" strokeWidth="0.8"/>
 
-              {/* Tagline — each word is its own element with explicit x to guarantee spacing */}
-              <text x="102" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="26" fontWeight="700" fill="#B3995E" letterSpacing="5">AI &amp;</text>
-              <text x="210" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="26" fontWeight="700" fill="#FFFFFF" letterSpacing="5">HUMAN</text>
-              <text x="355" y="118" fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif" fontSize="26" fontWeight="700" fill="#B3995E" letterSpacing="5">FACILITATOR</text>
+              {/* Tagline: single text element starting at x=100, same as TONY — natural word spacing */}
+              <text x="100" y="118"
+                fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
+                fontSize="26" fontWeight="700" letterSpacing="4">
+                <tspan fill="#B3995E">AI &amp; </tspan><tspan fill="#FFFFFF">HUMAN </tspan><tspan fill="#B3995E">FACILITATOR</tspan>
+              </text>
             </svg>
           </Link>
 
