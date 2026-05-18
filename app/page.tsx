@@ -237,10 +237,37 @@ export default function Home() {
         .card {
           background: #0a0a0a;
           padding: 40px 36px;
-          transition: background 0.2s ease;
+          transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+          position: relative;
+          cursor: default;
         }
 
-        .card:hover { background: #111; }
+        .card::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 1.5px;
+          background: #C8A96E;
+          opacity: 0;
+          transition: opacity 0.25s ease;
+        }
+
+        .card:hover {
+          background: #0f0f0f;
+          transform: translateY(-3px);
+          box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+          z-index: 1;
+        }
+
+        .card:hover::before {
+          opacity: 1;
+        }
+
+        .card:hover .card-title {
+          color: #C8A96E;
+        }
 
         .card-num {
           font-family: 'Cormorant Garamond', serif;
@@ -259,6 +286,7 @@ export default function Home() {
           color: #f0ede8;
           margin-bottom: 12px;
           line-height: 1.3;
+          transition: color 0.25s ease;
         }
 
         .card-body {
