@@ -214,18 +214,6 @@ export default function Writing() {
           margin-bottom: 28px;
         }
 
-        .ar-body ul {
-          margin: 0 0 28px 28px;
-          color: rgba(240,237,232,0.8);
-        }
-
-        .ar-body li {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(18px, 2.2vw, 22px);
-          line-height: 1.75;
-          margin-bottom: 8px;
-        }
-
         .ar-body .section-break {
           text-align: center;
           color: rgba(200,169,110,0.4);
@@ -390,10 +378,9 @@ export default function Writing() {
             </div>
 
             <p className="wr-article-excerpt">
-              Mile 67. Headwinds hammering 20–30 mph for hours.
-              A race plan that no longer existed.
-              What remained was the operating system that runs when pressure rises
-              and the script breaks.
+              Mile 67. Sustained headwinds. A race plan that no longer existed.
+              What happened next became less about endurance and more about the
+              habits, decisions, and operating system that remain when pressure rises.
             </p>
 
             <a href="#article" className="wr-read-link">
@@ -426,49 +413,30 @@ export default function Writing() {
 
           <div className="ar-body">
             <p>
-              Mile 67. Headwinds hammering 20–30 mph for over three hours.
-              I'd already vomited during the second lap of the swim.
-              My legs were empty and the race plan was gone.
+              Mile 67. Sustained headwinds of 20 to 30 miles per hour for over
+              three hours. I had already vomited during the second lap of the swim.
+              My legs were empty, and the race plan I had trained for no longer existed.
             </p>
 
             <p>
-              Quitting was right there: get to the next aid station,
-              hand in the chip, and be done.
-              I even played out the full scene — them asking me three times
-              if I was sure, me saying yes, then finding the nearest bar
-              and swearing off triathlon forever.
+              Quitting was the simplest option. No one would have blamed me.
             </p>
 
             <p>
-              Instead, a strange calm settled in.
+              Instead, a strange calm settled in. I sat down for twenty minutes
+              and made a deliberate decision: unless I was in serious physical danger,
+              I would continue until my body physically stopped. Quitting just to
+              escape discomfort wasn't something I wanted to carry.
             </p>
 
             <p>
-              I sat down for twenty minutes and made a deliberate decision:
-              unless I was in serious physical danger, I would continue
-              until my body physically quit.
-              Because quitting just to escape discomfort was something
-              I didn't want to carry.
+              I stood up, took another water bottle, and kept moving.
+              Fourteen hours later, I crossed the finish line.
             </p>
 
             <p>
-              I stood up, grabbed another water bottle, and kept moving.
-            </p>
-
-            <p>
-              The only acceptable outcomes were medical DNF or the finish line.
-            </p>
-
-            <p>
-              Fourteen hours later, I crossed it.
-            </p>
-
-            <p>
-              That day wasn't really about endurance.
-            </p>
-
-            <p>
-              It was about the operating system I run when everything falls apart.
+              That day stopped being about endurance and became about the operating
+              system I run when everything falls apart.
             </p>
 
             <span className="section-break">
@@ -476,69 +444,52 @@ export default function Writing() {
             </span>
 
             <p>
-              Pressure doesn't build character.
+              <strong>Pressure does not build character. It reveals what was already installed.</strong>
             </p>
 
             <p>
-              It reveals what was already installed.
+              When the plan collapses and fatigue is total, you don't suddenly transform.
+              You default to what you've already drilled — your composure, habits,
+              and decision-making under stress.
             </p>
 
             <p>
-              When the plan collapses and fatigue is total,
-              you don't suddenly become someone better.
-              You default to what you've drilled — your composure,
-              your decision-making, your tolerance for discomfort.
+              This principle has shown up across very different arenas.
             </p>
 
             <p>
-              I've seen it across wildly different arenas.
+              In Emergency First Response and Rescue Diver training, panic is often
+              the real threat. Breathing accelerates, thinking narrows, and small
+              problems become dangerous when emotion overrides process.
             </p>
 
             <p>
-              In Emergency First Response and Rescue Diver training,
-              where panic underwater turns small problems deadly
-              and where panic underwater can quickly turn manageable problems into life or death scenarios.
+              In MMA sparring and BJJ matches, adrenaline, fatigue, and physical
+              consequences test whether you stick with technique or let emotion take over.
+              The best performers aren't usually the loudest — they're the ones who
+              stay calm enough to think clearly.
             </p>
 
             <p>
-              In MMA sparring and BJJ matches,
-              where emotion overrides technique and composure is the only thing
-              keeping you from making bad decisions with real consequences.
+              The same pattern appears in enterprise transformations. Overnight cutovers
+              with zero margin for error, 2 a.m. crises, and demanding stakeholders
+              quickly reveal whether a team's operating system is built for composure
+              or collapse.
             </p>
 
             <p>
-              In enterprise transformations,
-              where an overnight cutover goes sideways at 2 a.m.
-              and the pressure tests whether the team holds or folds.
+              The environments change. The operating system does not.
             </p>
 
             <p>
-              The environments change.
+              Most people and teams perform fine when conditions are stable.
+              What matters is what runs after the script breaks — when motivation
+              is gone and nobody is watching.
             </p>
 
             <p>
-              The operating system does not.
-            </p>
-
-            <span className="section-break">
-              — — —
-            </span>
-
-            <p>
-              Most people and organizations perform fine when conditions are stable.
-            </p>
-
-            <p>
-              What matters is what runs after the script breaks —
-              when motivation is gone, the weather is ugly,
-              and nobody is watching.
-            </p>
-
-            <p>
-              True resilience is almost always quiet:
-              consistency without applause,
-              emotional control under pressure,
-              continuing to execute when inspiration has long disappeared.
+              True resilience is quiet: consistency without applause, emotional control
+              under pressure, and the willingness to keep executing in uncertainty.
             </p>
 
             <span className="section-break">
@@ -546,40 +497,20 @@ export default function Writing() {
             </span>
 
             <p>
-              Today's world — accelerated by AI, shifting models,
-              and relentless change — rewards the quality of that operating system
-              more than ever.
+              In a world being rewritten by AI and constant change, tools and processes
+              will keep evolving. The ability to stay calm and functional when conditions
+              turn ugly remains the real advantage.
             </p>
 
             <p>
-              Tools evolve fast.
+              I bring this same operating system to enterprise transformation and AI
+              operations — helping teams build the habits, governance, and composure
+              to navigate chaos without breaking.
             </p>
 
             <p>
-              The ability to stay calm and functional in uncertainty does not.
-            </p>
-
-            <p>
-              The Ironman finish line mattered far less
-              than the realization it left behind:
-              you can endure more than you think.
-            </p>
-
-            <p>
-              And when the inevitable headwinds hit,
-              your operating system is what remains.
-            </p>
-
-            <p>
-              I bring that same wiring to enterprise transformation
-              and AI operations — helping teams install the habits,
-              governance, and composure required to navigate chaos
-              without breaking.
-            </p>
-
-            <p>
-              If you're leading an organization that needs to perform
-              when conditions turn ugly, I'd welcome the conversation.
+              If you're leading through uncertainty and value steady execution when
+              it gets hard, I'd welcome the conversation.
             </p>
 
             <div className="ar-divider"></div>
