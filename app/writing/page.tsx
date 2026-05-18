@@ -425,7 +425,7 @@ export default function Writing() {
           </h2>
 
           <div className="ar-subheadline">
-            “The race reveals who you are.”
+            "The race reveals who you are."
           </div>
 
           <div className="ar-byline">
@@ -553,10 +553,16 @@ export default function Writing() {
               and AI operations leader based in Fuquay-Varina, NC.
               His work focuses on disciplined execution, operational resilience,
               and helping teams navigate uncertainty, pressure, and change.
-              You can find his work at{" "}
-              <a href="https://tonylombardi.ai">
-                tonylombardi.ai
-              </a>.
+              Connect on{" "}
+              <a
+                href="https://linkedin.com/in/tonylombardi1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>{" "}
+              or reach out directly — he works with leaders navigating enterprise
+              transformation, AI operations, and the pressure that comes with both.
             </p>
 
             <div className="ar-nav">
@@ -577,7 +583,7 @@ export default function Writing() {
 
         <footer className="wr-footer">
           <Link href="/" className="wr-footer-logo">
-            tonyLombardi<span>.ai</span>
+            tonylombardi<span>.ai</span>
           </Link>
 
           <div className="wr-footer-links">
