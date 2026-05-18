@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import PageTransition from "@/components/PageTransition";
 
 export const metadata: Metadata = {
   title: "Tony Lombardi | Enterprise Transformation & AI Operations",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "High-agency operator with range. $8.6M portfolios, $5B+ in client assets, 7× Ironman finisher.",
     url: "https://tonylombardi.ai",
-    siteName: "TonyLombardi.ai",
+    siteName: "tonylombardi.ai",
     locale: "en_US",
     type: "website",
     images: [
@@ -52,7 +53,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ margin: 0, padding: 0, background: "#0a0a0a" }}>
-        {children}
+        <PageTransition>
+          {children}
+        </PageTransition>
         <Analytics />
       </body>
     </html>
