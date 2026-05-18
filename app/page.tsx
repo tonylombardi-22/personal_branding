@@ -564,14 +564,14 @@ export default function Home() {
               Same discipline.<br /><em>Different arena.</em>
             </div>
             <p className="identity-body">
-              Seven Ironman finishes. 20+ marathons. Active BJJ practitioner. Amateur MMA
-              competitor. Currently pursuing a first-of-its-kind milestone: a sanctioned MMA
-              fight and a full-distance Ironman in the same calendar year.
+              Seven Ironman finishes. 20+ marathons. Active BJJ practitioner pursuing a
+              first-of-its-kind milestone: a sanctioned MMA fight and a full-distance
+              Ironman in the same calendar year.
             </p>
             <div className="pills">
               <span className="pill">7× Ironman</span>
               <span className="pill">Brazilian Jiu-Jitsu</span>
-              <span className="pill">Amateur MMA</span>
+              <span className="pill">MMA in progress</span>
               <span className="pill">20+ marathons</span>
               <span className="pill">Emergency First Responder</span>
             </div>

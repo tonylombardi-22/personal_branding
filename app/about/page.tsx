@@ -508,7 +508,7 @@ export default function About() {
               <div className="ab-section-label">02</div>
               <div className="ab-section-title">The <em>athlete</em></div>
               <p className="ab-body">
-                Seven Ironman finishes. 20+ marathons. Active Brazilian Jiu-Jitsu practitioner. Amateur MMA competitor. Certified Emergency First Responder and rescue scuba diver.
+                Seven Ironman finishes. 20+ marathons. Active Brazilian Jiu-Jitsu practitioner pursuing a first-of-its-kind milestone: a sanctioned MMA fight and a full-distance Ironman in the same calendar year. Certified Emergency First Responder and rescue scuba diver.
               </p>
               <p className="ab-body">
                 The athletic identity is not separate from the professional one — it is the same identity in a different arena. The discipline required to cross seven Ironman finish lines is the same discipline that runs 326 overnight branch implementations without a single failure. Endurance isn't a hobby. It's the operating system.
@@ -523,7 +523,7 @@ export default function About() {
                 <span className="ab-pill">7× Ironman</span>
                 <span className="ab-pill">20+ marathons</span>
                 <span className="ab-pill">Brazilian Jiu-Jitsu</span>
-                <span className="ab-pill">Amateur MMA</span>
+                <span className="ab-pill">MMA in progress</span>
                 <span className="ab-pill">Emergency First Responder</span>
                 <span className="ab-pill">Rescue Scuba Diver</span>
               </div>
@@ -543,6 +543,7 @@ export default function About() {
                   <div className="ab-photo-caption">Brazilian Jiu-Jitsu</div>
                 </div>
               </div>
+
             </section>
 
             {/* The Builder */}
