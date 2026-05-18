@@ -528,12 +528,6 @@ export default function Writing() {
             </span>
 
             <p>
-              In a world being rewritten by AI and constant change, tools and processes
-              will keep evolving. The ability to stay calm and functional when conditions
-              turn ugly remains the real advantage.
-            </p>
-
-            <p>
               I bring this same operating system to enterprise transformation and AI
               operations — helping teams build the habits, governance, and composure
               to navigate chaos without breaking.
