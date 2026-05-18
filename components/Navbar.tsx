@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const pathname = usePathname();
-
+   const pathname = usePathname();
+   
   const isActive = (href: string) => pathname === href;
 
   return (
@@ -33,6 +33,7 @@ export default function Navbar() {
           padding: 0 48px;
         }
 
+        /* Logo zone */
         .tl-logo-zone {
           display: flex;
           align-items: center;
@@ -55,6 +56,7 @@ export default function Navbar() {
           color: #C8A96E;
         }
 
+        /* Nav links */
         .tl-links {
           display: flex;
           align-items: center;
@@ -80,23 +82,7 @@ export default function Navbar() {
           background: rgba(240, 237, 232, 0.06);
         }
 
-        .tl-link.active {
-          color: #f0ede8;
-          background: rgba(240, 237, 232, 0.08);
-          position: relative;
-        }
-
-        .tl-link.active::after {
-          content: '';
-          position: absolute;
-          bottom: -1px;
-          left: 14px;
-          right: 14px;
-          height: 1px;
-          background: #C8A96E;
-          opacity: 0.7;
-        }
-
+        /* Right zone */
         .tl-right {
           display: flex;
           align-items: center;
@@ -113,6 +99,7 @@ export default function Navbar() {
           flex-shrink: 0;
         }
 
+        /* Contact button — Option A style: gold border */
         .tl-contact {
           font-family: 'DM Sans', sans-serif;
           font-size: 12px;
@@ -133,12 +120,7 @@ export default function Navbar() {
           color: #d4b87a;
         }
 
-        .tl-contact.active {
-          background: rgba(200, 169, 110, 0.12);
-          border-color: rgba(200, 169, 110, 0.8);
-          color: #d4b87a;
-        }
-
+        /* Mobile hamburger */
         .tl-hamburger {
           display: none;
           background: none;
@@ -151,6 +133,7 @@ export default function Navbar() {
           justify-content: center;
         }
 
+        /* Mobile menu */
         .tl-mobile-menu {
           display: none;
           flex-direction: column;
@@ -179,13 +162,6 @@ export default function Navbar() {
           background: rgba(240, 237, 232, 0.06);
         }
 
-        .tl-mobile-link.active {
-          color: #f0ede8;
-          background: rgba(240, 237, 232, 0.08);
-          border-left: 2px solid #C8A96E;
-          padding-left: 10px;
-        }
-
         .tl-mobile-contact {
           font-family: 'DM Sans', sans-serif;
           font-size: 13px;
@@ -200,21 +176,31 @@ export default function Navbar() {
         }
 
         @media (max-width: 768px) {
-          .tl-nav-inner { padding: 0 24px; }
-          .tl-links { display: none; }
-          .tl-right { display: none; }
-          .tl-hamburger { display: flex; }
-          .tl-logo-zone { border-right: none; padding-right: 0; }
+          .tl-nav-inner {
+            padding: 0 24px;
+          }
+          .tl-links {
+            display: none;
+          }
+          .tl-right {
+            display: none;
+          }
+          .tl-hamburger {
+            display: flex;
+          }
+          .tl-logo-zone {
+            border-right: none;
+            padding-right: 0;
+          }
         }
       `}</style>
 
       <nav className="tl-nav">
         <div className="tl-nav-inner">
-
           {/* Logo */}
           <div className="tl-logo-zone">
             <Link href="/" className="tl-logo">
-              tonylombardi<span className="dot-ai">.ai</span>
+              TonyLombardi<span className="dot-ai">.ai</span>
             </Link>
           </div>
 
@@ -223,13 +209,14 @@ export default function Navbar() {
             <Link href="/about" className={`tl-link${isActive("/about") ? " active" : ""}`}>About</Link>
             <Link href="/experience" className={`tl-link${isActive("/experience") ? " active" : ""}`}>Experience</Link>
             <Link href="/projects" className={`tl-link${isActive("/projects") ? " active" : ""}`}>Projects</Link>
+            <Link href="/writing" className={`tl-link${isActive("/writing") ? " active" : ""}`}>Writing</Link>
           </div>
 
           {/* Desktop right side */}
           <div className="tl-right">
             <a href="/tony-lombardi-resume.pdf" download className="tl-link">Resume</a>
             <div className="tl-dot" aria-hidden="true" />
-            <Link href="/contact" className={`tl-contact${isActive("/contact") ? " active" : ""}`}>Contact</Link>
+            <Link href="/contact" className="tl-contact">Contact</Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -245,13 +232,13 @@ export default function Navbar() {
 
         {/* Mobile dropdown */}
         <div className={`tl-mobile-menu${menuOpen ? " open" : ""}`}>
-          <Link href="/about" className={`tl-mobile-link${isActive("/about") ? " active" : ""}`} onClick={() => setMenuOpen(false)}>About</Link>
-          <Link href="/experience" className={`tl-mobile-link${isActive("/experience") ? " active" : ""}`} onClick={() => setMenuOpen(false)}>Experience</Link>
-          <Link href="/projects" className={`tl-mobile-link${isActive("/projects") ? " active" : ""}`} onClick={() => setMenuOpen(false)}>Projects</Link>
+          <Link href="/about" className="tl-mobile-link" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/experience" className="tl-mobile-link" onClick={() => setMenuOpen(false)}>Experience</Link>
+          <Link href="/projects" className="tl-mobile-link" onClick={() => setMenuOpen(false)}>Projects</Link>
+          <Link href="/writing" className="tl-mobile-link" onClick={() => setMenuOpen(false)}>Writing</Link>
           <a href="/tony-lombardi-resume.pdf" download className="tl-mobile-link">Resume</a>
           <Link href="/contact" className="tl-mobile-contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
-
       </nav>
     </>
   );
