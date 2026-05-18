@@ -28,7 +28,27 @@ export default function Home() {
           align-items: center;
         }
 
-        .hero-left {}
+        .hero-left {
+          position: relative;
+        }
+
+        .hero-left::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: -10%;
+          transform: translateY(-50%);
+          width: 120%;
+          height: 70%;
+          background: radial-gradient(ellipse at 30% 50%, rgba(200,169,110,0.07) 0%, rgba(200,169,110,0.03) 40%, transparent 70%);
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .hero-left > * {
+          position: relative;
+          z-index: 1;
+        }
 
         .hero-photo-wrap {
           position: relative;
