@@ -497,7 +497,7 @@ export default function Writing() {
             <p>
               In Emergency First Response and Rescue Diver training,
               where panic underwater turns small problems deadly
-              and where panic underwater can quickly turn manageable problems dangerous.
+              and where panic underwater can quickly turn manageable problems into life or death scenarios.
             </p>
 
             <p>
