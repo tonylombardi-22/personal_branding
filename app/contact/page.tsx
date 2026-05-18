@@ -409,8 +409,8 @@ export default function Contact() {
         <div className="ct-avail">
           <div className="ct-avail-dot" />
           <p className="ct-avail-text">
-            <strong>Currently available</strong> for transformation leadership, consulting, and strategic advisory roles —
-            on-site, hybrid, or remote. Based in Fuquay-Varina, NC.
+            <strong>Currently available</strong> for Q3 engagement — transformation leadership, fractional advisory, or consulting.
+            On-site, hybrid, or remote. Based in Fuquay-Varina, NC - 15 minutes from Raleigh.
           </p>
         </div>
 
