@@ -235,11 +235,6 @@ export default function Writing() {
           display: block;
         }
 
-        .ar-body em {
-          font-style: italic;
-          color: rgba(240,237,232,0.9);
-        }
-
         .ar-divider {
           width: 120px;
           height: 1px;
@@ -395,9 +390,10 @@ export default function Writing() {
             </div>
 
             <p className="wr-article-excerpt">
-              Mile 67. Sustained headwinds. A race plan that no longer existed.
-              What happened next became less about endurance and more about the
-              habits, decisions, and operating system that remain when pressure rises.
+              Mile 67. Headwinds hammering 20–30 mph for hours.
+              A race plan that no longer existed.
+              What remained was the operating system that runs when pressure rises
+              and the script breaks.
             </p>
 
             <a href="#article" className="wr-read-link">
@@ -430,14 +426,17 @@ export default function Writing() {
 
           <div className="ar-body">
             <p>
-              Mile 67. Sustained headwinds of 20 to 30 miles per hour for over
-              three hours. I had already vomited during the second lap of the swim.
-              My legs were empty, and the race plan I had trained for no longer existed.
+              Mile 67. Headwinds hammering 20–30 mph for over three hours.
+              I'd already vomited during the second lap of the swim.
+              My legs were empty and the race plan was gone.
             </p>
 
             <p>
-              At that moment, the simplest option was clear: get to the next aid
-              station, turn in my timing chip, and be done. No one would have blamed me.
+              Quitting was right there: get to the next aid station,
+              hand in the chip, and be done.
+              I even played out the full scene — them asking me three times
+              if I was sure, me saying yes, then finding the nearest bar
+              and swearing off triathlon forever.
             </p>
 
             <p>
@@ -445,14 +444,15 @@ export default function Writing() {
             </p>
 
             <p>
-              I sat down for twenty minutes and made a deliberate decision. Unless I
-              was in serious physical danger, I would continue until my body physically
-              stopped. Quitting just to escape discomfort was not something I wanted
-              to carry.
+              I sat down for twenty minutes and made a deliberate decision:
+              unless I was in serious physical danger, I would continue
+              until my body physically quit.
+              Because quitting just to escape discomfort was something
+              I didn't want to carry.
             </p>
 
             <p>
-              I stood up, took another water bottle, and kept moving.
+              I stood up, grabbed another water bottle, and kept moving.
             </p>
 
             <p>
@@ -464,12 +464,11 @@ export default function Writing() {
             </p>
 
             <p>
-              At the time, I thought that day was about endurance.
+              That day wasn't really about endurance.
             </p>
 
             <p>
-              Years later, I understood it was about something deeper: the operating
-              system we run on when plans collapse.
+              It was about the operating system I run when everything falls apart.
             </p>
 
             <span className="section-break">
@@ -477,7 +476,7 @@ export default function Writing() {
             </span>
 
             <p>
-              Pressure does not build character.
+              Pressure doesn't build character.
             </p>
 
             <p>
@@ -485,126 +484,40 @@ export default function Writing() {
             </p>
 
             <p>
-              When conditions deteriorate, when fatigue sets in, and when the original
-              strategy evaporates, people and organizations do not suddenly become
-              something else. They default to the patterns, habits, and decision
-              frameworks they built long before the crisis arrived.
+              When the plan collapses and fatigue is total,
+              you don't suddenly become someone better.
+              You default to what you've drilled — your composure,
+              your decision-making, your tolerance for discomfort.
             </p>
 
             <p>
-              That operating system does not change under pressure.
+              I've seen it across wildly different arenas.
             </p>
 
             <p>
-              It simply runs.
+              In Emergency First Response and Rescue Diver training,
+              where panic underwater turns small problems deadly
+              and breathing itself becomes the threat.
             </p>
 
             <p>
-              This principle has shown up consistently in my work and training.
-              In enterprise transformations where overnight cutovers left little room
-              for error. In operational environments where composure separates resolution
-              from escalation. In endurance events where motivation disappears long
-              before the work is done.
+              In MMA sparring and BJJ matches,
+              where emotion overrides technique and composure is the only thing
+              keeping you from making bad decisions with real consequences.
             </p>
 
             <p>
-              The environments differ.
+              In enterprise transformations,
+              where an overnight cutover goes sideways at 2 a.m.
+              and the pressure tests whether the team holds or folds.
             </p>
 
             <p>
-              The underlying system does not.
-            </p>
-
-            <span className="section-break">
-              — — —
-            </span>
-
-            <p>
-              Most people and teams perform adequately when conditions are stable.
+              The environments change.
             </p>
 
             <p>
-              What matters is what happens after the script fails.
-            </p>
-
-            <p>
-              Can you stay composed?
-            </p>
-
-            <p>
-              Can you adapt without losing direction?
-            </p>
-
-            <p>
-              Can you keep executing when the original plan no longer applies?
-            </p>
-
-            <p>
-              Can you continue when motivation is gone and nobody is watching?
-            </p>
-
-            <p>
-              In my experience, true resilience is usually quiet.
-            </p>
-
-            <p>
-              It looks like:
-            </p>
-
-            <ul>
-              <li>consistency when inspiration disappears,</li>
-              <li>discipline when outcomes are uncertain,</li>
-              <li>emotional control when pressure rises,</li>
-              <li>and the willingness to keep moving forward in uncertainty.</li>
-            </ul>
-
-            <span className="section-break">
-              — — —
-            </span>
-
-            <p>
-              Rescue Diver and Emergency First Response training taught me another
-              version of the same lesson.
-            </p>
-
-            <p>
-              In that environment, panic is often the real danger. Breathing accelerates.
-              Decision-making narrows. Small problems can become serious when emotion
-              overrides process.
-            </p>
-
-            <p>
-              The training is not only about physical skill. It is about slowing the
-              mind down enough to assess, prioritize, and act while stress is rising.
-            </p>
-
-            <p>
-              Combat sports carry their own version of that pressure.
-            </p>
-
-            <p>
-              In a hard MMA sparring session or a Brazilian Jiu-Jitsu tournament match,
-              there is adrenaline, uncertainty, physical consequence, fatigue, and the
-              temptation to abandon technique for emotion.
-            </p>
-
-            <p>
-              The people who perform best are rarely the loudest or most aggressive.
-            </p>
-
-            <p>
-              They are usually the ones who can remain calm enough to think clearly
-              while pressure escalates around them.
-            </p>
-
-            <p>
-              That lesson translates directly into leadership.
-            </p>
-
-            <p>
-              In high-pressure operational environments, calm is not passive. It is a
-              functional advantage. It creates room for judgment, communication, and
-              resolution when the situation could otherwise become reactive.
+              The operating system does not.
             </p>
 
             <span className="section-break">
@@ -612,66 +525,61 @@ export default function Writing() {
             </span>
 
             <p>
-              Today's business landscape rewards adaptability more than certainty.
+              Most people and organizations perform fine when conditions are stable.
             </p>
 
             <p>
-              Industries are changing. Technology is changing. Careers are changing.
-              Entire operating models are being rewritten in real time.
+              What matters is what runs after the script breaks —
+              when motivation is gone, the weather is ugly,
+              and nobody is watching.
             </p>
 
             <p>
-              AI is accelerating that reality even further.
+              True resilience is almost always quiet:
+              consistency without applause,
+              emotional control under pressure,
+              continuing to execute when inspiration has long disappeared.
+            </p>
+
+            <span className="section-break">
+              — — —
+            </span>
+
+            <p>
+              Today's world — accelerated by AI, shifting models,
+              and relentless change — rewards the quality of that operating system
+              more than ever.
             </p>
 
             <p>
-              Tools and processes will continue to evolve. But the fundamentals that
-              allow people and organizations to navigate change remain remarkably
-              consistent:
-            </p>
-
-            <ul>
-              <li>discipline,</li>
-              <li>composure,</li>
-              <li>accountability,</li>
-              <li>adaptability,</li>
-              <li>and the ability to function effectively when conditions become uncomfortable.</li>
-            </ul>
-
-            <p>
-              That is true in endurance sports.
+              Tools evolve fast.
             </p>
 
             <p>
-              It is true underwater.
+              The ability to stay calm and functional in uncertainty does not.
             </p>
 
             <p>
-              It is true in combat sports.
+              The Ironman finish line mattered far less
+              than the realization it left behind:
+              you can endure more than you think.
             </p>
 
             <p>
-              And it is true in leadership.
+              And when the inevitable headwinds hit,
+              your operating system is what remains.
             </p>
 
             <p>
-              The Ironman finish line mattered far less than the realization that came
-              from it: you can endure more than you think.
+              I bring that same wiring to enterprise transformation
+              and AI operations — helping teams install the habits,
+              governance, and composure required to navigate chaos
+              without breaking.
             </p>
 
             <p>
-              And when the plan inevitably breaks, your operating system is what remains.
-            </p>
-
-            <p>
-              I bring that same mindset to enterprise transformation and AI operations —
-              helping teams build the infrastructure, governance, and habits that
-              sustain performance through uncertainty and change.
-            </p>
-
-            <p>
-              If you're leading an organization that values disciplined execution and
-              steady leadership under pressure, I'd welcome the conversation.
+              If you're leading an organization that needs to perform
+              when conditions turn ugly, I'd welcome the conversation.
             </p>
 
             <div className="ar-divider"></div>
