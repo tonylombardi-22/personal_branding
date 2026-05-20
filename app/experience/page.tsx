@@ -184,6 +184,32 @@ export default function Experience() {
           line-height: 1.8;
           color: rgba(240,237,232,0.5);
           max-width: 560px;
+          margin-bottom: 36px;
+        }
+
+        /* ── RESUME DOWNLOAD ──────────────────── */
+        .ex-resume-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 12px 28px;
+          border: 0.5px solid rgba(200,169,110,0.45);
+          border-radius: 2px;
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #C8A96E;
+          transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .ex-resume-btn:hover {
+          background: rgba(200,169,110,0.08);
+        }
+
+        .ex-resume-btn svg {
+          flex-shrink: 0;
         }
 
         /* ── RULE ─────────────────────────────── */
@@ -479,6 +505,33 @@ export default function Experience() {
             Every engagement follows the same pattern — find the complexity, design the
             operating model, and deliver measurable results.
           </p>
+
+          {/* Resume download */}
+          <a
+            href="/tony-lombardi-resume.pdf"
+            download="Tony-Lombardi-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ex-resume-btn"
+            aria-label="Download Tony Lombardi resume PDF"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download Resume
+          </a>
         </section>
 
         <hr className="rule" />
@@ -544,7 +597,7 @@ export default function Experience() {
         {/* CTA */}
         <div className="ex-cta">
           <div>
-            <div className="ex-cta-headline">Let's build something that works.</div>
+            <div className="ex-cta-headline">If you&apos;re leading through uncertainty.</div>
             <div className="ex-cta-sub">Open to transformation leadership, consulting, and strategic advisory roles.</div>
           </div>
           <Link href="/contact" className="ex-cta-btn">Get in touch →</Link>
@@ -553,7 +606,7 @@ export default function Experience() {
         {/* Footer */}
         <footer className="ex-footer">
           <Link href="/" className="ex-footer-logo">
-            TonyLombardi<span>.ai</span>
+            tonylombardi<span>.ai</span>
           </Link>
           <div className="ex-footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="ex-footer-link">LinkedIn</a>
