@@ -832,7 +832,7 @@ export default function SalterraPage() {
               <div className="cs-artifact-panel fade-up">
                 <div className="cs-artifact-header">
                   <span className="cs-artifact-badge">Positioning Output</span>
-                  <span className="cs-artifact-file">salterra-positioning.md</span>
+                  <span className="cs-artifact-file">Positioning Strategy</span>
                 </div>
                 <div className="cs-artifact-body">
                   <div className="cs-artifact-row">
