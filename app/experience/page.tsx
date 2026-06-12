@@ -600,7 +600,7 @@ export default function Experience() {
             <div className="ex-cta-headline">If you&apos;re leading through uncertainty.</div>
             <div className="ex-cta-sub">Open to transformation leadership, consulting, and strategic advisory roles.</div>
           </div>
-          <Link href="/contact" className="ex-cta-btn">Get in touch →</Link>
+          <Link href="/work-with-me" className="ex-cta-btn">Work With Me →</Link>
         </div>
 
         {/* Footer */}
@@ -611,7 +611,7 @@ export default function Experience() {
           <div className="ex-footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="ex-footer-link">LinkedIn</a>
             <a href="/about" className="ex-footer-link">About</a>
-            <a href="/contact" className="ex-footer-link">Contact</a>
+            <a href="/work-with-me" className="ex-footer-link">Work With Me</a>
           </div>
         </footer>
       </div>

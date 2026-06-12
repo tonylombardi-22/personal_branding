@@ -14,14 +14,14 @@ export default function About() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
-          background: #0a0a0a;
+          background: #0d0d0d;
           color: #f0ede8;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', system-ui, sans-serif;
           -webkit-font-smoothing: antialiased;
         }
 
@@ -45,9 +45,9 @@ export default function About() {
         }
 
         .ab-h1 {
-          font-family: 'Cormorant Garamond', serif;
+          font-family: 'DM Serif Display', Georgia, serif;
           font-size: clamp(56px, 8vw, 86px);
-          font-weight: 600;
+          font-weight: 400;
           line-height: 0.93;
           color: #f0ede8;
           letter-spacing: -0.01em;
@@ -71,9 +71,9 @@ export default function About() {
         .ab-hero-stat:last-child { margin-bottom: 0; }
 
         .ab-hero-stat-num {
-          font-family: 'Cormorant Garamond', serif;
+          font-family: 'DM Serif Display', Georgia, serif;
           font-size: 38px;
-          font-weight: 600;
+          font-weight: 400;
           color: #C8A96E;
           line-height: 1;
         }
@@ -145,9 +145,9 @@ export default function About() {
         }
 
         .ab-section-title {
-          font-family: 'Cormorant Garamond', serif;
+          font-family: 'DM Serif Display', Georgia, serif;
           font-size: 38px;
-          font-weight: 600;
+          font-weight: 400;
           line-height: 1.05;
           color: #f0ede8;
           margin-bottom: 24px;
@@ -169,10 +169,10 @@ export default function About() {
         .ab-body:last-of-type { margin-bottom: 0; }
 
         .ab-pull {
-          font-family: 'Cormorant Garamond', serif;
+          font-family: 'DM Serif Display', Georgia, serif;
           font-size: 21px;
           font-style: italic;
-          font-weight: 500;
+          font-weight: 400;
           color: rgba(200,169,110,0.75);
           border-left: 1.5px solid rgba(200,169,110,0.25);
           padding: 4px 0 4px 22px;
@@ -188,7 +188,7 @@ export default function About() {
         }
 
         .ab-stat-num {
-          font-family: 'Cormorant Garamond', serif;
+          font-family: 'DM Serif Display', Georgia, serif;
           font-size: 40px;
           font-weight: 600;
           color: #C8A96E;
@@ -307,9 +307,9 @@ export default function About() {
         }
 
         .ab-cta-headline {
-          font-family: 'Cormorant Garamond', serif;
+          font-family: 'DM Serif Display', Georgia, serif;
           font-size: 40px;
-          font-weight: 600;
+          font-weight: 400;
           color: #0a0a0a;
           line-height: 1.05;
           margin-bottom: 8px;
@@ -350,9 +350,9 @@ export default function About() {
         }
 
         .ab-footer-logo {
-          font-family: 'Cormorant Garamond', serif;
+          font-family: 'DM Serif Display', Georgia, serif;
           font-size: 17px;
-          font-weight: 600;
+          font-weight: 400;
           letter-spacing: 0.04em;
           color: rgba(240,237,232,0.2);
           text-decoration: none;
@@ -430,7 +430,7 @@ export default function About() {
         }
       `}</style>
 
-      <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
+      <div style={{ background: "#0d0d0d", minHeight: "100vh" }}>
         <Navbar />
 
         {/* Hero */}
@@ -623,9 +623,9 @@ export default function About() {
             Featured
           </div>
           <div style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "'DM Serif Display', Georgia, serif",
             fontSize: "32px",
-            fontWeight: 600,
+            fontWeight: 400,
             color: "#f0ede8",
             marginBottom: "8px",
             lineHeight: 1.1,
