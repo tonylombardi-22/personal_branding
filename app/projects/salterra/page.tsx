@@ -808,8 +808,7 @@ export default function SalterraPage() {
             <div className="screenshot-grid">
               <div className="screenshot-card fade-up">
                 <div className="screenshot-card-header">
-                  <span className="screenshot-title">Homepage</span>
-                  <span className="screenshot-context">Brand entry point</span>
+                  <span className="screenshot-title">Homepage</span>                
                 </div>
                 <img
                   className="screenshot-image"
@@ -820,8 +819,7 @@ export default function SalterraPage() {
 
               <div className="screenshot-card fade-up">
                 <div className="screenshot-card-header">
-                  <span className="screenshot-title">Services</span>
-                  <span className="screenshot-context">Offer architecture</span>
+                  <span className="screenshot-title">Services</span>                  
                 </div>
                 <img
                   className="screenshot-image"
@@ -832,8 +830,7 @@ export default function SalterraPage() {
 
               <div className="screenshot-card fade-up">
                 <div className="screenshot-card-header">
-                  <span className="screenshot-title">About</span>
-                  <span className="screenshot-context">Founder credibility</span>
+                  <span className="screenshot-title">About</span>                  
                 </div>
                 <img
                   className="screenshot-image"
