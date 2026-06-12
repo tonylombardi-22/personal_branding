@@ -1,476 +1,485 @@
 import Navbar from "@/components/Navbar";
+import ScrollAnimations from "@/components/ScrollAnimations";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const dynamic = 'force-static';
-
 export const metadata: Metadata = {
   title: "Projects | Tony Lombardi",
-  description:
-    "DMV 2.0 · The Fight Don · Jared P. Grenier Scholarship Foundation · The Hybrid Athlete Milestone · Travelers ITLDP. Five projects that show the range.",
+  description: "A portfolio of builds, systems, and ventures. Real work, real outcomes — not a resume.",
 };
 
-const projects = [
-  {
-    number: "01",
-    name: "DMV 2.0",
-    positioning:
-      "A mobile-first GovTech disruption concept that would replace Connecticut's in-person vehicle registration process with an on-demand, Uber-style field service — designed, patented, and pitched at the gubernatorial level.",
-    summary:
-      "Connecticut's DMV registration process for private vehicle sales was paper-heavy, slow, and required in-person visits — friction the system had accepted for decades. Tony founded LCL Business Solutions, assembled a four-person team, and designed a dual mobile app allowing consumers to schedule a registration appointment while a trained DMV 2.0 field employee came to their location, processed all documentation via mobile OCR and VIN verification, collected payment, and installed plates on the spot. A non-provisional patent application was filed with the USPTO and a trademark application was cleared. The concept was adopted as a policy platform element by a major-party Connecticut gubernatorial campaign before the project was discontinued following the 2018 election.",
-    proofPoints: [
-      "USPTO non-provisional patent filed August 13, 2018 (App. No. 16/102,677); converted to provisional No. 62/763,133 with Anthony Dominic Lombardi as named inventor",
-      "USPTO trademark application (Serial No. 88132179) cleared with no conflicting marks",
-      "Concept formally adopted by the Bob Stefanowski 2018 Connecticut gubernatorial campaign as a policy platform element",
-    ],
-    tags: ["GovTech", "Product Design", "Patent", "Startup", "Digital Transformation"],
-    role: "Founder & President, LCL Business Solutions",
-    year: "2017 — 2018",
-  },
-  {
-    number: "02",
-    name: "The Fight Don — Digital Platform & AI Operations",
-    positioning:
-      "A complete digital operating infrastructure and AI-enabled performance analytics platform built from zero for a growth-stage combat sports organization.",
-    summary:
-      "A launching combat sports organization had no technology infrastructure, no digital operating model, and no playbook — everything needed to be stood up simultaneously with active business operations. Tony designed and deployed the full collaboration and productivity stack, architected a modular training platform spanning MMA, BJJ, boxing, Muay Thai, and bare-knuckle disciplines, and built fighter performance analytics infrastructure capturing training load, progression, and fight preparation metrics. He simultaneously designed a two-phase consumer digital platform roadmap — Phase 1 monetizing sponsorships and ticket sales to self-fund Phase 2's full platform buildout — and developed a structured sponsorship pipeline converting ad hoc conversations into a tracked, measurable revenue stream.",
-    proofPoints: [
-      "Full digital operating stack — Slack, Google Workspace, Dropbox, Monday.com — live within the first 30 days from zero legacy foundation",
-      "Two-phase consumer platform roadmap designed to self-fund the full platform buildout through early-stage revenue operations — no external capital required for Phase 1",
-      "Complete digital operating model designed, standing, and actively generating revenue operations within the first 120 days of engagement",
-    ],
-    tags: ["AI-Enabled Operations", "Sports Technology", "Operating Model Design", "Digital Infrastructure", "Startup"],
-    role: "Director, Digital Transformation & AI Operations",
-    year: "2025 — Present",
-  },
-  {
-    number: "03",
-    name: "Jared P. Grenier Scholarship Foundation",
-    positioning:
-      "A living tribute to a friend who deserved to be remembered — a 501(c)(3) scholarship founded in 2006 that has awarded a graduating Southington High School senior every single year since.",
-    summary:
-      "In 2006, following the loss of a close friend, Tony Lombardi co-founded the Jared P. Grenier Scholarship Foundation alongside Jared's friends and family — not as a career accomplishment, but because the people who loved him wanted his memory to mean something beyond grief. Tony secured full 501(c)(3) nonprofit status, designed the annual selection process from scratch, and has served as President continuously since founding. The scholarship is awarded each year to a graduating senior from Southington High School who best embodies the values Jared represented: friendship, loyalty, and love. Applicants submit a peer reference, a photograph, and an essay describing what friendship means to them and how the photograph relates to it. Nearly two decades later, the award has never been missed.",
-    proofPoints: [
-      "Full 501(c)(3) nonprofit status obtained and maintained since 2006",
-      "Annual scholarship awarded to a Southington High School graduating senior every year without interruption for nearly 20 years",
-      "Four-person board — President, Vice President, Secretary, Treasurer — sustained across the full tenure with no external funding or institutional support",
-    ],
-    tags: ["501(c)(3) Governance", "Nonprofit Operations", "Program Design", "Award Administration", "Community Institution Building"],
-    role: "Co-Founder & President",
-    year: "2006 — Present",
-  },
-  {
-    number: "04",
-    name: "The Hybrid Athlete Milestone",
-    positioning:
-      "An active pursuit of a first-of-its-kind athletic milestone: a sanctioned MMA fight and a full-distance Ironman triathlon in the same calendar year — built on a 7-Ironman, 20-marathon endurance foundation and a combat sports development track begun in 2025.",
-    summary:
-      "Tony Lombardi has competed in endurance sports since 2007, accumulating seven Ironman finishes and more than twenty marathon completions before stepping back from competition during a period of major life transition from 2014 to 2019. He returned to Ironman competition in 2021 — completing Ironman Florida under severe race conditions — and has finished Ironman Florida again in 2023 and 2024. Beginning in spring 2025, he added combat sports: Brazilian Jiu-Jitsu, kickboxing, Muay Thai, and MMA, completing two competitive BJJ matches and one live unsanctioned MMA smoker round. He is currently a BJJ white belt with one stripe, targeting blue belt as the prerequisite for sanctioned MMA competition. The dual milestone is actively in progress — timing contingent on belt progression. The discipline, sequencing, and long-term goal execution that defines this pursuit is the same operating model applied across every professional engagement in the career.",
-    proofPoints: [
-      "Seven Ironman finishes, including three consecutive post-comeback completions at Ironman Florida in 2021, 2023, and 2024",
-      "Two competitive BJJ matches and one live unsanctioned MMA smoker round completed",
-      "PADI Rescue Diver certified in 2023, including Emergency First Responder certification — sustaining a scuba practice begun with Junior Open Water certification in 1996",
-    ],
-    tags: ["Endurance Performance", "Combat Sports Development", "Multi-Discipline Training", "Long-Horizon Goal Execution", "Performance Analytics"],
-    role: "Athlete — In Progress",
-    year: "2007 — Present",
-  },
-  {
-    number: "05",
-    name: "Travelers IT Leadership Development Program",
-    positioning:
-      "The origin of a full-stack delivery career: selected into one of financial services' most competitive corporate leadership programs — top 30% of 3,000+ applicants, 10–15 accepted — rotating through developer, BA, project lead, and PM seats on mission-critical systems.",
-    summary:
-      "Tony Lombardi entered Travelers' IT Leadership Development Program in 2006 after earning a contingent full-time offer through a 2005 summer internship, completing his M.S. in Information Systems with a 3.92 GPA to qualify. Over five rotations across five distinct business units, he held nearly every role on a modern delivery team simultaneously — developer, business analyst, QA tester, Scrum Master, budget owner, and team leader — often within a single engagement. He also chaired the Leadership Development Intern Program during his LDP tenure, designing programming, mentoring early-career talent, and running the pipeline that fed future cohorts. The breadth of that foundation — built at a Fortune 100 insurer alongside ThoughtWorks consultants, years before Agile reached mainstream corporate adoption — is the ground-level credibility that distinguishes every transformation leadership role that followed.",
-    proofPoints: [
-      "Selected into the Travelers ITLDP in the top 30% of a cohort drawn from 3,000+ applicants — 10 to 15 participants accepted annually",
-      "Completed five rotations across five distinct business units spanning Agile development, infrastructure project management, QA team leadership, waterfall budget delivery, and legacy system modernization",
-      "Chaired the Leadership Development Intern Program during LDP tenure — designing programming and mentoring early-career talent across the full early-in-career pipeline",
-    ],
-    tags: ["Fortune 100 Enterprise", "Multi-Role Delivery Immersion", "Early-Career Foundation", "Agile Methodology", "Talent Development"],
-    role: "IT Leadership Development Program",
-    year: "2006 — 2012",
-  },
-];
-
-export default function Projects() {
+export default function ProjectsPage() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
-          background: #0a0a0a;
+          background: #0d0d0d;
           color: #f0ede8;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', system-ui, sans-serif;
+          font-size: 16px;
+          line-height: 1.65;
           -webkit-font-smoothing: antialiased;
         }
 
-        /* ── HERO ─────────────────────────────── */
-        .pj-hero {
-          padding: 100px 48px 80px;
-          max-width: 1100px;
-          margin: 0 auto;
+        a { color: inherit; text-decoration: none; }
+        ul { list-style: none; }
+
+        .container {
+          width: 100%;
+          max-width: 1120px;
+          margin-inline: auto;
+          padding-inline: 2rem;
         }
 
-        .pj-eyebrow {
-          font-size: 11px;
+        .section-label {
+          font-size: 0.72rem;
+          font-weight: 600;
           letter-spacing: 0.14em;
           text-transform: uppercase;
-          color: rgba(240,237,232,0.3);
-          margin-bottom: 28px;
+          color: #c9a96e;
+          margin-bottom: 2rem;
         }
 
-        .pj-h1 {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(52px, 7vw, 78px);
+        .btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.75rem 1.75rem;
+          border-radius: 4px;
+          font-family: 'Inter', system-ui, sans-serif;
+          font-size: 0.9rem;
           font-weight: 600;
-          line-height: 0.93;
-          color: #f0ede8;
-          margin-bottom: 32px;
+          letter-spacing: 0.02em;
+          cursor: pointer;
+          transition: all 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          border: 1.5px solid transparent;
+          text-decoration: none;
+        }
+
+        .btn-primary {
+          background: #c9a96e;
+          color: #0d0d0d;
+          border-color: #c9a96e;
+        }
+        .btn-primary:hover {
+          background: #d4b07a;
+          border-color: #d4b07a;
+          box-shadow: 0 0 24px rgba(201,169,110,0.28);
+          transform: translateY(-1px);
+        }
+
+        .btn-large { padding: 1rem 2.5rem; font-size: 1rem; }
+
+        /* Page hero */
+        .page-hero {
+          padding-top: calc(68px + 5rem);
+          padding-bottom: 5rem;
+          position: relative;
+          overflow: hidden;
+        }
+        .page-hero::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse 60% 50% at 70% 30%, rgba(201,169,110,0.07) 0%, transparent 65%);
+          pointer-events: none;
+        }
+
+        .page-hero-content {
+          max-width: 640px;
+          position: relative;
+        }
+
+        .page-eyebrow {
+          font-size: 0.8rem;
+          font-weight: 500;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+          color: #c9a96e;
+          margin-bottom: 1rem;
+        }
+
+        .page-headline {
+          font-family: 'DM Serif Display', Georgia, serif;
+          font-size: clamp(3rem, 7vw, 6rem);
+          font-weight: 400;
+          line-height: 0.95;
+          color: #ffffff;
+          margin-bottom: 2rem;
           letter-spacing: -0.01em;
         }
 
-        .pj-h1 em {
-          color: #C8A96E;
-          font-style: italic;
+        .page-subline {
+          font-size: 1.05rem;
+          color: #888880;
+          line-height: 1.75;
+          max-width: 540px;
         }
 
-        .pj-lead {
-          font-size: 15px;
-          font-weight: 300;
-          line-height: 1.8;
-          color: rgba(240,237,232,0.5);
-          max-width: 560px;
+        /* Hub grid */
+        .inner-section {
+          padding-block: 4rem 6rem;
         }
 
-        /* ── RULE ─────────────────────────────── */
-        .rule {
-          border: none;
-          border-top: 0.5px solid rgba(240,237,232,0.08);
-          margin: 0 48px;
-        }
-
-        /* ── PROJECT CARDS ────────────────────── */
-        .pj-projects {
+        .hub-grid {
           display: flex;
           flex-direction: column;
           gap: 1px;
-          background: rgba(240,237,232,0.06);
+          background: #2a2a2a;
+          border: 1px solid #2a2a2a;
+          border-radius: 12px;
+          overflow: hidden;
         }
 
-        .pj-project {
-          background: #0a0a0a;
-          padding: 72px 48px;
+        .hub-card {
           display: grid;
-          grid-template-columns: 260px 1fr;
-          gap: 72px;
-          transition: background 0.2s ease;
+          grid-template-columns: 280px 1fr;
+          gap: 0;
+          background: #141414;
+          transition: background 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
+        .hub-card:hover { background: #1c1c1c; }
 
-        .pj-project:hover { background: #0d0d0d; }
-
-        /* Left column */
-        .pj-left {}
-
-        .pj-num {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 13px;
-          font-weight: 500;
-          color: rgba(200,169,110,0.4);
-          letter-spacing: 0.1em;
-          margin-bottom: 16px;
-        }
-
-        .pj-name {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 26px;
-          font-weight: 600;
-          color: #f0ede8;
-          line-height: 1.15;
-          margin-bottom: 10px;
-        }
-
-        .pj-role {
-          font-size: 11px;
-          color: rgba(240,237,232,0.3);
-          letter-spacing: 0.04em;
-          margin-bottom: 4px;
-          line-height: 1.5;
-        }
-
-        .pj-year {
-          font-size: 11px;
-          color: rgba(240,237,232,0.2);
-          letter-spacing: 0.06em;
-          margin-bottom: 24px;
-        }
-
-        .pj-tags {
+        .hub-card-left {
+          padding: 3rem 2.5rem;
+          border-right: 1px solid #2a2a2a;
           display: flex;
           flex-direction: column;
-          gap: 5px;
+          justify-content: space-between;
+          gap: 2rem;
         }
 
-        .pj-tag {
-          display: inline-block;
-          font-size: 10px;
-          letter-spacing: 0.08em;
-          color: rgba(200,169,110,0.65);
-          border: 0.5px solid rgba(200,169,110,0.2);
-          padding: 3px 10px;
-          border-radius: 2px;
-          width: fit-content;
-          transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        .hub-card-num {
+          font-size: 0.72rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          color: #c9a96e;
+          margin-bottom: 0.75rem;
+        }
+
+        .hub-card-title {
+          font-family: 'DM Serif Display', Georgia, serif;
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: #ffffff;
+          margin-bottom: 0.5rem;
+          line-height: 1.15;
+        }
+
+        .hub-card-category {
+          font-size: 0.75rem;
+          font-weight: 500;
+          letter-spacing: 0.06em;
+          color: #888880;
+          text-transform: uppercase;
+        }
+
+        .hub-card-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 0.85rem;
+          font-weight: 600;
+          color: #c9a96e;
+          text-decoration: none;
+          letter-spacing: 0.02em;
+          transition: gap 0.22s ease, opacity 0.22s ease;
+        }
+        .hub-card-link:hover { gap: 0.75rem; }
+        .hub-card-link--disabled {
+          opacity: 0.35;
+          pointer-events: none;
           cursor: default;
         }
 
-        .pj-tag:hover {
-          color: #C8A96E;
-          border-color: rgba(200,169,110,0.55);
-          background: rgba(200,169,110,0.06);
-        }
-
-        /* Right column */
-        .pj-right {}
-
-        .pj-positioning {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 20px;
-          font-style: italic;
-          font-weight: 500;
-          color: rgba(200,169,110,0.75);
-          line-height: 1.45;
-          margin-bottom: 28px;
-          border-left: 1.5px solid rgba(200,169,110,0.25);
-          padding-left: 22px;
-        }
-
-        .pj-summary {
-          font-size: 13.5px;
-          font-weight: 300;
-          line-height: 1.95;
-          color: rgba(240,237,232,0.5);
-          margin-bottom: 36px;
-        }
-
-        .pj-proof-label {
-          font-size: 10px;
-          letter-spacing: 0.12em;
-          text-transform: uppercase;
-          color: rgba(240,237,232,0.2);
-          margin-bottom: 16px;
-        }
-
-        .pj-proof-items {
+        .hub-card-right {
+          padding: 3rem 2.5rem;
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 1.5rem;
         }
 
-        .pj-proof-item {
+        .hub-summary {
+          font-size: 0.95rem;
+          color: #888880;
+          line-height: 1.75;
+          margin-bottom: 0.5rem;
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid #2a2a2a;
+        }
+
+        .hub-trio-item {
           display: flex;
-          gap: 14px;
-          align-items: flex-start;
+          flex-direction: column;
+          gap: 0.35rem;
         }
 
-        .pj-proof-dash {
-          color: #C8A96E;
-          opacity: 0.5;
-          flex-shrink: 0;
-          font-size: 14px;
-          padding-top: 1px;
+        .hub-trio-label {
+          font-size: 0.68rem;
+          font-weight: 700;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: #c9a96e;
         }
 
-        .pj-proof-text {
-          font-size: 13px;
-          font-weight: 300;
-          color: rgba(240,237,232,0.45);
+        .hub-trio-item p {
+          font-size: 0.875rem;
+          color: #888880;
           line-height: 1.65;
         }
 
-        /* ── CTA ──────────────────────────────── */
-        .pj-cta {
-          background: #C8A96E;
-          padding: 72px 48px;
+        /* Page CTA */
+        .page-cta {
+          padding-block: 9rem;
+          background: #141414;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+        }
+        .page-cta::before {
+          content: '';
+          position: absolute;
+          top: 0; left: 0; right: 0;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, #c9a96e, transparent);
+        }
+        .page-cta::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(201,169,110,0.04) 0%, transparent 70%);
+          pointer-events: none;
+        }
+
+        .page-cta-inner {
+          max-width: 580px;
+          margin-inline: auto;
+          padding-inline: 2rem;
+          position: relative;
+          z-index: 1;
+        }
+
+        .page-cta-headline {
+          font-family: 'DM Serif Display', Georgia, serif;
+          font-size: clamp(1.8rem, 4vw, 3rem);
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 1.15;
+          margin-bottom: 1.5rem;
+        }
+
+        .page-cta-copy {
+          font-size: 1rem;
+          color: #888880;
+          line-height: 1.7;
+          margin-bottom: 3rem;
+        }
+
+        .page-cta-actions { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+
+        /* Footer */
+        .site-footer { padding-block: 4rem; background: #0d0d0d; }
+
+        .footer-inner {
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: space-between;
-          gap: 40px;
+          gap: 0.5rem;
+          text-align: center;
+          width: 100%;
+          max-width: 1120px;
+          margin-inline: auto;
+          padding-inline: 2rem;
         }
 
-        .pj-cta-headline {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 40px;
-          font-weight: 600;
-          color: #0a0a0a;
-          margin-bottom: 8px;
-          line-height: 1.05;
-        }
-
-        .pj-cta-sub {
-          font-size: 13px;
-          font-weight: 300;
-          color: rgba(10,10,10,0.58);
-        }
-
-        .pj-cta-btn {
-          background: #0a0a0a;
-          color: #f0ede8;
-          padding: 15px 36px;
-          font-size: 12.5px;
-          letter-spacing: 0.08em;
-          border-radius: 2px;
-          text-decoration: none;
-          white-space: nowrap;
-          flex-shrink: 0;
-          transition: opacity 0.2s ease;
-        }
-
-        .pj-cta-btn:hover { opacity: 0.85; }
-
-        /* ── FOOTER ───────────────────────────── */
-        .pj-footer {
-          padding: 36px 48px;
-          border-top: 0.5px solid rgba(240,237,232,0.08);
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          max-width: 1200px;
-          margin: 0 auto;
-          flex-wrap: wrap;
-          gap: 16px;
-        }
-
-        .pj-footer-logo {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 17px;
-          font-weight: 600;
-          letter-spacing: 0.04em;
-          color: rgba(240,237,232,0.2);
+        .footer-logo {
+          font-family: 'DM Serif Display', Georgia, serif;
+          font-size: 1.2rem;
+          color: #ffffff;
           text-decoration: none;
         }
+        .footer-copy { font-size: 0.8rem; color: #888880; letter-spacing: 0.06em; }
+        .footer-legal { font-size: 0.75rem; color: #555; }
 
-        .pj-footer-logo span { color: rgba(200,169,110,0.35); }
-
-        .pj-footer-links {
-          display: flex;
-          gap: 28px;
-        }
-
-        .pj-footer-link {
-          font-size: 12px;
-          color: rgba(240,237,232,0.25);
-          text-decoration: none;
-          letter-spacing: 0.04em;
-          transition: color 0.2s ease;
-        }
-
-        .pj-footer-link:hover { color: rgba(240,237,232,0.55); }
-
-        /* ── RESPONSIVE ───────────────────────── */
+        /* Responsive */
         @media (max-width: 900px) {
-          .pj-hero { padding: 72px 24px 64px; }
-          .rule { margin: 0 24px; }
+          .hub-card { grid-template-columns: 1fr; }
+          .hub-card-left { border-right: none; border-bottom: 1px solid #2a2a2a; padding-bottom: 2rem; }
+        }
 
-          .pj-project {
-            grid-template-columns: 1fr;
-            gap: 32px;
-            padding: 48px 24px;
-          }
-
-          .pj-tags { flex-direction: row; flex-wrap: wrap; }
-
-          .pj-cta {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 56px 24px;
-          }
-
-          .pj-footer {
-            padding: 32px 24px;
-            flex-direction: column;
-            align-items: flex-start;
-          }
+        @media (max-width: 640px) {
+          .page-hero { padding-top: calc(68px + 2.5rem); }
+          .hub-card-left, .hub-card-right { padding: 2rem; }
         }
       `}</style>
 
-      <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
+      <div style={{ background: "#0d0d0d", minHeight: "100vh" }}>
         <Navbar />
+        <ScrollAnimations />
 
         {/* Hero */}
-        <section className="pj-hero">
-          <div className="pj-eyebrow">Projects</div>
-          <h1 className="pj-h1">
-            Built from<br />
-            <em>zero.</em>
-          </h1>
-          <p className="pj-lead">
-            Not every project lives on a resume. These are the ones that required
-            building something that didn't exist — a product, a platform, an operating
-            model — from a blank page.
-          </p>
+        <section className="page-hero">
+          <div className="container">
+            <div className="page-hero-content fade-up">
+              <p className="page-eyebrow">Portfolio</p>
+              <h1 className="page-headline">Built.<br />Shipped.<br />Working.</h1>
+              <p className="page-subline">These aren't concepts or proposals. They're things that got built — brands, systems, frameworks, and research engines — each with a real problem at the start and a real outcome at the end.</p>
+            </div>
+          </div>
         </section>
 
-        <hr className="rule" />
+        {/* Projects */}
+        <section className="inner-section">
+          <div className="container">
+            <div className="hub-grid">
 
-        {/* Project cards */}
-        <div className="pj-projects">
-          {projects.map((project) => (
-            <div key={project.number} className="pj-project">
-              {/* Left */}
-              <div className="pj-left">
-                <div className="pj-num">{project.number}</div>
-                <div className="pj-name">{project.name}</div>
-                <div className="pj-role">{project.role}</div>
-                <div className="pj-year">{project.year}</div>
-                <div className="pj-tags">
-                  {project.tags.map((tag) => (
-                    <span key={tag} className="pj-tag">{tag}</span>
-                  ))}
+              {/* Salterra */}
+              <article className="hub-card fade-up">
+                <div className="hub-card-left">
+                  <div>
+                    <p className="hub-card-num">01</p>
+                    <h2 className="hub-card-title">Salterra Enterprises</h2>
+                    <p className="hub-card-category">Brand / Web / Launch</p>
+                  </div>
+                  <Link href="/projects/salterra" className="hub-card-link">
+                    Read the case study
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </Link>
                 </div>
-              </div>
+                <div className="hub-card-right">
+                  <p className="hub-summary">A financial services operations leader with decades of enterprise experience stepping out independently — with no brand, no website, and no service structure. Built everything from scratch: brand positioning, website, service architecture, and launch strategy. Market-ready in a single coordinated pass.</p>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Challenge</span>
+                    <p>Financial services operator launching independently with no brand, no digital presence, and no defined service offerings.</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Build</span>
+                    <p>Full brand positioning, website design and build, service architecture, CTA flow design, and practical launch strategy.</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Outcome</span>
+                    <p>Market-ready consulting brand launched with a credible digital presence and service structure that enables confident sales conversations.</p>
+                  </div>
+                </div>
+              </article>
 
-              {/* Right */}
-              <div className="pj-right">
-                <div className="pj-positioning">{project.positioning}</div>
-                <p className="pj-summary">{project.summary}</p>
-                <div className="pj-proof-label">Proof points</div>
-                <div className="pj-proof-items">
-                  {project.proofPoints.map((point, i) => (
-                    <div key={i} className="pj-proof-item">
-                      <div className="pj-proof-dash">—</div>
-                      <div className="pj-proof-text">{point}</div>
-                    </div>
-                  ))}
+              {/* TonyOS */}
+              <article className="hub-card fade-up">
+                <div className="hub-card-left">
+                  <div>
+                    <p className="hub-card-num">02</p>
+                    <h2 className="hub-card-title">TonyOS</h2>
+                    <p className="hub-card-category">Operating System / Framework</p>
+                  </div>
+                  <Link href="/tonyos" className="hub-card-link">
+                    Explore TonyOS
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </Link>
                 </div>
-              </div>
+                <div className="hub-card-right">
+                  <p className="hub-summary">Not a product, not a methodology — an operating framework built from years of pattern recognition across business leadership, independent building, and life design. TonyOS is the system behind how I think, decide, build, and advise. Every client engagement runs through it.</p>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Challenge</span>
+                    <p>Building a coherent personal operating framework from years of pattern recognition across business, life, and execution — and making it legible enough to be useful.</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Build</span>
+                    <p>An integrated framework connecting life pattern recognition, execution systems, and practical decision-making — designed to be applied, not archived.</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Outcome</span>
+                    <p>A living operating system that drives every engagement. Not a methodology deck — a working framework that shapes real decisions.</p>
+                  </div>
+                </div>
+              </article>
+
+              {/* The Fight Don */}
+              <article className="hub-card fade-up">
+                <div className="hub-card-left">
+                  <div>
+                    <p className="hub-card-num">03</p>
+                    <h2 className="hub-card-title">The Fight Don</h2>
+                    <p className="hub-card-category">Brand / Community / Business Model</p>
+                  </div>
+                  <span className="hub-card-link hub-card-link--disabled" aria-disabled="true">
+                    Coming soon
+                  </span>
+                </div>
+                <div className="hub-card-right">
+                  <p className="hub-summary">A combat sports coaching brand built around making combat sports accessible to ordinary people — not elite athletes. The problem was real expertise and community energy with no scalable structure to turn it into a business. The build covered everything from brand to business model.</p>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Challenge</span>
+                    <p>How do you turn combat sports expertise, coaching, and community energy into a scalable business that serves people who aren't already athletes?</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Build</span>
+                    <p>Brand positioning, coaching framework, content system, community strategy, and digital platform architecture designed around a repeatable model.</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Outcome</span>
+                    <p>A repeatable model for helping ordinary people enter combat sports with structure, confidence, and momentum — not just access to a gym.</p>
+                  </div>
+                </div>
+              </article>
+
+              {/* Cuba Property Research */}
+              <article className="hub-card fade-up">
+                <div className="hub-card-left">
+                  <div>
+                    <p className="hub-card-num">04</p>
+                    <h2 className="hub-card-title">Cuba Property Research</h2>
+                    <p className="hub-card-category">Research / Archival / Investigative</p>
+                  </div>
+                  <span className="hub-card-link hub-card-link--disabled" aria-disabled="true">
+                    Coming soon
+                  </span>
+                </div>
+                <div className="hub-card-right">
+                  <p className="hub-summary">Reconstructing a family property history across Cuba, exile, legal uncertainty, and decades of fragmented public records. An information problem with no obvious playbook — requiring a custom research system combining family accounts, historical maps, legal context, and archival evidence.</p>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Challenge</span>
+                    <p>How do you reconstruct a family property history across Cuba, exile, legal uncertainty, and fragmented public records — when no single source holds the answer?</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Build</span>
+                    <p>A structured research system combining family history, property clues, historical maps, legal context, and archival evidence into a coherent investigative framework.</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Outcome</span>
+                    <p>A clearer investigative path through an information problem with no obvious playbook — and a methodology transferable to similar cases.</p>
+                  </div>
+                </div>
+              </article>
+
             </div>
-          ))}
-        </div>
-
-        <hr className="rule" />
-
-        {/* CTA */}
-        <div className="pj-cta">
-          <div>
-            <div className="pj-cta-headline">Let's build something that works.</div>
-            <div className="pj-cta-sub">Open to transformation leadership, consulting, and strategic advisory roles.</div>
           </div>
-          <Link href="/contact" className="pj-cta-btn">Get in touch →</Link>
-        </div>
+        </section>
+
+        {/* Page CTA */}
+        <section className="page-cta">
+          <div className="page-cta-inner fade-up">
+            <h2 className="page-cta-headline">Have something worth building?</h2>
+            <p className="page-cta-copy">The problems I work on best are the ones where the path isn't obvious and the stakes are real. If that's where you are, let's talk.</p>
+            <div className="page-cta-actions">
+              <Link href="/work-with-me" className="btn btn-primary btn-large">Work With Me</Link>
+            </div>
+          </div>
+        </section>
 
         {/* Footer */}
-        <footer className="pj-footer">
-          <Link href="/" className="pj-footer-logo">
-            tonyLombardi<span>.ai</span>
-          </Link>
-          <div className="pj-footer-links">
-            <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="pj-footer-link">LinkedIn</a>
-            <a href="/experience" className="pj-footer-link">Experience</a>
-            <a href="/contact" className="pj-footer-link">Contact</a>
+        <footer className="site-footer">
+          <div className="footer-inner">
+            <Link href="/" className="footer-logo">Tony Lombardi</Link>
+            <p className="footer-copy">Builder. Designer. Advisor.</p>
+            <p className="footer-legal">&copy; {new Date().getFullYear()} Tony Lombardi. All rights reserved.</p>
           </div>
         </footer>
       </div>
