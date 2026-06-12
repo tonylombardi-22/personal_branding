@@ -5,14 +5,14 @@ import PageTransition from "@/components/PageTransition";
 import CustomCursor from "@/components/CustomCursor";
 
 export const metadata: Metadata = {
-  title: "Tony Lombardi | Enterprise Transformation & AI Operations",
+  title: "Tony Lombardi — Builder. Designer. Advisor.",
   description:
-    "High-agency operator with range. 20+ years leading enterprise transformation, AI-enabled operations, and platform strategy across insurance, financial services, SaaS, and sports technology.",
+    "When the path isn't obvious, I build the system that gets people moving again. 18+ years enterprise transformation, AI systems, and independent consulting.",
   metadataBase: new URL("https://tonylombardi.ai"),
   openGraph: {
-    title: "Tony Lombardi | Enterprise Transformation & AI Operations",
+    title: "Tony Lombardi — Builder. Designer. Advisor.",
     description:
-      "High-agency operator with range. $8.6M portfolios, $5B+ in client assets, 7× Ironman finisher.",
+      "When the path isn't obvious, I build the system that gets people moving again.",
     url: "https://tonylombardi.ai",
     siteName: "tonylombardi.ai",
     locale: "en_US",
@@ -22,15 +22,15 @@ export const metadata: Metadata = {
         url: "https://tonylombardi.ai/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Tony Lombardi — Enterprise Transformation & AI Operations",
+        alt: "Tony Lombardi — Builder. Designer. Advisor.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tony Lombardi | Enterprise Transformation & AI Operations",
+    title: "Tony Lombardi — Builder. Designer. Advisor.",
     description:
-      "High-agency operator with range. $8.6M portfolios, $5B+ in client assets, 7× Ironman finisher.",
+      "When the path isn't obvious, I build the system that gets people moving again.",
     images: ["https://tonylombardi.ai/og-image.png"],
   },
   icons: {
@@ -53,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, padding: 0, background: "#0a0a0a" }}>
+      <body style={{ margin: 0, padding: 0, background: "#0d0d0d" }}>
         <CustomCursor />
         <PageTransition>
           {children}

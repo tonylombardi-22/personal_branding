@@ -7,16 +7,18 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  const isActive = (path: string) => pathname === path;
+  const isActive = (path: string) => pathname === path || pathname.startsWith(path + "/");
 
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
 
         .tl-nav {
-          background: #0d0d0d;
-          border-bottom: 0.5px solid rgba(240, 237, 232, 0.08);
+          background: rgba(13,13,13,0.92);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border-bottom: 1px solid rgba(240, 237, 232, 0.07);
           position: sticky;
           top: 0;
           z-index: 100;
@@ -36,7 +38,7 @@ export default function Navbar() {
           display: flex;
           align-items: center;
           padding-right: 32px;
-          border-right: 0.5px solid rgba(240, 237, 232, 0.1);
+          border-right: 0.5px solid rgba(240, 237, 232, 0.08);
           flex-shrink: 0;
           text-decoration: none;
           line-height: 0;
@@ -75,27 +77,33 @@ export default function Navbar() {
 
         .tl-link.active {
           color: #f0ede8;
-          background: rgba(200, 169, 110, 0.1);
+          background: rgba(201, 169, 110, 0.1);
         }
 
         .tl-cta {
           font-family: 'DM Sans', sans-serif;
           font-size: 11px;
-          font-weight: 500;
+          font-weight: 600;
           letter-spacing: 0.12em;
-          color: #C8A96E;
+          text-transform: uppercase;
+          color: #0d0d0d;
+          background: #c9a96e;
           text-decoration: none;
-          border: 0.5px solid rgba(200, 169, 110, 0.5);
           border-radius: 4px;
-          padding: 8px 18px;
-          transition: background 0.18s ease, border-color 0.18s ease;
+          padding: 9px 20px;
+          transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
           white-space: nowrap;
           flex-shrink: 0;
         }
 
         .tl-cta:hover {
-          background: rgba(200, 169, 110, 0.08);
-          border-color: rgba(200, 169, 110, 0.8);
+          background: #d4b07a;
+          box-shadow: 0 0 18px rgba(201,169,110,0.28);
+          transform: translateY(-1px);
+        }
+
+        .tl-cta.active {
+          box-shadow: 0 0 12px rgba(201,169,110,0.2);
         }
 
         .tl-hamburger {
@@ -121,7 +129,7 @@ export default function Navbar() {
           display: none;
           flex-direction: column;
           background: #0d0d0d;
-          border-top: 0.5px solid rgba(240, 237, 232, 0.08);
+          border-top: 0.5px solid rgba(240, 237, 232, 0.07);
           padding: 16px 24px 24px;
           gap: 4px;
         }
@@ -145,13 +153,14 @@ export default function Navbar() {
         .tl-mobile-cta {
           font-family: 'DM Sans', sans-serif;
           font-size: 13px;
-          font-weight: 500;
+          font-weight: 600;
           letter-spacing: 0.08em;
-          color: #C8A96E;
+          text-transform: uppercase;
+          color: #0d0d0d;
+          background: #c9a96e;
           text-decoration: none;
-          border: 0.5px solid rgba(200, 169, 110, 0.4);
           border-radius: 4px;
-          padding: 10px 16px;
+          padding: 12px 16px;
           text-align: center;
           margin-top: 12px;
         }
@@ -188,23 +197,20 @@ export default function Navbar() {
 
               <line x1="100" y1="84" x2="616" y2="84" stroke="#B3995E" strokeWidth="0.8"/>
 
-              {/* Tagline: single text element starting at x=100, same as TONY — natural word spacing */}
               <text x="100" y="118"
                 fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
                 fontSize="26" fontWeight="700" letterSpacing="4">
-                <tspan fill="#B3995E">AI &amp; </tspan><tspan fill="#FFFFFF">HUMAN </tspan><tspan fill="#B3995E">FACILITATOR</tspan>
+                <tspan fill="#B3995E">BUILDER · </tspan><tspan fill="#FFFFFF">DESIGNER · </tspan><tspan fill="#B3995E">ADVISOR</tspan>
               </text>
             </svg>
           </Link>
 
           <div className="tl-links">
-            <Link href="/about"      className={`tl-link${isActive("/about")      ? " active" : ""}`}>About</Link>
-            <Link href="/experience" className={`tl-link${isActive("/experience") ? " active" : ""}`}>Experience</Link>
-            <Link href="/projects"   className={`tl-link${isActive("/projects")   ? " active" : ""}`}>Projects</Link>
-            <Link href="/writing"    className={`tl-link${isActive("/writing")    ? " active" : ""}`}>Writing</Link>
+            <Link href="/projects" className={`tl-link${isActive("/projects") ? " active" : ""}`}>Projects</Link>
+            <Link href="/tonyos"   className={`tl-link${isActive("/tonyos")   ? " active" : ""}`}>TonyOS</Link>
           </div>
 
-          <Link href="/contact" className="tl-cta">GET IN TOUCH →</Link>
+          <Link href="/work-with-me" className={`tl-cta${isActive("/work-with-me") ? " active" : ""}`}>Work With Me</Link>
 
           <button
             className="tl-hamburger"
@@ -218,11 +224,9 @@ export default function Navbar() {
         </div>
 
         <div className={`tl-mobile-menu${menuOpen ? " open" : ""}`}>
-          <Link href="/about"      className={`tl-mobile-link${isActive("/about")      ? " active" : ""}`} onClick={() => setMenuOpen(false)}>About</Link>
-          <Link href="/experience" className={`tl-mobile-link${isActive("/experience") ? " active" : ""}`} onClick={() => setMenuOpen(false)}>Experience</Link>
-          <Link href="/projects"   className={`tl-mobile-link${isActive("/projects")   ? " active" : ""}`} onClick={() => setMenuOpen(false)}>Projects</Link>
-          <Link href="/writing"    className={`tl-mobile-link${isActive("/writing")    ? " active" : ""}`} onClick={() => setMenuOpen(false)}>Writing</Link>
-          <Link href="/contact"    className="tl-mobile-cta"                                               onClick={() => setMenuOpen(false)}>GET IN TOUCH →</Link>
+          <Link href="/projects"    className={`tl-mobile-link${isActive("/projects")    ? " active" : ""}`} onClick={() => setMenuOpen(false)}>Projects</Link>
+          <Link href="/tonyos"      className={`tl-mobile-link${isActive("/tonyos")      ? " active" : ""}`} onClick={() => setMenuOpen(false)}>TonyOS</Link>
+          <Link href="/work-with-me" className="tl-mobile-cta"                                               onClick={() => setMenuOpen(false)}>Work With Me</Link>
         </div>
       </nav>
     </>
