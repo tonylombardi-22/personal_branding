@@ -208,6 +208,7 @@ export default function Navbar() {
           <div className="tl-links">
             <Link href="/projects" className={`tl-link${isActive("/projects") ? " active" : ""}`}>Projects</Link>
             <Link href="/tonyos"   className={`tl-link${isActive("/tonyos")   ? " active" : ""}`}>TonyOS</Link>
+            <Link href="/about"    className={`tl-link${isActive("/about")    ? " active" : ""}`}>About</Link>
           </div>
 
           <Link href="/work-with-me" className={`tl-cta${isActive("/work-with-me") ? " active" : ""}`}>Work With Me</Link>
@@ -226,6 +227,7 @@ export default function Navbar() {
         <div className={`tl-mobile-menu${menuOpen ? " open" : ""}`}>
           <Link href="/projects"    className={`tl-mobile-link${isActive("/projects")    ? " active" : ""}`} onClick={() => setMenuOpen(false)}>Projects</Link>
           <Link href="/tonyos"      className={`tl-mobile-link${isActive("/tonyos")      ? " active" : ""}`} onClick={() => setMenuOpen(false)}>TonyOS</Link>
+          <Link href="/about"       className={`tl-mobile-link${isActive("/about")       ? " active" : ""}`} onClick={() => setMenuOpen(false)}>About</Link>
           <Link href="/work-with-me" className="tl-mobile-cta"                                               onClick={() => setMenuOpen(false)}>Work With Me</Link>
         </div>
       </nav>

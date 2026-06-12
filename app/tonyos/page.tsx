@@ -128,7 +128,7 @@ export default function TonyOSPage() {
 
         /* Page hero */
         .page-hero {
-          padding-top: calc(68px + 5rem);
+          padding-top: 2.5rem;
           padding-bottom: 5rem;
           position: relative;
           overflow: hidden;
@@ -331,14 +331,31 @@ export default function TonyOSPage() {
         .footer-copy { font-size: 0.8rem; color: #888880; letter-spacing: 0.06em; }
         .footer-legal { font-size: 0.75rem; color: #555; }
 
-        /* Responsive */
+        .footer-links {
+          display: flex;
+          gap: 1.5rem;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .footer-link {
+          font-size: 0.78rem;
+          color: #444;
+          text-decoration: none;
+          letter-spacing: 0.05em;
+          transition: color 0.2s ease;
+        }
+
+        .footer-link:hover { color: #888880; }
+
+                /* Responsive */
         @media (max-width: 900px) {
           .tos-principles { grid-template-columns: 1fr; }
           .tos-project-row { grid-template-columns: 1fr; gap: 0.75rem; }
         }
 
         @media (max-width: 640px) {
-          .page-hero { padding-top: calc(68px + 2.5rem); }
+          .page-hero { padding-top: 2rem; }
           .tos-principle { padding: 2rem; }
           .tos-project-row { padding: 1.5rem; }
         }
@@ -366,7 +383,6 @@ export default function TonyOSPage() {
               <div className="section-label">What TonyOS Is</div>
               <h2 className="inner-heading">A way of operating, not a model to sell</h2>
               <p className="inner-copy">TonyOS is the operating framework behind how I think, build, decide, and advise. It connects pattern recognition, execution systems, and practical decision-making into something coherent enough to apply consistently — across very different types of problems.</p>
-              <p className="inner-copy">It's called an operating system because that's what it is. Not a philosophy. Not a set of principles on a card. An actual system — a way of processing information, making decisions, and moving forward that I've refined across 18+ years of enterprise work, independent building, and the kind of life experiences that force real pattern recognition.</p>
               <p className="inner-copy">Every client engagement runs through this framework. Every project. Every decision. Not because it's a methodology I've packaged — because it's how I actually work.</p>
             </div>
           </div>
@@ -380,7 +396,6 @@ export default function TonyOSPage() {
               <h2 className="inner-heading">Most people operate reactively. This is the alternative.</h2>
               <p className="inner-copy">I built TonyOS because I noticed a pattern in how I was working — and in how most people I worked with were working. Operating reactively: responding to what shows up, defaulting to familiar approaches, confusing activity with progress.</p>
               <p className="inner-copy">The more complex the environment, the more expensive reactive operating gets. Enterprise transformation, independent practice, leadership under pressure — these situations don't reward people who are waiting to see what happens. They reward people who have a system for thinking through what's happening and deciding what to do about it.</p>
-              <p className="inner-copy">TonyOS is an attempt to operate deliberately. To bring the same rigor to how I think and decide that I bring to what I build.</p>
             </div>
           </div>
         </section>
@@ -486,7 +501,12 @@ export default function TonyOSPage() {
         <footer className="site-footer">
           <div className="footer-inner">
             <Link href="/" className="footer-logo">Tony Lombardi</Link>
-            <p className="footer-copy">Builder. Designer. Advisor.</p>
+            <div className="footer-links">
+              <Link href="/about" className="footer-link">About</Link>
+              <Link href="/projects" className="footer-link">Projects</Link>
+              <Link href="/work-with-me" className="footer-link">Work With Me</Link>
+              <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
+            </div>
             <p className="footer-legal">&copy; {new Date().getFullYear()} Tony Lombardi. All rights reserved.</p>
           </div>
         </footer>

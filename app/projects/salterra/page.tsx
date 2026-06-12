@@ -141,7 +141,7 @@ export default function SalterraPage() {
 
         /* Page hero */
         .page-hero {
-          padding-top: calc(68px + 5rem);
+          padding-top: 2.5rem;
           padding-bottom: 5rem;
           position: relative;
           overflow: hidden;
@@ -513,7 +513,159 @@ export default function SalterraPage() {
         .footer-copy { font-size: 0.8rem; color: #888880; letter-spacing: 0.06em; }
         .footer-legal { font-size: 0.75rem; color: #555; }
 
-        /* Responsive */
+        .footer-links {
+          display: flex;
+          gap: 1.5rem;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .footer-link {
+          font-size: 0.78rem;
+          color: #444;
+          text-decoration: none;
+          letter-spacing: 0.05em;
+          transition: color 0.2s ease;
+        }
+
+        .footer-link:hover { color: #888880; }
+
+                /* Proof / artifact panels */
+        .cs-artifact-panel {
+          margin-top: 3rem;
+          border: 1px solid rgba(201,169,110,0.25);
+          border-radius: 8px;
+          overflow: hidden;
+          background: rgba(201,169,110,0.03);
+        }
+
+        .cs-artifact-header {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: 1rem 1.75rem;
+          background: rgba(201,169,110,0.08);
+          border-bottom: 1px solid rgba(201,169,110,0.15);
+        }
+
+        .cs-artifact-badge {
+          font-size: 0.65rem;
+          font-weight: 700;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: #0d0d0d;
+          background: #c9a96e;
+          padding: 0.2rem 0.6rem;
+          border-radius: 2px;
+        }
+
+        .cs-artifact-file {
+          font-size: 0.8rem;
+          color: rgba(201,169,110,0.7);
+          font-family: 'Inter', monospace;
+          letter-spacing: 0.02em;
+        }
+
+        .cs-artifact-body {
+          padding: 1.5rem 1.75rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+        }
+
+        .cs-artifact-row {
+          display: grid;
+          grid-template-columns: 200px 1fr;
+          gap: 1.25rem;
+          align-items: start;
+          padding-bottom: 1.25rem;
+          border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+
+        .cs-artifact-row:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+
+        .cs-artifact-label {
+          font-size: 0.7rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #c9a96e;
+          padding-top: 0.15rem;
+        }
+
+        .cs-artifact-value {
+          font-size: 0.9rem;
+          color: #888880;
+          line-height: 1.65;
+        }
+
+        /* Pull quote */
+        .cs-pull-quote {
+          margin-top: 2.5rem;
+          padding: 1.5rem 2rem;
+          border-left: 3px solid #c9a96e;
+          background: rgba(201,169,110,0.04);
+          border-radius: 0 6px 6px 0;
+          font-family: 'DM Serif Display', Georgia, serif;
+          font-size: 1.2rem;
+          font-weight: 400;
+          font-style: italic;
+          color: rgba(240,237,232,0.75);
+          line-height: 1.55;
+        }
+
+        /* Service architecture cards */
+        .cs-service-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1px;
+          background: #2a2a2a;
+          border: 1px solid #2a2a2a;
+          border-radius: 8px;
+          overflow: hidden;
+          margin-top: 2.5rem;
+        }
+
+        .cs-service-card {
+          background: #141414;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          transition: background 0.22s ease;
+        }
+        .cs-service-card:hover { background: #1c1c1c; }
+
+        .cs-service-num {
+          font-family: 'DM Serif Display', Georgia, serif;
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: rgba(201,169,110,0.4);
+          line-height: 1;
+        }
+
+        .cs-service-name {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #ffffff;
+          line-height: 1.35;
+        }
+
+        .cs-service-scope {
+          font-size: 0.825rem;
+          color: #888880;
+          line-height: 1.65;
+        }
+
+        @media (max-width: 768px) {
+          .cs-artifact-row { grid-template-columns: 1fr; gap: 0.4rem; }
+          .cs-service-grid { grid-template-columns: 1fr; }
+        }
+
+                /* Responsive */
         @media (max-width: 900px) {
           .cs-overview-grid { grid-template-columns: 1fr; }
           .cs-stat-row { grid-template-columns: 1fr; }
@@ -522,7 +674,7 @@ export default function SalterraPage() {
         }
 
         @media (max-width: 640px) {
-          .page-hero { padding-top: calc(68px + 2.5rem); }
+          .page-hero { padding-top: 2rem; }
           .cs-step { grid-template-columns: 2rem 1fr; padding: 1.5rem; }
           .cs-outcome-card { padding: 2rem; }
         }
@@ -676,6 +828,27 @@ export default function SalterraPage() {
                 <li>Kept language direct and concrete — no generic consultant copy</li>
                 <li>Built differentiation on depth and relevance, not claims of uniqueness</li>
               </ul>
+
+              <div className="cs-artifact-panel fade-up">
+                <div className="cs-artifact-header">
+                  <span className="cs-artifact-badge">Positioning Output</span>
+                  <span className="cs-artifact-file">salterra-positioning.md</span>
+                </div>
+                <div className="cs-artifact-body">
+                  <div className="cs-artifact-row">
+                    <span className="cs-artifact-label">Primary Positioning</span>
+                    <span className="cs-artifact-value">Senior financial services operations consulting — for organizations navigating complex operational transitions, compliance requirements, and performance gaps that need someone who has run these systems from the inside.</span>
+                  </div>
+                  <div className="cs-artifact-row">
+                    <span className="cs-artifact-label">Ideal Client</span>
+                    <span className="cs-artifact-value">Regional banks, insurance carriers, and financial operations teams that need senior-level operational expertise without a full-time executive hire. Decision-makers who value depth over generalist advisory.</span>
+                  </div>
+                  <div className="cs-artifact-row">
+                    <span className="cs-artifact-label">Key Differentiator</span>
+                    <span className="cs-artifact-value">Operational depth from inside enterprise organizations — not strategic advisory positioning, not methodology-first consulting — direct pattern recognition from decades in the roles that built and ran these systems.</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -688,6 +861,10 @@ export default function SalterraPage() {
               <h2 className="inner-heading">Simple. Credible. Converts.</h2>
               <p className="inner-copy">A consulting website for an independent operator has one job: make the right client confident enough to reach out. It doesn't need to be complex. It needs to be clear.</p>
               <p className="inner-copy">The architecture was deliberately lean. One page for launch, structured around a single conversion path. The copy at every stage was written to either qualify the reader in or let them qualify themselves out — both outcomes are useful.</p>
+              <blockquote className="cs-pull-quote fade-up">
+                "The right clients read it and recognize themselves. The wrong ones move on. Both outcomes are correct."
+              </blockquote>
+
               <div className="trio-grid">
                 <div className="trio-cell">
                   <span className="trio-cell-label">Structure</span>
@@ -719,6 +896,23 @@ export default function SalterraPage() {
                 <li>Transformation leadership and advisory — providing senior-level operational leadership through periods of change</li>
                 <li>Implementation support — hands-on engagement to execute on operational improvements, not just recommend them</li>
               </ul>
+              <div className="cs-service-grid fade-up">
+                <div className="cs-service-card">
+                  <span className="cs-service-num">01</span>
+                  <h4 className="cs-service-name">Operational Assessment & Design</h4>
+                  <p className="cs-service-scope">Reviewing and restructuring operational models for efficiency, resilience, and measurable performance improvement.</p>
+                </div>
+                <div className="cs-service-card">
+                  <span className="cs-service-num">02</span>
+                  <h4 className="cs-service-name">Transformation Leadership</h4>
+                  <p className="cs-service-scope">Senior-level operational leadership through periods of change — transition, integration, or significant process redesign.</p>
+                </div>
+                <div className="cs-service-card">
+                  <span className="cs-service-num">03</span>
+                  <h4 className="cs-service-name">Implementation Support</h4>
+                  <p className="cs-service-scope">Hands-on engagement to execute on operational improvements — not just recommendations, but the follow-through to make them real.</p>
+                </div>
+              </div>
               <p className="inner-copy" style={{ marginTop: "2rem" }}>Each service was scoped as a client outcome, not a deliverable list. This matters because clients hire for results, not for process. The scoping also includes enough specificity to enable confident sales conversations without boxing the client into a rigid methodology.</p>
             </div>
           </div>
@@ -832,7 +1026,12 @@ export default function SalterraPage() {
         <footer className="site-footer">
           <div className="footer-inner">
             <Link href="/" className="footer-logo">Tony Lombardi</Link>
-            <p className="footer-copy">Builder. Designer. Advisor.</p>
+            <div className="footer-links">
+              <Link href="/about" className="footer-link">About</Link>
+              <Link href="/projects" className="footer-link">Projects</Link>
+              <Link href="/work-with-me" className="footer-link">Work With Me</Link>
+              <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
+            </div>
             <p className="footer-legal">&copy; {new Date().getFullYear()} Tony Lombardi. All rights reserved.</p>
           </div>
         </footer>

@@ -481,7 +481,7 @@ export default function Writing() {
               <strong>Tony Lombardi</strong> is an enterprise transformation and AI operations leader based in Fuquay-Varina, NC. His work focuses on disciplined execution, operational resilience, and helping teams navigate uncertainty, pressure, and change. You can find his work at <a href="https://tonylombardi.ai">tonylombardi.ai</a>.
             </p>
             <div className="ar-nav">
-              <Link href="/contact" className="ar-nav-link gold">Get in touch →</Link>
+              <Link href="/work-with-me" className="ar-nav-link gold">Work With Me →</Link>
               <Link href="/about" className="ar-nav-link">About Tony</Link>
               <Link href="/experience" className="ar-nav-link">Experience</Link>
             </div>
@@ -494,8 +494,8 @@ export default function Writing() {
           </Link>
           <div className="wr-footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="wr-footer-link">LinkedIn</a>
-            <a href="/experience" className="wr-footer-link">Experience</a>
-            <a href="/contact" className="wr-footer-link">Contact</a>
+            <a href="/about" className="wr-footer-link">About</a>
+            <a href="/work-with-me" className="wr-footer-link">Work With Me</a>
           </div>
         </footer>
       </div>

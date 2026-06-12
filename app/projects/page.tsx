@@ -76,7 +76,7 @@ export default function ProjectsPage() {
 
         /* Page hero */
         .page-hero {
-          padding-top: calc(68px + 5rem);
+          padding-top: 2.5rem;
           padding-bottom: 5rem;
           position: relative;
           overflow: hidden;
@@ -305,14 +305,31 @@ export default function ProjectsPage() {
         .footer-copy { font-size: 0.8rem; color: #888880; letter-spacing: 0.06em; }
         .footer-legal { font-size: 0.75rem; color: #555; }
 
-        /* Responsive */
+        .footer-links {
+          display: flex;
+          gap: 1.5rem;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .footer-link {
+          font-size: 0.78rem;
+          color: #444;
+          text-decoration: none;
+          letter-spacing: 0.05em;
+          transition: color 0.2s ease;
+        }
+
+        .footer-link:hover { color: #888880; }
+
+                /* Responsive */
         @media (max-width: 900px) {
           .hub-card { grid-template-columns: 1fr; }
           .hub-card-left { border-right: none; border-bottom: 1px solid #2a2a2a; padding-bottom: 2rem; }
         }
 
         @media (max-width: 640px) {
-          .page-hero { padding-top: calc(68px + 2.5rem); }
+          .page-hero { padding-top: 2rem; }
           .hub-card-left, .hub-card-right { padding: 2rem; }
         }
       `}</style>
@@ -478,7 +495,12 @@ export default function ProjectsPage() {
         <footer className="site-footer">
           <div className="footer-inner">
             <Link href="/" className="footer-logo">Tony Lombardi</Link>
-            <p className="footer-copy">Builder. Designer. Advisor.</p>
+            <div className="footer-links">
+              <Link href="/about" className="footer-link">About</Link>
+              <Link href="/projects" className="footer-link">Projects</Link>
+              <Link href="/work-with-me" className="footer-link">Work With Me</Link>
+              <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
+            </div>
             <p className="footer-legal">&copy; {new Date().getFullYear()} Tony Lombardi. All rights reserved.</p>
           </div>
         </footer>
