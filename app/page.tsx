@@ -110,9 +110,9 @@ export default function Home() {
 
         /* ─── Hero ─── */
         .hero {
-          padding-top: calc(68px + 5rem);
-          padding-bottom: 5rem;
-          min-height: 100svh;
+          padding-top: 2.5rem;
+          padding-bottom: 3rem;
+          min-height: calc(100svh - 76px);
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -133,8 +133,8 @@ export default function Home() {
 
         .hero-layout {
           display: grid;
-          grid-template-columns: 1fr 400px;
-          gap: 5rem;
+          grid-template-columns: 1fr 500px;
+          gap: 3.5rem;
           align-items: center;
           position: relative;
         }
@@ -164,7 +164,7 @@ export default function Home() {
           font-size: clamp(1rem, 1.8vw, 1.15rem);
           color: #888880;
           max-width: 480px;
-          margin-bottom: 3.5rem;
+          margin-bottom: 2rem;
           line-height: 1.75;
         }
 
@@ -187,8 +187,8 @@ export default function Home() {
 
         .hero-portrait-frame {
           position: relative;
-          width: 340px;
-          height: 340px;
+          width: 460px;
+          height: 460px;
           border-radius: 6px;
           overflow: hidden;
           border: 1px solid rgba(201,169,110,0.35);
@@ -245,7 +245,7 @@ export default function Home() {
 
         /* ─── BDA ─── */
         .bda {
-          padding-block: 9rem;
+          padding-block: 7rem;
           border-bottom: 1px solid #2a2a2a;
         }
 
@@ -760,8 +760,8 @@ export default function Home() {
 
         /* ─── Responsive ─── */
         @media (max-width: 1024px) {
-          .hero-layout { grid-template-columns: 1fr 320px; gap: 3rem; }
-          .hero-portrait-frame { width: 280px; height: 280px; }
+          .hero-layout { grid-template-columns: 1fr 380px; gap: 2.5rem; }
+          .hero-portrait-frame { width: 340px; height: 340px; }
         }
 
         @media (max-width: 900px) {
@@ -780,7 +780,7 @@ export default function Home() {
         }
 
         @media (max-width: 640px) {
-          .hero { min-height: auto; padding-top: calc(68px + 2.5rem); }
+          .hero { min-height: auto; padding-top: 2rem; }
           .hero-actions { flex-direction: column; }
           .hero-actions .btn { width: 100%; justify-content: center; }
           .bda-card { padding: 2rem; }
@@ -831,6 +831,35 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-line" aria-hidden="true"></div>
+        </section>
+
+        {/* Credibility strip */}
+        <section className="credibility">
+          <div className="container">
+            <ul className="credibility-list">
+              <li className="credibility-item fade-up">
+                <span className="credibility-value">18+</span>
+                <span className="credibility-label">Years enterprise transformation</span>
+              </li>
+              <li className="credibility-divider" aria-hidden="true"></li>
+              <li className="credibility-item fade-up">
+                <span className="credibility-label">Portfolio leadership across technology and operations</span>
+              </li>
+              <li className="credibility-divider" aria-hidden="true"></li>
+              <li className="credibility-item fade-up">
+                <span className="credibility-label">Banking · Insurance · Consulting · Software delivery</span>
+              </li>
+              <li className="credibility-divider" aria-hidden="true"></li>
+              <li className="credibility-item fade-up">
+                <span className="credibility-label">Founder. Builder. Operator.</span>
+              </li>
+              <li className="credibility-divider" aria-hidden="true"></li>
+              <li className="credibility-item fade-up">
+                <span className="credibility-value">7×</span>
+                <span className="credibility-label">Ironman finisher</span>
+              </li>
+            </ul>
+          </div>
         </section>
 
         {/* Build / Design / Advise */}
@@ -899,35 +928,6 @@ export default function Home() {
               </div>
 
             </div>
-          </div>
-        </section>
-
-        {/* Credibility strip */}
-        <section className="credibility">
-          <div className="container">
-            <ul className="credibility-list">
-              <li className="credibility-item fade-up">
-                <span className="credibility-value">18+</span>
-                <span className="credibility-label">Years enterprise transformation</span>
-              </li>
-              <li className="credibility-divider" aria-hidden="true"></li>
-              <li className="credibility-item fade-up">
-                <span className="credibility-label">Portfolio leadership across technology and operations</span>
-              </li>
-              <li className="credibility-divider" aria-hidden="true"></li>
-              <li className="credibility-item fade-up">
-                <span className="credibility-label">Banking · Insurance · Consulting · Software delivery</span>
-              </li>
-              <li className="credibility-divider" aria-hidden="true"></li>
-              <li className="credibility-item fade-up">
-                <span className="credibility-label">Founder. Builder. Operator.</span>
-              </li>
-              <li className="credibility-divider" aria-hidden="true"></li>
-              <li className="credibility-item fade-up">
-                <span className="credibility-value">7×</span>
-                <span className="credibility-label">Ironman finisher</span>
-              </li>
-            </ul>
           </div>
         </section>
 

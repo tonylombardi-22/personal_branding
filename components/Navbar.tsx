@@ -45,7 +45,7 @@ export default function Navbar() {
         }
 
         .tl-logo-svg {
-          height: 44px;
+          height: 50px;
           width: auto;
           display: block;
         }
