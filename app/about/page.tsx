@@ -722,9 +722,9 @@ export default function About() {
         <div className="ab-cta">
           <div>
             <div className="ab-cta-headline">Let's build something that works.</div>
-            <div className="ab-cta-sub">Open to transformation leadership, consulting, and strategic advisory roles.</div>
+            <div className="ab-cta-sub">Complex problem? Real stakes? That&apos;s where I work best.</div>
           </div>
-          <Link href="/contact" className="ab-cta-btn">Get in touch →</Link>
+          <Link href="/work-with-me" className="ab-cta-btn">Work With Me →</Link>
         </div>
 
         {/* Footer */}
@@ -734,8 +734,8 @@ export default function About() {
           </Link>
           <div className="ab-footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="ab-footer-link">LinkedIn</a>
-            <a href="/experience" className="ab-footer-link">Experience</a>
-            <a href="/contact" className="ab-footer-link">Contact</a>
+            <a href="/projects" className="ab-footer-link">Projects</a>
+            <Link href="/work-with-me" className="ab-footer-link">Work With Me</Link>
           </div>
         </footer>
       </div>

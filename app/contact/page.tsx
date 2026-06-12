@@ -379,49 +379,34 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right — contact form */}
+          {/* Right — how to engage */}
           <div className="ct-form-wrap">
-            <div className="ct-form-label">Send a message</div>
-            <form
-              className="ct-form"
-              action="https://formspree.io/f/YOUR_FORM_ID"
-              method="POST"
+            <div className="ct-form-label">How to engage</div>
+            <p style={{ fontSize: "14px", fontWeight: 300, lineHeight: 1.85, color: "rgba(240,237,232,0.48)", marginBottom: "28px" }}>
+              The best first step is a direct message describing the actual problem — not the polished version. What&apos;s happening, what you&apos;ve tried, what you need.
+            </p>
+            <p style={{ fontSize: "14px", fontWeight: 300, lineHeight: 1.85, color: "rgba(240,237,232,0.48)", marginBottom: "28px" }}>
+              From there, a short call to determine fit. If it&apos;s a match, we scope and move. If it isn&apos;t, I&apos;ll tell you and point you somewhere more useful.
+            </p>
+            <Link
+              href="/work-with-me"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                background: "#C8A96E",
+                color: "#0a0a0a",
+                padding: "14px 28px",
+                fontSize: "12.5px",
+                fontWeight: 500,
+                letterSpacing: "0.06em",
+                borderRadius: "2px",
+                textDecoration: "none",
+                transition: "opacity 0.2s",
+              }}
             >
-              <div className="ct-field">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-              <div className="ct-field">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="your@email.com"
-                  required
-                />
-              </div>
-              <div className="ct-field">
-                <label htmlFor="context">What are you working on?</label>
-                <textarea
-                  id="context"
-                  name="context"
-                  placeholder="Brief context on your organization, the role or project, and what you're looking for..."
-                />
-              </div>
-              <button type="submit" className="ct-submit">
-                Send message →
-              </button>
-              <p className="ct-form-note">
-                Typically responds within 24–48 hours.
-              </p>
-            </form>
+              See how I work →
+            </Link>
           </div>
         </section>
 
@@ -445,8 +430,8 @@ export default function Contact() {
           </Link>
           <div className="ct-footer-links">
             <a href="https://linkedin.com/in/tonylombardi1" target="_blank" rel="noopener noreferrer" className="ct-footer-link">LinkedIn</a>
-            <a href="/experience" className="ct-footer-link">Experience</a>
-            <a href="/about" className="ct-footer-link">About</a>
+            <Link href="/about" className="ct-footer-link">About</Link>
+            <Link href="/projects" className="ct-footer-link">Projects</Link>
           </div>
         </footer>
       </div>

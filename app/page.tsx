@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -81,7 +82,7 @@ export default function Home() {
         .btn-primary:hover {
           background: #d4b07a;
           border-color: #d4b07a;
-          box-shadow: 0 0 24px rgba(201,169,110,0.28);
+          box-shadow: 0 0 28px rgba(201,169,110,0.35);
           transform: translateY(-1px);
         }
 
@@ -107,10 +108,10 @@ export default function Home() {
 
         .btn-large { padding: 1rem 2.5rem; font-size: 1rem; }
 
-        /* Hero */
+        /* ─── Hero ─── */
         .hero {
-          padding-top: calc(68px + 6rem);
-          padding-bottom: 6rem;
+          padding-top: calc(68px + 5rem);
+          padding-bottom: 5rem;
           min-height: 100svh;
           display: flex;
           flex-direction: column;
@@ -124,16 +125,21 @@ export default function Home() {
           position: absolute;
           top: 0; left: 0; right: 0; bottom: 0;
           background:
-            radial-gradient(ellipse 65% 55% at 78% 32%, rgba(201,169,110,0.08) 0%, transparent 65%),
-            radial-gradient(ellipse 45% 65% at 18% 75%, rgba(201,169,110,0.04) 0%, transparent 65%),
-            radial-gradient(ellipse 30% 30% at 50% 50%, rgba(201,169,110,0.02) 0%, transparent 70%);
+            radial-gradient(ellipse 70% 60% at 75% 30%, rgba(201,169,110,0.10) 0%, transparent 60%),
+            radial-gradient(ellipse 50% 70% at 15% 80%, rgba(201,169,110,0.05) 0%, transparent 65%),
+            radial-gradient(ellipse 40% 40% at 50% 50%, rgba(201,169,110,0.03) 0%, transparent 70%);
           pointer-events: none;
         }
 
-        .hero-content {
-          max-width: 720px;
+        .hero-layout {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          gap: 5rem;
+          align-items: center;
           position: relative;
         }
+
+        .hero-content { position: relative; }
 
         .hero-eyebrow {
           font-size: 0.8rem;
@@ -146,7 +152,7 @@ export default function Home() {
 
         .hero-headline {
           font-family: 'DM Serif Display', Georgia, serif;
-          font-size: clamp(3.5rem, 9vw, 8rem);
+          font-size: clamp(3.5rem, 8vw, 7rem);
           font-weight: 400;
           line-height: 0.95;
           color: #ffffff;
@@ -155,10 +161,10 @@ export default function Home() {
         }
 
         .hero-copy {
-          font-size: clamp(1rem, 2vw, 1.2rem);
+          font-size: clamp(1rem, 1.8vw, 1.15rem);
           color: #888880;
-          max-width: 500px;
-          margin-bottom: 4rem;
+          max-width: 480px;
+          margin-bottom: 3.5rem;
           line-height: 1.75;
         }
 
@@ -168,6 +174,68 @@ export default function Home() {
           gap: 1rem;
         }
 
+        /* Portrait */
+        .hero-portrait-col {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hero-portrait-wrap {
+          position: relative;
+        }
+
+        .hero-portrait-frame {
+          position: relative;
+          width: 340px;
+          height: 340px;
+          border-radius: 6px;
+          overflow: hidden;
+          border: 1px solid rgba(201,169,110,0.35);
+          box-shadow:
+            0 0 0 1px rgba(201,169,110,0.12),
+            0 0 60px rgba(201,169,110,0.14),
+            0 32px 80px rgba(0,0,0,0.65);
+        }
+
+        .hero-portrait-frame img {
+          object-fit: cover;
+          object-position: center top;
+          width: 100% !important;
+          height: 100% !important;
+          position: relative !important;
+        }
+
+        .hero-portrait-frame::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to bottom, transparent 55%, rgba(13,13,13,0.45) 100%);
+          pointer-events: none;
+          z-index: 1;
+        }
+
+        /* Accent line + corner marks */
+        .hero-portrait-accent {
+          position: absolute;
+          top: -12px; right: -12px;
+          width: 60px; height: 60px;
+          border-top: 1px solid rgba(201,169,110,0.5);
+          border-right: 1px solid rgba(201,169,110,0.5);
+          border-radius: 0 4px 0 0;
+          pointer-events: none;
+        }
+
+        .hero-portrait-accent-bl {
+          position: absolute;
+          bottom: -12px; left: -12px;
+          width: 60px; height: 60px;
+          border-bottom: 1px solid rgba(201,169,110,0.5);
+          border-left: 1px solid rgba(201,169,110,0.5);
+          border-radius: 0 0 0 4px;
+          pointer-events: none;
+        }
+
         .hero-line {
           position: absolute;
           bottom: 0; left: 0; right: 0;
@@ -175,7 +243,7 @@ export default function Home() {
           background: linear-gradient(90deg, transparent, #2a2a2a, transparent);
         }
 
-        /* BDA */
+        /* ─── BDA ─── */
         .bda {
           padding-block: 9rem;
           border-bottom: 1px solid #2a2a2a;
@@ -208,11 +276,11 @@ export default function Home() {
         }
 
         .bda-card:hover {
-          background: #1c1c1c;
-          transform: translateY(-2px);
+          background: #1a1a1a;
+          transform: translateY(-3px);
         }
         .bda-card:hover::after {
-          box-shadow: inset 0 0 0 1px rgba(201,169,110,0.2);
+          box-shadow: inset 0 0 0 1px rgba(201,169,110,0.25);
         }
 
         .bda-card--center {
@@ -232,7 +300,7 @@ export default function Home() {
           margin-bottom: 2rem;
           transition: transform 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-        .bda-card:hover .bda-icon { transform: scale(1.08); }
+        .bda-card:hover .bda-icon { transform: scale(1.1); }
 
         .bda-title {
           font-family: 'DM Serif Display', Georgia, serif;
@@ -264,7 +332,7 @@ export default function Home() {
           position: relative;
           transition: color 0.22s ease;
         }
-        .bda-card:hover .bda-list li { color: #9d9d94; }
+        .bda-card:hover .bda-list li { color: #a0a09a; }
         .bda-list li::before {
           content: '—';
           position: absolute;
@@ -274,7 +342,7 @@ export default function Home() {
           top: 0.15em;
         }
 
-        /* Credibility strip */
+        /* ─── Credibility strip ─── */
         .credibility {
           padding-block: 2.25rem;
           background: #141414;
@@ -331,12 +399,13 @@ export default function Home() {
           align-self: center;
         }
 
-        /* Case study — featured */
+        /* ─── Case study ─── */
         .case-study {
           padding-block: 9rem;
-          background: #141414;
+          background: #111111;
           border-bottom: 1px solid #2a2a2a;
           position: relative;
+          overflow: hidden;
         }
         .case-study::before {
           content: '';
@@ -345,8 +414,16 @@ export default function Home() {
           height: 2px;
           background: linear-gradient(90deg, transparent, #c9a96e, transparent);
         }
+        .case-study::after {
+          content: '';
+          position: absolute;
+          top: 0; right: 0; bottom: 0;
+          width: 40%;
+          background: radial-gradient(ellipse 80% 60% at 80% 40%, rgba(201,169,110,0.05) 0%, transparent 70%);
+          pointer-events: none;
+        }
 
-        .case-study-inner { max-width: 800px; }
+        .case-study-inner { max-width: 820px; position: relative; z-index: 1; }
 
         .case-study-meta {
           display: flex;
@@ -362,10 +439,10 @@ export default function Home() {
           letter-spacing: 0.1em;
           text-transform: uppercase;
           color: #c9a96e;
-          background: rgba(201,169,110,0.15);
-          padding: 0.25rem 0.75rem;
+          background: rgba(201,169,110,0.12);
+          padding: 0.3rem 0.85rem;
           border-radius: 2px;
-          border: 1px solid rgba(201,169,110,0.2);
+          border: 1px solid rgba(201,169,110,0.22);
         }
 
         .case-study-title {
@@ -388,12 +465,21 @@ export default function Home() {
         .case-study-proof {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 2rem;
+          gap: 0;
           margin-bottom: 4rem;
-          padding: 2rem 0;
-          border-top: 1px solid #2a2a2a;
-          border-bottom: 1px solid #2a2a2a;
+          border: 1px solid #2a2a2a;
+          border-radius: 8px;
+          overflow: hidden;
         }
+
+        .proof-item {
+          padding: 2rem 1.75rem;
+          background: #141414;
+          border-right: 1px solid #2a2a2a;
+          transition: background 0.25s ease;
+        }
+        .proof-item:last-child { border-right: none; }
+        .proof-item:hover { background: #1c1c1c; }
 
         .proof-label {
           display: block;
@@ -402,7 +488,7 @@ export default function Home() {
           letter-spacing: 0.12em;
           text-transform: uppercase;
           color: #c9a96e;
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.75rem;
         }
 
         .proof-item p {
@@ -411,7 +497,7 @@ export default function Home() {
           line-height: 1.65;
         }
 
-        /* Selected projects grid */
+        /* ─── Projects grid ─── */
         .projects {
           padding-block: 9rem;
           border-bottom: 1px solid #2a2a2a;
@@ -429,9 +515,10 @@ export default function Home() {
 
         .project-card {
           background: #141414;
-          padding: 4rem 2rem;
-          transition: background 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          padding: 3.5rem 2.5rem;
+          transition: background 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
           position: relative;
+          cursor: default;
         }
         .project-card::after {
           content: '';
@@ -441,8 +528,11 @@ export default function Home() {
           transition: box-shadow 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
           pointer-events: none;
         }
-        .project-card:hover { background: #1c1c1c; }
-        .project-card:hover::after { box-shadow: inset 0 0 0 1px rgba(201,169,110,0.15); }
+        .project-card:hover {
+          background: #1a1a1a;
+          transform: translateY(-2px);
+        }
+        .project-card:hover::after { box-shadow: inset 0 0 0 1px rgba(201,169,110,0.18); }
 
         .project-header {
           display: flex;
@@ -473,7 +563,9 @@ export default function Home() {
           color: #ffffff;
           margin-bottom: 2rem;
           line-height: 1.15;
+          transition: color 0.22s ease;
         }
+        .project-card:hover .project-name { color: #f5f0e8; }
 
         .project-trio {
           display: flex;
@@ -497,9 +589,11 @@ export default function Home() {
           font-size: 0.875rem;
           color: #888880;
           line-height: 1.65;
+          transition: color 0.22s ease;
         }
+        .project-card:hover .project-trio-item p { color: #9d9d94; }
 
-        /* TonyOS section */
+        /* ─── TonyOS section ─── */
         .tonyos {
           padding-block: 9rem;
           background: #0a0a0a;
@@ -512,7 +606,7 @@ export default function Home() {
           content: '';
           position: absolute;
           inset: 0;
-          background: radial-gradient(ellipse 55% 60% at 80% 50%, rgba(201,169,110,0.06) 0%, transparent 70%);
+          background: radial-gradient(ellipse 55% 60% at 80% 50%, rgba(201,169,110,0.07) 0%, transparent 70%);
           pointer-events: none;
         }
 
@@ -580,7 +674,7 @@ export default function Home() {
           font-size: 0.9rem;
           font-weight: 700;
           font-family: 'DM Serif Display', Georgia, serif;
-          box-shadow: 0 0 32px rgba(201,169,110,0.3);
+          box-shadow: 0 0 40px rgba(201,169,110,0.35);
         }
 
         .diagram-node--top    { top: 0; left: 50%; transform: translateX(-50%); color: rgba(240,237,232,0.45); width: 80px; }
@@ -588,7 +682,7 @@ export default function Home() {
         .diagram-node--bottom { bottom: 0; left: 50%; transform: translateX(-50%); color: rgba(240,237,232,0.45); width: 80px; }
         .diagram-node--left   { left: 0; top: 50%; transform: translateY(-50%); color: rgba(240,237,232,0.45); width: 80px; }
 
-        /* Final CTA */
+        /* ─── Final CTA ─── */
         .final-cta {
           padding-block: 9rem;
           background: #141414;
@@ -601,7 +695,7 @@ export default function Home() {
           content: '';
           position: absolute;
           inset: 0;
-          background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(201,169,110,0.04) 0%, transparent 70%);
+          background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(201,169,110,0.05) 0%, transparent 70%);
           pointer-events: none;
         }
 
@@ -625,7 +719,7 @@ export default function Home() {
 
         .final-cta-actions { display: flex; justify-content: center; }
 
-        /* Footer */
+        /* ─── Footer ─── */
         .site-footer { padding-block: 4rem; background: #0d0d0d; }
 
         .footer-inner {
@@ -653,10 +747,30 @@ export default function Home() {
         }
         .footer-legal { font-size: 0.75rem; color: #555; }
 
-        /* Responsive */
+        /* ─── Fade animations ─── */
+        .fade-up {
+          opacity: 0;
+          transform: translateY(24px);
+          transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        /* ─── Responsive ─── */
+        @media (max-width: 1024px) {
+          .hero-layout { grid-template-columns: 1fr 320px; gap: 3rem; }
+          .hero-portrait-frame { width: 280px; height: 280px; }
+        }
+
         @media (max-width: 900px) {
+          .hero-layout { grid-template-columns: 1fr; }
+          .hero-portrait-col { display: none; }
           .bda-grid { grid-template-columns: 1fr; }
-          .case-study-proof { grid-template-columns: 1fr; gap: 1rem; }
+          .case-study-proof { grid-template-columns: 1fr; }
+          .case-study-proof .proof-item { border-right: none; border-bottom: 1px solid #2a2a2a; }
+          .case-study-proof .proof-item:last-child { border-bottom: none; }
           .tonyos-inner { grid-template-columns: 1fr; }
           .tonyos-visual { display: none; }
           .projects-grid { grid-template-columns: 1fr; }
@@ -671,6 +785,7 @@ export default function Home() {
           .hero-actions .btn { width: 100%; justify-content: center; }
           .bda-card { padding: 2rem; }
           .project-header { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+          .project-card { padding: 2.5rem 1.5rem; }
         }
       `}</style>
 
@@ -681,13 +796,37 @@ export default function Home() {
         {/* Hero */}
         <section className="hero">
           <div className="container">
-            <div className="hero-content fade-up">
-              <p className="hero-eyebrow">Tony Lombardi</p>
-              <h1 className="hero-headline">Builder.<br />Designer.<br />Advisor.</h1>
-              <p className="hero-copy">When the path isn't obvious, I build the system that gets people moving again.</p>
-              <div className="hero-actions">
-                <Link href="/work-with-me" className="btn btn-primary">Work With Me</Link>
-                <Link href="/projects" className="btn btn-ghost">See My Projects</Link>
+            <div className="hero-layout">
+              <div className="hero-content fade-up">
+                <p className="hero-eyebrow">Tony Lombardi</p>
+                <h1 className="hero-headline">Builder.<br />Designer.<br />Advisor.</h1>
+                <p className="hero-copy">When the path isn&apos;t obvious, I build the system that gets people moving again.</p>
+                <div className="hero-actions">
+                  <Link href="/work-with-me" className="btn btn-primary">Work With Me</Link>
+                  <Link href="/projects" className="btn btn-ghost">See My Projects</Link>
+                </div>
+              </div>
+
+              <div className="hero-portrait-col fade-up">
+                <div className="hero-portrait-wrap">
+                  <div className="hero-portrait-accent" aria-hidden="true" />
+                  <div className="hero-portrait-accent-bl" aria-hidden="true" />
+                  <div className="hero-portrait-frame">
+                    <Image
+                      src="/tony-lombardi.jpg"
+                      alt="Tony Lombardi"
+                      width={1024}
+                      height={1024}
+                      priority
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "center top",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -710,7 +849,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h2 className="bda-title">Build</h2>
-                <p className="bda-copy">AI systems, ventures, websites, operating workflows, teams, and execution engines. If it needs to exist and doesn't, I build it.</p>
+                <p className="bda-copy">AI systems, ventures, websites, operating workflows, teams, and execution engines. If it needs to exist and doesn&apos;t, I build it.</p>
                 <ul className="bda-list">
                   <li>AI-powered systems &amp; tools</li>
                   <li>Ventures &amp; new business builds</li>
@@ -804,7 +943,7 @@ export default function Home() {
                 <span className="case-tag">Launch Support</span>
               </div>
               <h2 className="case-study-title fade-up">Salterra Enterprises</h2>
-              <p className="case-study-copy">A full business website and positioning system built for a financial services operations leader launching an independent consulting brand. This wasn't a template drop — it was a ground-up build: brand positioning, service architecture, CTA flow, and practical launch support designed to move a founder from idea to market.</p>
+              <p className="case-study-copy">A full business website and positioning system built for a financial services operations leader launching an independent consulting brand. This wasn&apos;t a template drop — it was a ground-up build: brand positioning, service architecture, CTA flow, and practical launch support designed to move a founder from idea to market.</p>
               <div className="case-study-proof">
                 <div className="proof-item fade-up">
                   <span className="proof-label">Challenge</span>
@@ -931,7 +1070,7 @@ export default function Home() {
                 <div className="section-label section-label--light">Intellectual Framework</div>
                 <h2 className="tonyos-title">TonyOS</h2>
                 <p className="tonyos-copy">TonyOS is the operating framework behind how I think, build, decide, and advise. It connects pattern recognition, execution systems, and practical decision-making.</p>
-                <p className="tonyos-copy">Every engagement I take on runs through this framework. It's not a methodology I sell. It's how I work.</p>
+                <p className="tonyos-copy">Every engagement I take on runs through this framework. It&apos;s not a methodology I sell. It&apos;s how I work.</p>
                 <Link href="/tonyos" className="btn btn-outline-light" style={{ marginTop: "2rem" }}>Explore TonyOS</Link>
               </div>
               <div className="tonyos-visual" aria-hidden="true">
