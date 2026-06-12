@@ -206,7 +206,63 @@ export default function SalterraPage() {
         }
 
         .inner-section-content { max-width: 680px; }
+        .screenshot-section {
+          padding-block: 7rem;
+          border-bottom: 1px solid #2a2a2a;
+        }
 
+        .screenshot-intro {
+          max-width: 680px;
+          margin-bottom: 3rem;
+        }
+
+        .screenshot-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .screenshot-card {
+          border: 1px solid rgba(201, 169, 110, 0.22);
+          border-radius: 10px;
+          overflow: hidden;
+          background: #141414;
+          box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+        }
+
+        .screenshot-card-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 1.25rem;
+          border-bottom: 1px solid rgba(201, 169, 110, 0.16);
+          background: rgba(201, 169, 110, 0.05);
+        }
+
+        .screenshot-title {
+          font-size: 0.75rem;
+          font-weight: 700;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: #c9a96e;
+        }
+
+        .screenshot-context {
+          font-size: 0.8rem;
+          color: #888880;
+        }
+
+        .screenshot-image {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        @media (min-width: 900px) {
+          .screenshot-grid {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
         /* Client overview */
         .cs-overview {
           padding-block: 7rem;
@@ -738,7 +794,56 @@ export default function SalterraPage() {
             </div>
           </div>
         </section>
+        {/* Project screenshots */}
+        <section className="screenshot-section">
+          <div className="container">
+            <div className="screenshot-intro fade-up">
+              <div className="section-label">Project Proof</div>
+              <h2 className="inner-heading">The work, not just the description</h2>
+              <p className="inner-copy">
+                Salterra needed more than a website. It needed a credible market presence that made the client&apos;s operational depth visible, understandable, and easy to act on.
+              </p>
+            </div>
 
+            <div className="screenshot-grid">
+              <div className="screenshot-card fade-up">
+                <div className="screenshot-card-header">
+                  <span className="screenshot-title">Homepage</span>
+                  <span className="screenshot-context">Brand entry point</span>
+                </div>
+                <img
+                  className="screenshot-image"
+                  src="/projects/salterra-homepage.png"
+                  alt="Salterra Enterprises homepage screenshot"
+                />
+              </div>
+
+              <div className="screenshot-card fade-up">
+                <div className="screenshot-card-header">
+                  <span className="screenshot-title">Services</span>
+                  <span className="screenshot-context">Offer architecture</span>
+                </div>
+                <img
+                  className="screenshot-image"
+                  src="/projects/salterra-services.png"
+                  alt="Salterra Enterprises services screenshot"
+                />
+              </div>
+
+              <div className="screenshot-card fade-up">
+                <div className="screenshot-card-header">
+                  <span className="screenshot-title">About</span>
+                  <span className="screenshot-context">Founder credibility</span>
+                </div>
+                <img
+                  className="screenshot-image"
+                  src="/projects/salterra-about.png"
+                  alt="Salterra Enterprises about page screenshot"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
         {/* Challenge */}
         <section className="inner-section">
           <div className="container">
