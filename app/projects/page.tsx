@@ -418,11 +418,43 @@ export default function ProjectsPage() {
                 </div>
               </article>
 
-              {/* The Fight Don */}
+              {/* DMV 2.0 */}
               <article className="hub-card fade-up">
                 <div className="hub-card-left">
                   <div>
                     <p className="hub-card-num">03</p>
+                    <h2 className="hub-card-title">DMV 2.0</h2>
+                    <p className="hub-card-category">Venture / Product Design / Workflow</p>
+                  </div>
+                  <Link href="/projects/dmv-2.0" className="hub-card-link">
+                    Read the case study
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </Link>
+                </div>
+                <div className="hub-card-right">
+                  <p className="hub-summary">A mobile-first vehicle registration platform designed to eliminate DMV wait times in Connecticut. The concept: field representatives come to the customer, complete registration on-site, and transmit digitally to the DMV. Built from zero: market research, product design, workflow engineering, wireframes, and a full investor pitch.</p>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Challenge</span>
+                    <p>Connecticut DMV customers waiting up to four hours for simple vehicle registration transactions. A broken public-sector experience with a viable private-sector solution.</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Build</span>
+                    <p>Full product concept, two-sided platform design (customer app and employee mobile app), workflow documentation, requirements matrix, wireframes, business model, and investor presentation.</p>
+                  </div>
+                  <div className="hub-trio-item">
+                    <span className="hub-trio-label">Outcome</span>
+                    <p>Proof-of-concept complete with validated market demand. 47% of CT residents willing to pay a premium to skip the DMV line. Full documentation and investor materials produced.</p>
+                  </div>
+                </div>
+              </article>
+
+                            {/* The Fight Don */}
+              <article className="hub-card fade-up">
+                <div className="hub-card-left">
+                  <div>
+                    <p className="hub-card-num">04</p>
                     <h2 className="hub-card-title">The Fight Don</h2>
                     <p className="hub-card-category">Brand / Community / Business Model</p>
                   </div>
@@ -451,7 +483,7 @@ export default function ProjectsPage() {
               <article className="hub-card fade-up">
                 <div className="hub-card-left">
                   <div>
-                    <p className="hub-card-num">04</p>
+                    <p className="hub-card-num">05</p>
                     <h2 className="hub-card-title">Cuba Property Research</h2>
                     <p className="hub-card-category">Research / Archival / Investigative</p>
                   </div>
