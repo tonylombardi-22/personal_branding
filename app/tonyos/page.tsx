@@ -466,6 +466,10 @@ export default function TonyOSPage() {
                 <p className="tos-project-desc">A research problem without a clear playbook requires the same pattern-recognition discipline as a business problem. What type of information problem is this? What sources exist? What can be inferred? The research system was built to operate systematically in conditions of genuine ambiguity.</p>
               </div>
               <div className="tos-project-row fade-up">
+                <span className="tos-project-name">DMV 2.0</span>
+                <p className="tos-project-desc">A public-sector problem treated as a product problem. Pattern recognition identified that wait times weren't a staffing issue — they were a distribution issue. TonyOS structured the full build: market validation first, workflow design second, two-sided platform architecture third, investor materials last. The sequencing was the product.</p>
+              </div>
+              <div className="tos-project-row fade-up">
                 <span className="tos-project-name">This Site</span>
                 <p className="tos-project-desc">TonyLombardi.ai was built using TonyOS. Positioning first — what is this site actually for, and for whom? Architecture second — what structure serves that positioning? Build third. The framework applies to every build, including the ones about the framework itself.</p>
               </div>
