@@ -450,64 +450,6 @@ export default function ProjectsPage() {
                 </div>
               </article>
 
-                            {/* The Fight Don */}
-              <article className="hub-card fade-up">
-                <div className="hub-card-left">
-                  <div>
-                    <p className="hub-card-num">04</p>
-                    <h2 className="hub-card-title">The Fight Don</h2>
-                    <p className="hub-card-category">Brand / Community / Business Model</p>
-                  </div>
-                  <span className="hub-card-link hub-card-link--disabled" aria-disabled="true">
-                    Coming soon
-                  </span>
-                </div>
-                <div className="hub-card-right">
-                  <p className="hub-summary">A combat sports coaching brand built around making combat sports accessible to ordinary people — not elite athletes. The problem was real expertise and community energy with no scalable structure to turn it into a business. The build covered everything from brand to business model.</p>
-                  <div className="hub-trio-item">
-                    <span className="hub-trio-label">Challenge</span>
-                    <p>How do you turn combat sports expertise, coaching, and community energy into a scalable business that serves people who aren't already athletes?</p>
-                  </div>
-                  <div className="hub-trio-item">
-                    <span className="hub-trio-label">Build</span>
-                    <p>Brand positioning, coaching framework, content system, community strategy, and digital platform architecture designed around a repeatable model.</p>
-                  </div>
-                  <div className="hub-trio-item">
-                    <span className="hub-trio-label">Outcome</span>
-                    <p>A repeatable model for helping ordinary people enter combat sports with structure, confidence, and momentum — not just access to a gym.</p>
-                  </div>
-                </div>
-              </article>
-
-              {/* Cuba Property Research */}
-              <article className="hub-card fade-up">
-                <div className="hub-card-left">
-                  <div>
-                    <p className="hub-card-num">05</p>
-                    <h2 className="hub-card-title">Cuba Property Research</h2>
-                    <p className="hub-card-category">Research / Archival / Investigative</p>
-                  </div>
-                  <span className="hub-card-link hub-card-link--disabled" aria-disabled="true">
-                    Coming soon
-                  </span>
-                </div>
-                <div className="hub-card-right">
-                  <p className="hub-summary">Reconstructing a family property history across Cuba, exile, legal uncertainty, and decades of fragmented public records. An information problem with no obvious playbook — requiring a custom research system combining family accounts, historical maps, legal context, and archival evidence.</p>
-                  <div className="hub-trio-item">
-                    <span className="hub-trio-label">Challenge</span>
-                    <p>How do you reconstruct a family property history across Cuba, exile, legal uncertainty, and fragmented public records — when no single source holds the answer?</p>
-                  </div>
-                  <div className="hub-trio-item">
-                    <span className="hub-trio-label">Build</span>
-                    <p>A structured research system combining family history, property clues, historical maps, legal context, and archival evidence into a coherent investigative framework.</p>
-                  </div>
-                  <div className="hub-trio-item">
-                    <span className="hub-trio-label">Outcome</span>
-                    <p>A clearer investigative path through an information problem with no obvious playbook — and a methodology transferable to similar cases.</p>
-                  </div>
-                </div>
-              </article>
-
             </div>
           </div>
         </section>

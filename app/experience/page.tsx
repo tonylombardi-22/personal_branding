@@ -12,33 +12,33 @@ export const metadata: Metadata = {
 
 const roles = [
   {
-    company: "The Fight Don",
-    title: "Director, Digital Transformation & AI Operations",
-    dates: "2025 — Present",
-    tags: ["Combat Sports", "AI Operations", "Signed Fighter"],
+    company: "Salterra Enterprises",
+    title: "IT & AI Transformation Consultant",
+    dates: "May 2026 — Present",
+    tags: ["Hourly Consulting", "AI-Assisted Development", "Multi-Client"],
     summary:
-      "Tony Lombardi serves as the embedded transformation executive for The Fight Don, a growth-stage combat sports organization, architecting its complete digital operating model, AI-enabled workflow systems, and fighter performance analytics infrastructure from zero. The engagement spans tools selection, data pipelines, sponsorship pipeline design, and phased consumer platform strategy — built without legacy infrastructure, budget overhead, or a pre-existing IT team. He is simultaneously signed as a fighter under the organization's banner, pursuing a first-of-its-kind dual milestone: a sanctioned MMA fight and a full-distance Ironman in the same calendar year.",
+      "Providing hourly IT and AI transformation consulting to a growing multi-client digital studio, combining hands-on technical delivery with AI-assisted development workflows. Solo-designed, built, and shipped the studio's production website, then evolved it into a lead-generation funnel with integrated capture, scheduling, and analytics. Led the platform's migration to Framer, integrating Claude Code into the build pipeline to automate defect resolution and deployment, and moved all client and build management activity onto Jira for repeatable tracking.",
     wins: [
       {
-        num: "30d",
-        text: "Full collaboration and productivity stack — Slack, Google Workspace, Dropbox, Monday.com — operational within the first 30 days, built from zero with no prior infrastructure.",
+        num: "44 units",
+        text: "Delivered a fully custom e-commerce build for a client — no off-the-shelf platform — resulting in 44 units sold within the first two weeks of launch.",
       },
       {
-        num: "2-Phase",
-        text: "Designed a phased consumer digital platform roadmap in which Phase 1 sponsorship and ticket revenue self-funds the Phase 2 full platform buildout — a capital efficiency strategy, not just a technology plan.",
+        num: "17 devices",
+        text: "Built and run a self-authored automated visual regression QA system covering 17 device and orientation combinations with real browser rendering, integrated into the deployment pipeline.",
       },
       {
-        num: "120d",
-        text: "Full digital operating model designed, standing, and actively generating revenue operations within the first 120 days of engagement.",
+        num: "Solo",
+        text: "Sole technical lead across a growing multi-client portfolio spanning home services, executive consulting, and cleaning industries.",
       },
     ],
     skills: [
-      "AI-Enabled Workflow Automation",
-      "Digital Operating Model Design",
-      "Fighter Performance Analytics",
-      "Sponsorship Pipeline Systems",
-      "Monday.com / Google Workspace",
-      "Phased Platform Roadmap",
+      "Framer + Claude Code Pipeline",
+      "Automated Visual Regression QA",
+      "Next.js / Vercel / GitHub",
+      "AI-Assisted Development Workflows",
+      "Jira Client Management",
+      "Custom E-Commerce Build",
     ],
   },
   {

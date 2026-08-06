@@ -557,15 +557,6 @@ export default function About() {
                 </div>
               </div>
 
-              {/* One man two worlds poster */}
-              <div style={{ marginTop: "32px", display: "flex", justifyContent: "center" }}>
-                <img
-                  src="/1_man_2_worlds.png"
-                  alt="Tony Lombardi — One man. Two worlds."
-                  style={{ width: "80%", display: "block", borderRadius: "4px" }}
-                />
-              </div>
-
             </section>
 
             {/* The Builder */}
@@ -591,14 +582,14 @@ export default function About() {
               <div className="ab-section-label">04</div>
               <div className="ab-section-title">Right <em>now</em></div>
               <p className="ab-body">
-                Currently serving as Director of Digital Transformation and AI Operations at The Fight Don — a growth-stage combat sports organization — where I'm building AI-enabled performance analytics systems, digital operating infrastructure, and a phased consumer platform roadmap from zero. Supporting flagship fighters including Parker Porter and Ryan "Royal" Reber, both competing in BKFC.
+                Currently providing hourly IT and AI transformation consulting to Salterra Enterprises, a growing multi-client digital studio — combining hands-on technical delivery with AI-assisted development workflows. Solo-built and shipped the studio's production website, led its migration to Framer with Claude Code integrated into the build pipeline, and built a self-authored automated visual regression QA system running across 17 device and orientation combinations.
               </p>
               <p className="ab-body">
-                Simultaneously signed as a fighter under the organization's banner — pursuing the MMA + Ironman milestone while building the AI automation capability that will define the next phase of the career. Based in Fuquay-Varina, NC. Open to transformation leadership, consulting, and strategic advisory roles — on-site, hybrid, or remote.
+                Sole technical lead across a growing multi-client portfolio spanning home services, executive consulting, and cleaning industries — while continuing the search for the next full-time transformation leadership seat. Based in Fuquay-Varina, NC. Open to transformation leadership, consulting, and strategic advisory roles — on-site, hybrid, or remote.
               </p>
               <div className="ab-pills">
-                <span className="ab-pill">The Fight Don</span>
-                <span className="ab-pill">AI Operations</span>
+                <span className="ab-pill">Salterra Enterprises</span>
+                <span className="ab-pill">AI-Assisted Development</span>
                 <span className="ab-pill">Fuquay-Varina, NC</span>
                 <span className="ab-pill">Open to work</span>
               </div>
@@ -606,115 +597,6 @@ export default function About() {
 
           </div>
         </div>
-
-        {/* Podcast Section */}
-        <section style={{
-          padding: "72px 48px",
-          maxWidth: "1100px",
-          margin: "0 auto",
-        }}>
-          <div style={{
-            fontSize: "11px",
-            letterSpacing: "0.14em",
-            textTransform: "uppercase" as const,
-            color: "rgba(240,237,232,0.28)",
-            marginBottom: "12px",
-          }}>
-            Featured
-          </div>
-          <div style={{
-            fontFamily: "'DM Serif Display', Georgia, serif",
-            fontSize: "32px",
-            fontWeight: 400,
-            color: "#f0ede8",
-            marginBottom: "8px",
-            lineHeight: 1.1,
-          }}>
-            The Mad Coach Podcast
-          </div>
-          <p style={{
-            fontSize: "13px",
-            fontWeight: 300,
-            color: "rgba(240,237,232,0.42)",
-            marginBottom: "36px",
-            lineHeight: 1.7,
-            maxWidth: "560px",
-          }}>
-            A conversation about the dual identity — enterprise operator and combat sports competitor.
-            What it takes to pursue two elite challenges simultaneously, and why the mindset is identical.
-          </p>
-
-          {/* Primary embed — combined cut */}
-          <div style={{ marginBottom: "16px" }}>
-            <div style={{
-              fontSize: "10px",
-              letterSpacing: "0.1em",
-              textTransform: "uppercase" as const,
-              color: "rgba(200,169,110,0.55)",
-              marginBottom: "10px",
-            }}>
-              Full conversation — edited cut
-            </div>
-            <iframe
-              style={{ borderRadius: "8px" }}
-              src="https://open.spotify.com/embed/episode/6xKKeVJdOn5VGaVzvQlDf5?utm_source=generator&theme=0"
-              width="100%"
-              height="152"
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            />
-          </div>
-
-          {/* Part 1 and Part 2 side by side */}
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "16px",
-            marginTop: "16px",
-          }}>
-            <div>
-              <div style={{
-                fontSize: "10px",
-                letterSpacing: "0.1em",
-                textTransform: "uppercase" as const,
-                color: "rgba(240,237,232,0.2)",
-                marginBottom: "10px",
-              }}>
-                Part 1
-              </div>
-              <iframe
-                style={{ borderRadius: "8px" }}
-                src="https://open.spotify.com/embed/episode/1VejZb5DwAPjYeZhRN5wHz?utm_source=generator&theme=0"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              />
-            </div>
-            <div>
-              <div style={{
-                fontSize: "10px",
-                letterSpacing: "0.1em",
-                textTransform: "uppercase" as const,
-                color: "rgba(240,237,232,0.2)",
-                marginBottom: "10px",
-              }}>
-                Part 2
-              </div>
-              <iframe
-                style={{ borderRadius: "8px" }}
-                src="https://open.spotify.com/embed/episode/3KO0T7jxhSbprKjYQw3Sso?utm_source=generator&theme=0"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </section>
 
         <hr className="rule" />
 

@@ -451,19 +451,11 @@ export default function TonyOSPage() {
           <div className="container">
             <div className="section-label fade-up">How It Shows Up In Projects</div>
             <h2 className="inner-heading fade-up" style={{ maxWidth: "640px" }}>Same framework. Different problems.</h2>
-            <p className="inner-copy fade-up" style={{ maxWidth: "680px" }}>The projects below are structurally different — a consulting brand launch, a combat sports business, an archival research system — but each one was approached through the same TonyOS lens.</p>
+            <p className="inner-copy fade-up" style={{ maxWidth: "680px" }}>The projects below are structurally different — a consulting brand launch, a public-sector product concept, a personal operating framework — but each one was approached through the same TonyOS lens.</p>
             <div className="tos-projects">
               <div className="tos-project-row fade-up">
                 <span className="tos-project-name">Salterra Enterprises</span>
                 <p className="tos-project-desc">Pattern recognition surfaced that this wasn't a website problem — it was a positioning problem. Execution discipline ensured positioning was resolved before a single line of design work started. Decision clarity defined what "done" meant at each stage so the launch didn't drift.</p>
-              </div>
-              <div className="tos-project-row fade-up">
-                <span className="tos-project-name">The Fight Don</span>
-                <p className="tos-project-desc">Recognized early that the challenge wasn't brand awareness — it was structural. No framework for turning expertise and community energy into repeatable engagements. The build was designed around that structural problem, not the surface symptoms.</p>
-              </div>
-              <div className="tos-project-row fade-up">
-                <span className="tos-project-name">Cuba Property Research</span>
-                <p className="tos-project-desc">A research problem without a clear playbook requires the same pattern-recognition discipline as a business problem. What type of information problem is this? What sources exist? What can be inferred? The research system was built to operate systematically in conditions of genuine ambiguity.</p>
               </div>
               <div className="tos-project-row fade-up">
                 <span className="tos-project-name">DMV 2.0</span>

@@ -995,28 +995,6 @@ export default function Home() {
               <article className="project-card fade-up">
                 <div className="project-header">
                   <span className="project-number">02</span>
-                  <span className="project-category">Brand / Community / Media</span>
-                </div>
-                <h3 className="project-name">The Fight Don</h3>
-                <div className="project-trio">
-                  <div className="project-trio-item">
-                    <span className="trio-label">Challenge</span>
-                    <p>How do you turn combat sports expertise, coaching, and community energy into a scalable business?</p>
-                  </div>
-                  <div className="project-trio-item">
-                    <span className="trio-label">Build</span>
-                    <p>Brand positioning, coaching framework, content system, community strategy, and digital platform architecture.</p>
-                  </div>
-                  <div className="project-trio-item">
-                    <span className="trio-label">Outcome</span>
-                    <p>A repeatable model for helping ordinary people enter combat sports with structure, confidence, and momentum.</p>
-                  </div>
-                </div>
-              </article>
-
-              <article className="project-card fade-up">
-                <div className="project-header">
-                  <span className="project-number">03</span>
                   <span className="project-category">Operating System / Framework</span>
                 </div>
                 <h3 className="project-name">TonyOS</h3>
@@ -1038,22 +1016,22 @@ export default function Home() {
 
               <article className="project-card fade-up">
                 <div className="project-header">
-                  <span className="project-number">04</span>
-                  <span className="project-category">Research / Data / International</span>
+                  <span className="project-number">03</span>
+                  <span className="project-category">Venture / Product Design / Workflow</span>
                 </div>
-                <h3 className="project-name">Cuba Property Research</h3>
+                <h3 className="project-name">DMV 2.0</h3>
                 <div className="project-trio">
                   <div className="project-trio-item">
                     <span className="trio-label">Challenge</span>
-                    <p>How do you reconstruct a family property history across Cuba, exile, legal uncertainty, and fragmented public records?</p>
+                    <p>Connecticut DMV customers waiting up to four hours for simple vehicle registration transactions.</p>
                   </div>
                   <div className="project-trio-item">
                     <span className="trio-label">Build</span>
-                    <p>A structured research system combining family history, property clues, historical maps, legal context, and archival evidence.</p>
+                    <p>Full product concept, two-sided platform design, workflow documentation, wireframes, business model, and investor presentation.</p>
                   </div>
                   <div className="project-trio-item">
                     <span className="trio-label">Outcome</span>
-                    <p>A clearer investigative path through an information problem with no obvious playbook.</p>
+                    <p>Proof-of-concept complete with validated market demand — 47% of CT residents willing to pay a premium to skip the DMV line.</p>
                   </div>
                 </div>
               </article>
