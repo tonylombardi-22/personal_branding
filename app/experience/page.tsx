@@ -7,38 +7,38 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: "Experience | Tony Lombardi",
   description:
-    "20+ years across insurance, financial services, SaaS, and sports technology. $8.6M portfolios, 326 branch rollouts, SOC certifications delivered months ahead of schedule.",
+    "20+ years across insurance, financial services, SaaS, and AI-enabled operations. $8.6M portfolios, 326 branch rollouts, SOC certifications delivered months ahead of schedule.",
 };
 
 const roles = [
   {
     company: "Salterra Enterprises",
-    title: "IT & AI Transformation Consultant",
+    title: "Head of IT & AI Transformation",
     dates: "May 2026 — Present",
-    tags: ["Hourly Consulting", "AI-Assisted Development", "Multi-Client"],
+    tags: ["AI-Enabled Operations", "Claude Code", "Multi-Client Studio"],
     summary:
-      "Providing hourly IT and AI transformation consulting to a growing multi-client digital studio, combining hands-on technical delivery with AI-assisted development workflows. Solo-designed, built, and shipped the studio's production website, then evolved it into a lead-generation funnel with integrated capture, scheduling, and analytics. Led the platform's migration to Framer, integrating Claude Code into the build pipeline to automate defect resolution and deployment, and moved all client and build management activity onto Jira for repeatable tracking.",
+      "Leading IT and AI transformation for a growing multi-client web studio. Designed and deployed an 8-agent AI development team on Claude Code, led the migration of the full client build pipeline from static HTML/Vercel to Framer, and moved project tracking onto a shared Jira workflow used by every client project. Integrated GoHighLevel CRM with AI through OAuth, and automated client onboarding down to a two-click scaffold generator.",
     wins: [
       {
-        num: "44 units",
-        text: "Delivered a fully custom e-commerce build for a client — no off-the-shelf platform — resulting in 44 units sold within the first two weeks of launch.",
+        num: "8 agents",
+        text: "Designed and deployed an 8-agent AI development team on Claude Code: build, QA, motion, SEO/AEO, CRM, reporting, onboarding, and infrastructure. Shared guardrails are encoded as reusable skills.",
       },
       {
         num: "17 devices",
-        text: "Built and run a self-authored automated visual regression QA system covering 17 device and orientation combinations with real browser rendering, integrated into the deployment pipeline.",
+        text: "Built automated nightly visual QA covering 17 device and orientation combinations on real browser engines, with a 0.3% pixel-diff threshold.",
       },
       {
-        num: "Solo",
-        text: "Sole technical lead across a growing multi-client portfolio spanning home services, executive consulting, and cleaning industries.",
+        num: "120+",
+        text: "Migrated project tracking from spreadsheets to Jira, moving more than 120 tasks, and designed a shared workflow scheme now used by every client project.",
       },
     ],
     skills: [
-      "Framer + Claude Code Pipeline",
-      "Automated Visual Regression QA",
-      "Next.js / Vercel / GitHub",
-      "AI-Assisted Development Workflows",
-      "Jira Client Management",
-      "Custom E-Commerce Build",
+      "AI Agent Orchestration",
+      "Claude Code",
+      "Framer Build Pipeline",
+      "Automated Visual QA",
+      "Jira Workflow Design",
+      "GoHighLevel CRM + AI",
     ],
   },
   {
@@ -501,7 +501,7 @@ export default function Experience() {
             <em>point.</em>
           </h1>
           <p className="ex-lead">
-            20+ years across insurance, financial services, SaaS, and sports technology.
+            20+ years across insurance, financial services, SaaS, and AI-enabled operations.
             Every engagement follows the same pattern — find the complexity, design the
             operating model, and deliver measurable results.
           </p>

@@ -482,7 +482,7 @@ export default function About() {
                 I started my career as a developer and business analyst at Travelers, where I was selected into a leadership development program that accepted 10–15 people from a pool of over 3,000 applicants. I rotated through every seat on a delivery team — developer, BA, project lead, project manager — which gave me a ground-level understanding of how technology actually gets built that most senior leaders never acquire.
               </p>
               <p className="ab-body">
-                That breadth became the foundation for everything that followed. At ESPN, First Citizens Bank, Apex Systems, Jahnel Group, and Verisk Analytics, I wasn't just managing programs. I was redesigning the operating models underneath them — cutting delivery cycle times by 50–60%, delivering SOC 1 and SOC 2 certifications months ahead of schedule, and translating executive vision into roadmaps that actually survived contact with reality.
+                That breadth became the foundation for everything that followed. At ESPN, First Citizens Bank, Apex Systems, Jahnel Group, and Verisk Analytics, I wasn't just managing programs. I was redesigning the operating models underneath them — cutting delivery cycle times by 30–40%, delivering SOC 1 and SOC 2 certifications months ahead of schedule, and translating executive vision into roadmaps that actually survived contact with reality.
               </p>
               <div className="ab-pull">
                 "I read operational signals early — before they become compliance findings, missed SLAs, or executive escalations."
@@ -570,7 +570,7 @@ export default function About() {
                 Building things that outlast the moment they were created is a pattern that runs through every part of this career. The nonprofit has no performance review, no compensation, and no external motivation. It persists entirely because of personal commitment to something larger than career — which is the same reason programs I design tend to survive leadership changes, budget cuts, and scope shifts.
               </p>
               <div className="ab-pills">
-                <span className="ab-pill">USPTO Patent</span>
+                <span className="ab-pill">USPTO Patent Application</span>
                 <span className="ab-pill">Nonprofit Founder — 20 years</span>
                 <span className="ab-pill">501(c)(3)</span>
                 <span className="ab-pill">HEAT Triathletes President</span>
@@ -582,10 +582,10 @@ export default function About() {
               <div className="ab-section-label">04</div>
               <div className="ab-section-title">Right <em>now</em></div>
               <p className="ab-body">
-                Currently providing hourly IT and AI transformation consulting to Salterra Enterprises, a growing multi-client digital studio — combining hands-on technical delivery with AI-assisted development workflows. Solo-built and shipped the studio's production website, led its migration to Framer with Claude Code integrated into the build pipeline, and built a self-authored automated visual regression QA system running across 17 device and orientation combinations.
+                Currently Head of IT &amp; AI Transformation at Salterra Enterprises, a growing multi-client web studio. I designed and deployed an 8-agent AI development team on Claude Code, led the migration of the full client build pipeline to Framer, and built automated nightly visual QA across 17 device and orientation combinations.
               </p>
               <p className="ab-body">
-                Sole technical lead across a growing multi-client portfolio spanning home services, executive consulting, and cleaning industries — while continuing the search for the next full-time transformation leadership seat. Based in Fuquay-Varina, NC. Open to transformation leadership, consulting, and strategic advisory roles — on-site, hybrid, or remote.
+                The work spans home services, executive consulting, and cleaning industry clients, while I continue the search for the next full-time transformation leadership seat. Based in Fuquay-Varina, NC. Open to transformation leadership, consulting, and strategic advisory roles — on-site, hybrid, or remote.
               </p>
               <div className="ab-pills">
                 <span className="ab-pill">Salterra Enterprises</span>
