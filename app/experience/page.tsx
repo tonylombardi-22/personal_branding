@@ -17,7 +17,7 @@ const roles = [
     dates: "May 2026 — Present",
     tags: ["AI-Enabled Operations", "Claude Code", "Multi-Client Studio"],
     summary:
-      "Leading IT and AI transformation for a growing multi-client web studio. Designed and deployed an 8-agent AI development team on Claude Code, led the migration of the full client build pipeline from static HTML/Vercel to Framer, and moved project tracking onto a shared Jira workflow used by every client project. Integrated GoHighLevel CRM with AI through OAuth, and automated client onboarding down to a two-click scaffold generator.",
+      "Leading IT and AI transformation for a growing multi-client web studio. Designed and deployed an 8-agent AI development team on Claude Code, led the migration of the full client build pipeline from static HTML/Vercel to Framer, and moved project tracking onto Jira with a shared workflow scheme for client site builds. Integrated GoHighLevel CRM with AI through OAuth, and automated client onboarding down to a two-click scaffold generator.",
     wins: [
       {
         num: "8 agents",
@@ -28,8 +28,8 @@ const roles = [
         text: "Built automated nightly visual QA covering 17 device and orientation combinations on real browser engines, with a 0.3% pixel-diff threshold.",
       },
       {
-        num: "120+",
-        text: "Migrated project tracking from spreadsheets to Jira, moving more than 120 tasks, and designed a shared workflow scheme now used by every client project.",
+        num: "355 cards",
+        text: "Run the team as a delivery operation: analysts write requirements as Jira cards, specialized agents execute them, and a QA agent advances each card to user testing. From Aug 1 to Oct 1, 2026 the team resolved 355 cards; the 252 routed to the agents closed in a median of 8.4 hours versus 44.6 for the rest.",
       },
     ],
     skills: [
